@@ -6,7 +6,7 @@
 
   <img class="img" src="http://cloud.ahfr.org/22e5b4d0a9872511881f.jpg" />
 
-  <p class="u-center">So you're probably asking yourself, "what the fuck does some cracker with the right stuff have to do with The God MC?"</p>
+  <p class="u-center">So you're probably asking yourself, "what the fuck does some writer with the right stuff have to do with The God MC?"</p>
 </div>
 <div class="col">
   <p>Before I expand your event-horizons, let's make something clear like tears rolling off Amil's cheek:</p>

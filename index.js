@@ -26,6 +26,13 @@ app.get('/base.css', function(request, response) {
   }).css).css);
 });
 
+app.get('/:style.css', function(request, response) {
+  response.set('Content-Type', 'text/css');
+  response.send(autoprefixer.process(sass.renderSync({
+    file: process.cwd() + '/src/assets/stylesheets/' + request.params.style + '.scss'
+  }).css).css);
+});
+
 app.use(express.static(__dirname + '/src/assets'));
 
 var invokeArgs = process.argv.slice(2).join(' ');

@@ -6,7 +6,7 @@
 
 .region--frame {
   font-family: Bauhaus;
-  color: yellow;
+  color: #ffff00;
   background-color: #272727;
   border-bottom-color: #636363;
 }
@@ -27,7 +27,7 @@ hr {
 hr:before {
   content: '';
   border-radius: 50%;
-  background-color: yellow;
+  background-color: #ffff00;
 }
 
 .col + hr {

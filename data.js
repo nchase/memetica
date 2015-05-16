@@ -1,6 +1,7 @@
 module.exports = {
   frames: [],
   styles: [
-    'steel_moss'
+    'steel_moss',
+    'bauhaus'
   ]
 };

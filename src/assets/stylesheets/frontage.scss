@@ -1,0 +1,23 @@
+@font-face {
+  src: url('../fonts/frontage-3d.otf');
+  font-family: 'Frontage 3D';
+}
+
+
+.region--frame {
+  color: #fff;
+  background-color: lightblue;
+}
+
+h1 {
+  font-family: 'Frontage 3D';
+}
+
+h2, p {
+  font-family: monospace;
+}
+
+hr:before {
+  content: '❧';
+  font-family: 'Arial Unicode MS', 'Zapf Dingbats';
+}

@@ -17,6 +17,10 @@ h2, p {
   font-family: monospace;
 }
 
+hr {
+  margin: 1.5em 0;
+}
+
 hr:before {
   content: '❧';
   font-family: 'Arial Unicode MS', 'Zapf Dingbats';

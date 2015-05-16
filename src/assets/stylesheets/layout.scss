@@ -105,10 +105,7 @@ hr {
     transition: inherit;
   }
 
-  &[min-width~="27em"] {
-  }
-
-  &[min-width~="60em"] {
+  @media (min-width: 60em) {
     h1 {
       font-size: 3em;
     }
@@ -122,7 +119,7 @@ hr {
     }
   }
 
-  &[min-width~="90em"] {
+  @media (min-width: 90em) {
     .region--frame-inner {
       max-width: none;
       width: 90em;
@@ -151,7 +148,8 @@ hr {
   background-size: cover;
 }
 
-.region--frame[min-width~="90em"] {
+
+@media (min-width: 90em) {
   .img--left {
     max-width: 50%;
     float: left;
@@ -175,7 +173,7 @@ hr {
   max-width: 50%;
 }
 
-.region--frame[min-width~="90em"] {
+@media (min-width: 90em) {
   .img--small.img--left {
     max-width: 25%;
   }

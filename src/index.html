@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<% var fs = require('fs') %>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/base.css" />
+    <link rel="icon" href="/favicon.png" />
+    <title>-</title>
+  </head>
+  <body>
+    <% if (!data.frames.length) data.frames = ['src/index.md']; data.frames.forEach(function(frame, index) { %>
+       <div class="region--frame region--frame--<%- frame.replace(/[^_a-zA-Z0-9-]+/g, '_') %>">
+         <div class="region--frame-inner">
+           <%- marked(fs.readFileSync(frame).toString()) -%>
+         </div>
+       </div>
+       <% if (data.frames.length  > 1 && index % 2 === 0) { %>
+         <div class="ctl--handle"></div>
+       <% } %>
+    <% }); %>
+    <script>
+      function detectDrag(event)  {
+        // initiate dragging UI if mousedown for 200ms:
+        this.dragID = setTimeout(function() {
+          startDragging(event.clientX);
+        }, 200);
+      }
+
+      function killDrag(event) {
+        // kill startDrag timer:
+
+        clearTimeout(this.dragID);
+
+        // (clever way to only have to take the next code path if we're really dragging)
+      }
+
+      function startDragging(mouseCoords) {
+        document.querySelector('body').classList.add('b-dragging');
+        document.querySelector('[data-contenteditable]').removeAttribute('contenteditable');
+
+        document.body.addEventListener('touchmove', moveHandler);
+        document.body.addEventListener('mousemove', moveHandler);
+        document.body.addEventListener('touchend', dropHandler);
+        document.body.addEventListener('mouseup', dropHandler);
+      }
+
+
+      function moveHandler(event) {
+        var xCoordinate = event.clientX || event.pageX;
+        document.querySelectorAll('.region--frame')[0].style.width = ((xCoordinate / window.innerWidth)  * 100 ) + '%';
+        document.querySelectorAll('.region--frame')[1].style.width = (100 - (xCoordinate / window.innerWidth)  * 100 ) + '%';
+      }
+
+      function dropHandler(event) {
+        document.body.removeEventListener('touchmove', moveHandler);
+        document.body.removeEventListener('mousemove', moveHandler);
+        document.querySelector('body').classList.remove('b-dragging');
+        document.querySelector('[data-contenteditable]').setAttribute('contenteditable', true);
+      }
+
+      var handle = document.querySelector('.ctl--handle');
+      handle && handle.addEventListener('touchstart', detectDrag);
+      handle && handle.addEventListener('mousedown', detectDrag);
+      handle && handle.addEventListener('mouseup', killDrag);
+
+    </script>
+    <script src="scripts/ResizeSensor.js"></script>
+    <script src="scripts/ElementQueries.js"></script>
+  </body>
+</html>

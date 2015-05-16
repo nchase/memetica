@@ -1,0 +1,59 @@
+html,
+body {
+  height: 100%;
+}
+
+iframe {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+}
+
+iframe,
+.region--frame {
+  width: 100%;
+  border: none;
+}
+
+.region--frame {
+  padding: 1em 1em 0;
+  overflow: scroll;
+
+  &[min-width~="27em"] {
+    .region--frame-inner {
+      width: 400px;
+    }
+  }
+
+  &[min-width~="40em"] {
+    .region--frame-inner {
+      width: 500px;
+      font-size: 20px;
+    }
+  }
+}
+
+.region--frame {
+  transition: all 500ms;
+}
+
+.region--frame-inner {
+  margin: 0 auto;
+}
+
+.ctl--handle {
+  border: solid;
+  border-width: 0 0.25em;
+  border-left-color: hsl(0, 60%, 75%);
+  border-right-color: hsl(200, 60%, 75%);
+  cursor: grab;
+
+}
+
+.b-dragging {
+  user-select: none;
+  cursor: col-resize;
+}

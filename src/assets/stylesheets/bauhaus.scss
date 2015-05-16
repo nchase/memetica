@@ -1,0 +1,17 @@
+@font-face {
+  src: url('../fonts/bauhaus.ttf');
+  font-family: 'Bauhaus'
+}
+
+
+.region--frame {
+  font-family: Bauhaus;
+  color: yellow;
+  background-color: #272727;
+  border-bottom-color: #636363;
+}
+
+h1 {
+  text-shadow:    -0.15em 0 red,
+                -0.25em 0 green;
+}

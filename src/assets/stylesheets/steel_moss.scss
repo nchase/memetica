@@ -29,7 +29,22 @@ p {
 }
 
 hr {
+  height: 1px;
+  margin: 0;
   margin-bottom: 1.5em;
+  border: none;
+  font-family: Baskerville;
+  font-size: 1.5em;
+
+  &:before {
+    content: '§';
+    width: 1em;
+    height: 1em;
+  }
+}
+
+.col + hr {
+  margin: 4em 0 6em;
 }
 
 .region--frame-inner {
@@ -130,4 +145,21 @@ hr {
 
 .u-center {
   text-align: center;
+}
+
+.u-absolute {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.u-absolute--before {
+  position: relative;
+
+  &:before {
+    @extend .u-absolute;
+  }
 }

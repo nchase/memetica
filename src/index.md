@@ -19,6 +19,7 @@
 
   You probably should have flown into a mountain right after you got done victory lapping this album.
   Freeze the frame it all at that ideal moment.</p>
+  <hr class="u-absolute--before" />
   <p>You should've impregnated the world when you came through the speakers, then left us all a bunch of bewildered single mothers with nothing to do but construct your legend.</p>
 </div>
 <div class="col">
@@ -36,7 +37,7 @@
   <p>Finally, the checkwriter asks the moonwalker to be a decent protestant and level with him; something like:</p>
 </div>
 
----
+<hr class="u-absolute--before" />
 
 <p>Between you, me and this sideboard, did you really pull that shit off? Because I believe in money, Tom Seaver and Jesus Christ, and if you guys filmed that shit on the backlot at Paramount while Mia Farrow was giving the chairman of the board a hummer, that is a-ok. But when I go home tonight and fuck my wife, I just want to know for sure how many steps mankind has taken. And Armstrong, who was a fucking square by all accounts, he finishes his drink and says:</p>
 <p>Hell is real and I have been there.</p>

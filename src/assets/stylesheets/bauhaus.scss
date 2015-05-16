@@ -15,3 +15,21 @@ h1 {
   text-shadow:    -0.15em 0 red,
                 -0.25em 0 green;
 }
+
+p {
+  font-family: monospace;
+}
+
+hr {
+  margin: 1.5em 0;
+}
+
+hr:before {
+  content: '';
+  border-radius: 50%;
+  background-color: yellow;
+}
+
+.col + hr {
+  margin: 2em 0 3em;
+}

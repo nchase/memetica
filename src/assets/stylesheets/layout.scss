@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
   height: 100%;
@@ -9,7 +13,6 @@ iframe {
 
 body {
   margin: 0;
-  display: flex;
 }
 
 iframe,
@@ -21,19 +24,6 @@ iframe,
 .region--frame {
   padding: 1em 1em 0;
   overflow: scroll;
-
-  &[min-width~="27em"] {
-    .region--frame-inner {
-      width: 400px;
-    }
-  }
-
-  &[min-width~="40em"] {
-    .region--frame-inner {
-      width: 500px;
-      font-size: 20px;
-    }
-  }
 }
 
 .region--frame {

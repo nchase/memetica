@@ -1,6 +1,6 @@
 <div class="col col--main">
-  <h1 id="moss-steel">Moss &amp; Steel</h1>
-  <h2 id="tepid-deeds-destruction-demagogic-pathologies-and-flagrant-fossilizations-combine-to-grout-in-gardens-of-goose-feathers-">Tepid deeds, destruction, demagogic pathologies and flagrant fossilizations combine to grout in gardens of goose feathers.</h2>
+  <h1 id="moss-steel">Moss &amp; Steel.</h1>
+  <h2 id="tepid-deeds-destruction-demagogic-pathologies-and-flagrant-fossilizations-combine-to-grout-in-gardens-of-goose-feathers-">Tepid deeds, destruction, demagogic pathologies and flagrant fossilizations grind grouting for garnish in gardens of goose feathers.</h2>
   <p>Hell is real and I have been there.</p>
   <p>I want you to you look me in my eyes; I haven't slept a peaceful night in more than a seventeen years. I am incapable of any kind of human connection. I am constantly in danger of drifting into total mental oblivion. These eyes, they looked upon the earth and saw an inconsequential particle in an incomprehensible, infinite universe. You think the jets have a shot this season? I walked on the fucking moon. Thanks for the drink.</p>
   <p>So this guy gets Armstrong a little toasty and they're talking about the traffic and weather and whatever. They're passing the shit back and forth like the society page version of E-Double and Parrish Smith. Open sesame, son.</p>

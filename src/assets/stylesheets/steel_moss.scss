@@ -1,0 +1,76 @@
+@font-face {
+  src: url('../fonts/marion.otf');
+  font-family: 'Marion'
+}
+
+
+h1, h2, p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+h1,
+h2 {
+  font-weight: normal;
+}
+
+h1 {
+  margin-bottom: 0.5em;
+  font-size: 2.75em;
+}
+
+h2 {
+  margin-bottom: 1.5em;
+  font-size: 1.375em;
+}
+
+p {
+  margin-bottom: 1.5em;
+}
+
+.region--frame-inner {
+  margin: auto;
+}
+
+.region--frame {
+  font-family: Marion, Georgia, serif;
+  color: #E7F2DA;
+  min-height: 100%;
+  background-color: #6E973F;
+  border-bottom: 1em solid #966B3F;
+
+  &[min-width~="27em"] {
+  }
+
+  &[min-width~="60em"] {
+    h1 {
+      font-size: 3em;
+    }
+
+    h2 {
+      font-size: 1.5em;
+    }
+
+    .region--frame-inner {
+      width: 56em;
+    }
+  }
+
+  &[min-width~="90em"] {
+    .region--frame-inner {
+      width: 90em;
+    }
+
+    .col {
+      display: inline-block;
+      margin-top: 6em;
+      margin-right: 3em;
+      width: 20em;
+      vertical-align: top;
+    }
+    .col--main {
+      margin-top: 0;
+      width: 40em;
+    }
+  }
+}

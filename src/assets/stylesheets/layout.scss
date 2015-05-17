@@ -192,6 +192,11 @@ hr {
 
   .col hr:first-child {
     margin-top: 0;
+    margin-bottom: 3em;
+
+    &:before {
+      bottom: auto;
+    }
   }
 }
 

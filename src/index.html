@@ -11,7 +11,10 @@
   </head>
   <body>
     <% if (!data.frames.length) data.frames = ['src/index.md']; data.frames.forEach(function(frame, index) { %>
-       <div class="region--frame region--frame--<%- frame.replace(/[^_a-zA-Z0-9-]+/g, '_') %>">
+       <div
+         class="region--frame region--frame--<%- frame.replace(/[^_a-zA-Z0-9-]+/g, '_') %>"
+         <%- editable ? "contenteditable" : '' -%>
+       >
          <div class="region--frame-inner">
            <%- require('./readFile')(frame); -%>
          </div>

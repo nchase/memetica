@@ -14,7 +14,8 @@ app.locals.require = require;
 
 app.get('/', function(request, response){
   response.render('index', {
-    data: require('./data')
+    data: require('./data'),
+    editable: request.query.editable
   });
 });
 

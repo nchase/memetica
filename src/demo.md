@@ -42,4 +42,4 @@ So you're probably asking yourself, &quot;what the fuck does some writer with th
 <p>I want you to you look me in my eyes; I haven't slept a peaceful night in more than a seventeen years. I am incapable of any kind of human connection. I am constantly in danger of drifting into total mental oblivion. These eyes, they looked upon the earth and saw an inconsequential particle in an incomprehensible, infinite universe. You think the jets have a shot this season? I walked on the fucking moon. Thanks for the drink.</p>
 <!-- We're missing the people we need in key places in order to get ahead and truly dominate, but that's OK, because our competitors don't have them either, so no one really gets ahead, and the customers end up with the same middling products over and over. -->
 
-<p><em>Source: <a href="http://gabesaidwereintomovements.blogspot.com/">http://gabesaidwereintomovements.blogspot.com/</a></em></p>
+<p>[Source: <a href="http://gabesaidwereintomovements.blogspot.com/">http://gabesaidwereintomovements.blogspot.com/</a>]</p>

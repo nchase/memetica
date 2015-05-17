@@ -21,6 +21,10 @@ iframe,
   border: none;
 }
 
+[contenteditable]:focus {
+  outline: 1px solid currentColor;
+}
+
 .region--frame {
   background-color: #fff;
   padding: 1em 1em 0;

@@ -5,19 +5,22 @@
 
 
 .region--frame {
-  font-family: Bauhaus;
   color: #ffff00;
   background-color: #272727;
   border-bottom: 1em solid #636363;
 }
 
-h1 {
-  text-shadow:    -0.15em 0 red,
-                -0.25em 0 green;
+h1, h2, blockquote {
+  font-family: Bauhaus;
 }
 
 p {
   font-family: monospace;
+}
+
+h1 {
+  text-shadow:    -0.15em 0 red,
+                -0.25em 0 green;
 }
 
 hr {

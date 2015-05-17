@@ -12,9 +12,15 @@ app.set('views', process.cwd() + '/src/');
 
 app.locals.require = require;
 
-app.get('/', function(request, response){
+app.get(/\/([^\s]+.(?:md|html))?$/, function(request, response) {
+  var data = JSON.parse(JSON.stringify(require('./data')));
+
+  if (request.params[0]) {
+    data.frames[0] = 'src/' + request.params[0].replace('html', 'md');
+  }
+
   response.render('index', {
-    data: require('./data'),
+    data: data,
     published: request.query.published
   });
 });

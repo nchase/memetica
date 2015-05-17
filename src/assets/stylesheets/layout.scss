@@ -50,7 +50,7 @@ iframe,
 
 
 
-h1, h2, p {
+h1, h2, p, blockquote {
   margin: 0;
   line-height: 1.5;
 }
@@ -72,6 +72,16 @@ h2 {
 
 p {
   margin-bottom: 1.5em;
+}
+
+a {
+  color: inherit;
+}
+
+blockquote {
+  margin: 0 0 1.5em;
+  padding-left: 1em;
+  border-left: 0.25em solid currentColor;
 }
 
 hr {

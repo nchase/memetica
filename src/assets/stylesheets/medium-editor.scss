@@ -46,6 +46,7 @@
   font-size: 1em;
   background-color: inherit;
   border: 0.1em solid currentColor;
+  transition: none;
 }
 .medium-editor-toolbar ul,
 .medium-editor-anchor-preview ul {
@@ -68,9 +69,10 @@
   text-decoration: none;
   background-color: transparent;
   border: none;
+  transition: transform 100ms;
 
   &:hover {
-    transform: translateY(0.5em);
+    transform: translateY(0.25em);
     text-decoration: underline;
   }
 }

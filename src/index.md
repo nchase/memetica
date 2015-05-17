@@ -38,4 +38,6 @@ So you're probably asking yourself, &quot;what the fuck does some writer with th
 <p>Between you, me and this sideboard, did you really pull that shit off? Because I believe in money, Tom Seaver and Jesus Christ, and if you guys filmed that shit on the backlot at Paramount while Mia Farrow was giving the chairman of the board a hummer, that is a-ok. But when I go home tonight and fuck my wife, I just want to know for sure how many steps mankind has taken. And Armstrong, who was a fucking square by all accounts, he finishes his drink and says:</p>
 <p>Hell is real and I have been there.</p>
 <p>I want you to you look me in my eyes; I haven't slept a peaceful night in more than a seventeen years. I am incapable of any kind of human connection. I am constantly in danger of drifting into total mental oblivion. These eyes, they looked upon the earth and saw an inconsequential particle in an incomprehensible, infinite universe. You think the jets have a shot this season? I walked on the fucking moon. Thanks for the drink.</p>
-<p>We're missing the people we need in key places in order to get ahead and truly dominate, but that's OK, because our competitors don't have them either, so no one really gets ahead, and the customers end up with the same middling products over and over.</p>
+<!-- We're missing the people we need in key places in order to get ahead and truly dominate, but that's OK, because our competitors don't have them either, so no one really gets ahead, and the customers end up with the same middling products over and over. -->
+
+

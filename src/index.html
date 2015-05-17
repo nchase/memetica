@@ -11,20 +11,21 @@
     <link rel="icon" href="/favicon.png" />
     <title>-</title>
   </head>
-  <body>
-    <% if (!data.frames.length) data.frames = ['src/index.md']; data.frames.forEach(function(frame, index) { %>
-       <div
-         class="region--frame region--frame--<%- frame.replace(/[^_a-zA-Z0-9-]+/g, '_') %>"
-         <%- published ? '' : 'contenteditable' -%>
-       >
-         <div class="region--frame-inner">
-           <%- require('./readFile')(frame); -%>
-         </div>
+  <% if (!data.frames.length) data.frames = ['src/index.md']; %>
+  <% var frame = data.frames[0]; %>
+  <body
+     class="region--frame region--frame--<%- frame.replace(/[^_a-zA-Z0-9-]+/g, '_') %>"
+  >
+     <div
+       <%- published ? '' : 'contenteditable' -%>
+     >
+       <div class="region--frame-inner">
+         <%- require('./readFile')(frame); -%>
        </div>
-       <% if (data.frames.length  > 1 && index % 2 === 0) { %>
-         <div class="ctl--handle"></div>
-       <% } %>
-    <% }); %>
+     </div>
+     <% if (data.frames.length  > 1 && index % 2 === 0) { %>
+       <div class="ctl--handle"></div>
+     <% } %>
 
     <select class="ctl--styleChanger">
       <option value="">none</option>

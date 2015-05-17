@@ -89,6 +89,8 @@ blockquote {
 }
 
 hr {
+  @extend .u-absolute--before;
+
   height: 1px;
   margin: 0 0 1.5em;
   border: none;
@@ -105,6 +107,14 @@ hr {
 
 .col + hr {
   margin: 2em 0 3em;
+}
+
+.footnotes {
+  font-size: 0.9em;
+}
+.footnotes ol {
+  margin: 1.5em 1em;
+  padding-left: 1em;
 }
 
 .region--frame-inner {

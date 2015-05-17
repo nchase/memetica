@@ -1,0 +1,11 @@
+#!/bin/bash
+
+for document in $(find src -iname \*.md.pandoc | sed 's/.pandoc//'); do
+  diff=`diff $document <(pandoc --from=markdown --to=html $document.pandoc)`
+
+  if [ -e $document ] && [ -n "$diff" ]
+  then
+    echo -e "check your generated file: pandoc $document differs from generated file.\n"
+    exit 1
+  fi
+done

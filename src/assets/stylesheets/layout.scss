@@ -115,23 +115,38 @@ hr {
   }
 
   @media (min-width: 64em) {
+    .region--frame-inner {
+      max-width: none;
+      width: 64em;
+    }
     .col {
       display: inline-block;
-      margin-top: 6.67%;
-      margin-right: 3.33%;
-      width: 22.22%;
+      margin: 6.67% 1.66% 0;
+      width: 46.44%;
       vertical-align: top;
+    }
+    .col:nth-child(odd):last-of-type {
+      width: 100%;
     }
     .col--main {
       margin-top: 0;
-      width: 44.44%;
     }
   }
 
   @media (min-width: 90em) {
     .region--frame-inner {
-      max-width: none;
       width: 90em;
+    }
+    .col,
+    .col:nth-child(odd):last-of-type {
+      width: 22.22%;
+    }
+    .col {
+      margin-right: 3.33%;
+      margin-left: 0;
+    }
+    .col--main {
+      width: 44.44%;
     }
   }
 }

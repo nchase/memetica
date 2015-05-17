@@ -1,0 +1,23 @@
+.region--frame {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+h1, h2 {
+  font-weight: bold;
+}
+
+hr {
+  margin: 1.5em 0;
+}
+
+hr:before {
+  content: '';
+  border-radius: 50%;
+  background-color: #000;
+}
+
+.col + hr {
+  margin: 2em 0 3em;
+}
+
+

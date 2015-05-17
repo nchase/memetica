@@ -3,6 +3,7 @@ module.exports = {
   styles: [
     'steel_moss',
     'bauhaus',
-    'frontage'
+    'frontage',
+    'helveticult'
   ]
 };

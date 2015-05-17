@@ -20,8 +20,7 @@ So you're probably asking yourself, &quot;what the fuck does some writer with th
 <p>Rest assured that I don't think you made this album operating under the premise I'm about to parade around; but I learned a long time ago that if I limited myself to thinking about music the way the music makers do, I'd be bored as shit.</p>
 <img class="img img--right" src="http://cloud.ahfr.org/f24929a0407db76c9747.jpg" />
 <p>That being said, like Neil Armstrong, you went somewhere, did something, then came back and realized your entire creative life had been building towards a moment that just passed you by. You probably should have flown into a mountain right after you got done victory lapping this album. Freeze the frame it all at that ideal moment.</p>
-<hr class="u-absolute--before" />
-
+<hr />
 <p>You should've impregnated the world when you came through the speakers, then left us all a bunch of bewildered single mothers with nothing to do but construct your legend.</p>
 </div>
 
@@ -35,8 +34,7 @@ So you're probably asking yourself, &quot;what the fuck does some writer with th
 <p>Finally, the checkwriter asks the moonwalker to be a decent protestant and level with him; something like:</p>
 </div>
 
-<hr class="u-absolute--before" />
-
+<hr />
 <p>Between you, me and this sideboard, did you really pull that shit off? Because I believe in money, Tom Seaver and Jesus Christ, and if you guys filmed that shit on the backlot at Paramount while Mia Farrow was giving the chairman of the board a hummer, that is a-ok. But when I go home tonight and fuck my wife, I just want to know for sure how many steps mankind has taken. And Armstrong, who was a fucking square by all accounts, he finishes his drink and says:</p>
 <p>Hell is real and I have been there.</p>
 <p>I want you to you look me in my eyes; I haven't slept a peaceful night in more than a seventeen years. I am incapable of any kind of human connection. I am constantly in danger of drifting into total mental oblivion. These eyes, they looked upon the earth and saw an inconsequential particle in an incomprehensible, infinite universe. You think the jets have a shot this season? I walked on the fucking moon. Thanks for the drink.</p>

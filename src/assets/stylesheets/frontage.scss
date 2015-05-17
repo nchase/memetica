@@ -12,7 +12,10 @@
 
 h1 {
   font-family: 'Frontage 3D';
-  white-space: nowrap;
+
+  @media (min-width: 64em) {
+    white-space: nowrap;
+  }
 }
 
 h2, p {

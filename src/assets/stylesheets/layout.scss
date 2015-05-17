@@ -112,6 +112,13 @@ hr {
 .footnotes {
   font-size: 0.9em;
 }
+.footnotes hr {
+  border: 1px solid currentColor;
+
+  &:before {
+    content: '';
+  }
+}
 .footnotes ol {
   margin: 1.5em 1em;
   padding-left: 1em;

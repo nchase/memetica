@@ -1,6 +1,6 @@
 module.exports = {
   frames: [
-    'src/index.md'
+    'src/demo.md'
   ],
   styles: [
     'steel_moss',

@@ -3,7 +3,9 @@
 <h1 id="moss-steel.">Moss &amp; Steel.</h1>
 <h2 id="tepid-deeds-destruction-demagogic-pathologies-and-flagrant-fossilizations-grind-grouting-for-garnish-in-gardens-of-goose-down.">Tepid deeds, destruction, demagogic pathologies and flagrant fossilizations grind grouting for garnish in gardens of goose down.</h2>
 <p>Hell is real and I have been there.</p>
+<blockquote>
 <p>I want you to you look me in my eyes; I haven't slept a peaceful night in more than a seventeen years. I am incapable of any kind of human connection. I am constantly in danger of drifting into total mental oblivion. These eyes, they looked upon the earth and saw an inconsequential particle in an incomprehensible, infinite universe. You think the jets have a shot this season? I walked on the fucking moon. Thanks for the drink.</p>
+</blockquote>
 <img class="img" src="http://cloud.ahfr.org/22e5b4d0a9872511881f.jpg" />
 <p class="u-center">
 So you're probably asking yourself, &quot;what the fuck does some writer with the right stuff have to do with The God MC?&quot;
@@ -40,4 +42,4 @@ So you're probably asking yourself, &quot;what the fuck does some writer with th
 <p>I want you to you look me in my eyes; I haven't slept a peaceful night in more than a seventeen years. I am incapable of any kind of human connection. I am constantly in danger of drifting into total mental oblivion. These eyes, they looked upon the earth and saw an inconsequential particle in an incomprehensible, infinite universe. You think the jets have a shot this season? I walked on the fucking moon. Thanks for the drink.</p>
 <!-- We're missing the people we need in key places in order to get ahead and truly dominate, but that's OK, because our competitors don't have them either, so no one really gets ahead, and the customers end up with the same middling products over and over. -->
 
-
+<p><em>Source: <a href="http://gabesaidwereintomovements.blogspot.com/">http://gabesaidwereintomovements.blogspot.com/</a></em></p>

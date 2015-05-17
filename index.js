@@ -21,7 +21,8 @@ app.get(/\/([^\s]+.(?:md|html))?$/, function(request, response) {
 
   response.render('index', {
     data: data,
-    published: request.query.published
+    published: request.query.published,
+    requestStyle: request.query.style
   });
 });
 

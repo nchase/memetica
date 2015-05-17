@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/base.css" />
     <link rel="stylesheet" href="/medium-editor.css" />
     <link rel="stylesheet" href="/default.css" />
-    <link rel="stylesheet" id="style" />
+    <link rel="stylesheet" id="style" href=/<%- requestStyle + ".css" -%> />
     <link rel="icon" href="/favicon.png" />
     <title>-</title>
   </head>
@@ -31,7 +31,10 @@
       <option value="">none</option>
 
       <% data.styles.forEach(function(style, index) { %>
-        <option value=<%= style %>><%=style %></option>
+        <option
+          <%- style === requestStyle ? 'selected' : '' -%>
+          value=<%= style %>><%=style %>
+        </option>
       <% }); %>
 
     </select>

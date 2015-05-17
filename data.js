@@ -1,6 +1,6 @@
 module.exports = {
   frames: [
-    'src/_index.md.pandoc'
+    'src/index.md'
   ],
   styles: [
     'steel_moss',

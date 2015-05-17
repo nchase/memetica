@@ -11,7 +11,6 @@ app.set('view engine', 'html');
 app.set('views', process.cwd() + '/src/');
 
 app.locals.require = require;
-app.locals.marked = require('marked');
 
 app.get('/', function(request, response){
   response.render('index', {

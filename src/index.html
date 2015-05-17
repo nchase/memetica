@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="/base.css" />
+    <link rel="stylesheet" href="/medium-editor.css" />
+    <link rel="stylesheet" href="/default.css" />
     <link rel="stylesheet" id="style" />
     <link rel="icon" href="/favicon.png" />
     <title>-</title>
@@ -36,5 +38,17 @@
     <script src="scripts/handleStyleChange.js"></script>
     <script src="scripts/ResizeSensor.js"></script>
     <script src="scripts/ElementQueries.js"></script>
+    <script src="scripts/medium-editor.js"></script>
+    <script>
+      var editor = new MediumEditor('[contenteditable]', {
+        buttons: [
+          'bold',
+          'italic',
+          'underline',
+          'anchor',
+          'quote'
+        ]
+      });
+    </script>
   </body>
 </html>

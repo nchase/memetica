@@ -1,7 +1,7 @@
 #!/bin/bash
 
 for document in $(find src -iname \*.md.pandoc | sed 's/.pandoc//'); do
-  diff=`diff $document <(pandoc --from=markdown --to=html $document.pandoc)`
+  diff=`diff $document <(pandoc --from=markdown --to=html $document.pandoc) 2>&1`
 
   if [ -e $document ] && [ -n "$diff" ]
   then

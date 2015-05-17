@@ -73,8 +73,10 @@
 
   &:hover {
     transform: translateY(0.25em);
-    text-decoration: underline;
   }
+}
+.medium-editor-button-active {
+  border-bottom: 0.25em solid currentColor !important;
 }
 .medium-editor-toolbar li button:focus,
 .medium-editor-anchor-preview li button:focus {

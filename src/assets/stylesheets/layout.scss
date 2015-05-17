@@ -94,7 +94,6 @@ hr {
 }
 
 .region--frame-inner {
-  max-width: 700px;
   margin: auto;
 }
 
@@ -113,9 +112,19 @@ hr {
     h2 {
       font-size: 1.5em;
     }
+  }
 
-    .region--frame-inner {
-      width: 56em;
+  @media (min-width: 64em) {
+    .col {
+      display: inline-block;
+      margin-top: 6.67%;
+      margin-right: 3.33%;
+      width: 22.22%;
+      vertical-align: top;
+    }
+    .col--main {
+      margin-top: 0;
+      width: 44.44%;
     }
   }
 
@@ -123,18 +132,6 @@ hr {
     .region--frame-inner {
       max-width: none;
       width: 90em;
-    }
-
-    .col {
-      display: inline-block;
-      margin-top: 6em;
-      margin-right: 3em;
-      width: 20em;
-      vertical-align: top;
-    }
-    .col--main {
-      margin-top: 0;
-      width: 40em;
     }
   }
 }

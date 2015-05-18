@@ -26,6 +26,18 @@ app.get(/\/([^\s]+.(?:md|html))?$/, function(request, response) {
   });
 });
 
+app.get('/contents', function(request, response) {
+  var data = JSON.parse(JSON.stringify(require('./data')));
+
+  data.frames[0] = 'src/index.md'
+
+  response.render('index', {
+    data: data,
+    published: true,
+    requestStyle: request.query.style
+  });
+});
+
 app.get('/base.css', function(request, response) {
   response.set('Content-Type', 'text/css');
   response.send(autoprefixer.process(sass.renderSync({

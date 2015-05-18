@@ -1,0 +1,20 @@
+#!/bin/bash
+
+if [ -e src/index.md ]
+then
+  echo "removing src/index.md"
+  rm src/index.md
+fi
+
+for document in $(find src -iname \*.md.pandoc); do
+  echo "generating markup for $document"
+
+  `pandoc --from=markdown --to=html $document > $(echo $document | sed 's/.pandoc//')`
+
+  while IFS= read -r line; do
+    if [[ $line =~ ^#[[:space:]](.+) ]]; then
+      echo "adding $document to table of contents"
+      echo -e "[${BASH_REMATCH[1]}](`echo $document | sed 's/.pandoc//' | sed 's/src\///' `) \n" >> src/index.md
+    fi
+  done < $document
+done

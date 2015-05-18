@@ -4,7 +4,10 @@ var marked = require('marked');
 
 module.exports = function(file) {
   if (process.env.NODE_ENV !== 'production') {
-    return spawnSync('pandoc', ['--from=markdown', '--to=html', file + '.pandoc']).stdout;
+    try {
+      fs.readFileSync(file + '.pandoc');
+      return spawnSync('pandoc', ['--from=markdown', '--to=html', file + '.pandoc']).stdout;
+    } catch(error) { }
   }
 
   return marked(fs.readFileSync(file).toString())

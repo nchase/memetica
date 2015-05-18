@@ -1,7 +1,9 @@
 require('babel/register');
 
 var express = require('express');
+var cookieParser = require('cookie-parser')
 var app = express();
+app.use(cookieParser());
 var sass = require('node-sass');
 var autoprefixer = require('autoprefixer-core');
 
@@ -24,7 +26,7 @@ app.get(/\/([^\s]+.(?:md|html))?$/, function(request, response) {
   response.render('index', {
     data: data,
     published: request.query.published,
-    requestStyle: request.query.style
+    requestStyle: request.query.style || request.cookies.style
   });
 });
 
@@ -36,7 +38,7 @@ function serveIndex(request, response) {
   response.render('index', {
     data: data,
     published: true,
-    requestStyle: request.query.style
+    requestStyle: request.query.style || request.cookies.style
   });
 }
 

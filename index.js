@@ -15,9 +15,11 @@ app.locals.require = require;
 app.get(/\/([^\s]+.(?:md|html))?$/, function(request, response) {
   var data = JSON.parse(JSON.stringify(require('./data')));
 
-  if (request.params[0]) {
-    data.frames[0] = 'src/' + request.params[0].replace('html', 'md');
+  if (!request.params[0]) {
+    return serveIndex(request, response);
   }
+
+  data.frames[0] = 'src/' + request.params[0].replace('html', 'md');
 
   response.render('index', {
     data: data,
@@ -26,7 +28,7 @@ app.get(/\/([^\s]+.(?:md|html))?$/, function(request, response) {
   });
 });
 
-app.get('/contents', function(request, response) {
+function serveIndex(request, response) {
   var data = JSON.parse(JSON.stringify(require('./data')));
 
   data.frames[0] = 'src/index.md'
@@ -36,7 +38,7 @@ app.get('/contents', function(request, response) {
     published: true,
     requestStyle: request.query.style
   });
-});
+}
 
 app.get('/base.css', function(request, response) {
   response.set('Content-Type', 'text/css');

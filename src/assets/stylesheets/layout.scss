@@ -266,8 +266,13 @@ hr {
   color: inherit;
   background-color: inherit;
   border-color: currentColor;
+  opacity: 0.25;
 
   &:focus {
     outline: none;
+  }
+
+  &:hover {
+    opacity: 1;
   }
 }

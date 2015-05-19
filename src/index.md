@@ -1,4 +1,4 @@
-[Inattention At Scale](001.md) 
+[Inattention At Scale](001.md)
 
-[Moss & Steel [demo].](demo.md) 
+[Moss & Steel [demo].](demo.md)
 

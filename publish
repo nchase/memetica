@@ -1,9 +1,12 @@
 #!/bin/bash
 
+echo -e "\n"
+
 if [ -e src/index.md ]
 then
-  echo "removing src/index.md"
+  echo -e "removing src/index.md"
   rm src/index.md
+  echo -e "removing src/index.md.html\n"
   rm src/index.md.html
 fi
 
@@ -14,13 +17,13 @@ for document in $(find src ! -name 'src/index.md' -iname \*.md); do
 
   while IFS= read -r line; do
     if [[ $line =~ ^#[[:space:]](.+) ]]; then
-      echo "adding $document to table of contents"
-      echo -e "[${BASH_REMATCH[1]}](`echo $document | sed 's/src\///' `) \n" >> src/index.md
+      echo -e "adding $document to table of contents\n"
+      echo -e "[${BASH_REMATCH[1]}](`echo $document | sed 's/src\///' `)\n" >> src/index.md
     fi
   done < $document
 done
 
-echo "generating markup for index"
+echo -e "generating markup for index\n"
 `pandoc --from=markdown --to=html 'src/index.md' --output='src/index.md.html'`
 
-echo "done."
+echo -e "done.\n\n"

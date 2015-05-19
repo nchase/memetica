@@ -10,5 +10,5 @@ module.exports = function(file) {
     } catch(error) { }
   }
 
-  return marked(fs.readFileSync(file).toString())
+  return marked(fs.readFileSync(file + '.html').toString())
 };

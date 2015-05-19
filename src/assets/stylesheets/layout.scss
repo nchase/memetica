@@ -259,6 +259,15 @@ hr {
 
 .ctl--styleChanger {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 1em;
+  right: 1em;
+  height: 4em;
+  font-family: monospace;
+  color: inherit;
+  background-color: inherit;
+  border-color: currentColor;
+
+  &:focus {
+    outline: none;
+  }
 }

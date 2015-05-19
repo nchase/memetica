@@ -23,7 +23,7 @@ app.get(/\/([^\s]+.(?:md|html))?$/, function(request, response) {
 
   data.frames[0] = 'src/' + request.params[0].replace('html', 'md');
 
-  response.render('index', {
+  response.render('layout', {
     data: data,
     published: request.query.published,
     requestStyle: request.query.style || request.cookies.style
@@ -35,7 +35,7 @@ function serveIndex(request, response) {
 
   data.frames[0] = 'src/index.md'
 
-  response.render('index', {
+  response.render('layout', {
     data: data,
     published: true,
     requestStyle: request.query.style || request.cookies.style

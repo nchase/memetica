@@ -194,6 +194,15 @@ hr {
   }
 }
 
+.col:nth-child(n + 4) {
+  margin: 6.67% 0 0;
+  width: 100%;
+
+  @media (min-width: 90em) {
+    margin-right: 3.33%;
+    width: 22.22%;
+  }
+}
 
 .img {
   display: block;

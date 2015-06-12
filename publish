@@ -13,10 +13,10 @@ fi
 for document in $(find src ! -name 'src/index.md' -iname \*.md); do
   echo "generating markup for $document"
 
-  `pandoc --from=markdown --to=html $document > $(echo $document | sed 's/.md/.md.html/')`
+  `cat $document | node columnize.js | pandoc --from=markdown --to=html > $(echo $document | sed 's/.md/.md.html/')`
 
   while IFS= read -r line; do
-    if [[ $line =~ ^#[[:space:]](.+) ]]; then
+    if [[ $line =~ ^[[:space:]]*#[[:space:]](.+) ]]; then
       echo -e "adding $document to table of contents\n"
       echo -e "[${BASH_REMATCH[1]}](`echo $document | sed 's/src\///' `?published=true)\n" >> src/index.md
     fi

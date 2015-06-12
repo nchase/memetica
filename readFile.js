@@ -1,13 +1,21 @@
 var fs = require('fs');
-var spawnSync = require('child_process').spawnSync;
+var execSync = require('child_process').execSync;
 var marked = require('marked');
 
 module.exports = function(file) {
   if (process.env.NODE_ENV !== 'production') {
     try {
       fs.readFileSync(file);
-      return spawnSync('pandoc', ['--from=markdown', '--to=html', file]).stdout;
-    } catch(error) { }
+      return execSync(
+        `
+          cat ${file} |
+          node columnize.js |
+          pandoc --from=markdown --to=html
+        `
+      );
+    } catch(error) {
+      console.log(error);
+    }
   }
 
   return marked(fs.readFileSync(file + '.html').toString())

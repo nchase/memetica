@@ -6,6 +6,7 @@
     "node": "0.12.x"
   },
   "scripts": {
+    "postinstall": "if [ \"$NODE_ENV\" = \"production\" ]; then ./publish; fi",
     "start": "node index.js",
     "start:debug": "node-debug index.js",
     "test": "echo \"no tests.\""

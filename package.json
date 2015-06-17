@@ -6,6 +6,7 @@
     "node": "0.12.x"
   },
   "scripts": {
+    "clean": "./clean",
     "deploy": "git push heroku deploy:master",
     "start": "node index.js",
     "start:debug": "node-debug index.js",

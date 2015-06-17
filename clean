@@ -1,0 +1,9 @@
+#!/bin/bash
+
+for document in $(find src -iname \*.md.html); do
+  echo "removing $document"
+
+  `rm $document`
+done
+
+echo -e "\ndone."

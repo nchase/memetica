@@ -32,11 +32,20 @@ iframe,
 }
 
 .region--frame {
-  transition: all 500ms;
+  transition-property: background-color;
+  transition-duration: 300ms;
 }
 
 .region--frame-inner {
   margin: 0 auto;
+  transition-property:
+    color,
+    background-color,
+    text-shadow,
+    font-size,
+    width,
+    min-width;
+  transition-duration: 500ms;
 }
 
 .ctl--handle {

@@ -6,6 +6,9 @@ var app = express();
 app.use(cookieParser());
 var sass = require('node-sass');
 var autoprefixer = require('autoprefixer-core');
+var bodyParser = require('body-parser');
+var serialize = require('./serialize');
+app.use(bodyParser.text());
 
 app.engine('html', require('ejs').renderFile);
 
@@ -54,6 +57,11 @@ app.get('/:style.css', function(request, response) {
   response.send(autoprefixer.process(sass.renderSync({
     file: process.cwd() + '/src/assets/stylesheets/' + request.params.style + '.scss'
   }).css).css);
+});
+
+app.put('/serialize', function(request, response) {
+  console.log(serialize(request.body));
+  response.sendStatus(200);
 });
 
 app.use(express.static(__dirname + '/src/assets'));

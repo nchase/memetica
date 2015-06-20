@@ -29,11 +29,12 @@ iframe,
   background-color: #fff;
   padding: 1em 1em 0;
   overflow: scroll;
-}
-
-.region--frame {
   transition-property: background-color;
   transition-duration: 300ms;
+}
+.region--frame.is-serializing {
+  color: #fff;
+  background-color: #fff;
 }
 
 .region--frame-inner {
@@ -67,6 +68,14 @@ iframe,
   background-color: inherit;
   border-color: currentColor;
   opacity: 1;
+}
+
+.ctl--serialize {
+  font-family: monospace;
+  color: inherit;
+  background-color: inherit;
+  border-color: currentColor;
+  border-style: solid;
 }
 
 h1, h2, p, blockquote {

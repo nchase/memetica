@@ -15,13 +15,13 @@
   <body
      class="region--frame region--frame--<%- frame.replace(/[^_a-zA-Z0-9-]+/g, '_') %>"
   >
-     <div
-       <%- published ? '' : 'contenteditable' -%>
-     >
-       <div class="region--frame-inner">
-         <%- require('./readFile')(frame); -%>
-       </div>
-     </div>
+    <div
+      <%- published ? '' : 'contenteditable' -%>
+    >
+      <div class="region--frame-inner">
+        <%- require('./readFile')(frame); -%>
+      </div>
+    </div>
 
     <select class="ctl--styleChanger">
       <option value="">none</option>

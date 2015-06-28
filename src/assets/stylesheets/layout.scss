@@ -38,6 +38,9 @@ iframe,
 }
 
 .region--frame-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   transition-property:
     color,
     background-color,
@@ -123,6 +126,7 @@ blockquote {
 hr {
   @extend .u-absolute--before;
 
+  width: 100%;
   height: 1px;
   margin: 0 0 1.5em;
   border: none;
@@ -142,6 +146,7 @@ hr {
 }
 
 .footnotes {
+  width: 100%;
   font-size: 0.9em;
 }
 .footnotes hr {
@@ -161,17 +166,16 @@ hr {
 }
 
 .col {
+  padding: 0 1em;
+
   @media (min-width: 64em) {
-    display: inline-block;
-    margin: 0 1.66% 0;
-    width: 46.44%;
+    width: 50%;
     vertical-align: top;
   }
 
   @media (min-width: 90em) {
-    margin-right: 3.33%;
     margin-left: 0;
-    width: 44.44%;
+    width: 50%;
   }
 }
 
@@ -184,7 +188,7 @@ hr {
   width: 100%;
 
   @media (min-width: 90em) {
-    width: 24%;
+    width: 25%;
   }
 }
 
@@ -194,7 +198,7 @@ hr {
   }
 
   @media (min-width: 90em) {
-    width: 24%;
+    width: 25%;
   }
 }
 
@@ -203,8 +207,7 @@ hr {
   width: 100%;
 
   @media (min-width: 90em) {
-    margin-right: 3.33%;
-    width: 22.22%;
+    width: 25%;
   }
 }
 

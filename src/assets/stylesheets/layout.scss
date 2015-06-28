@@ -111,6 +111,14 @@ h2 {
 
 p {
   margin-bottom: 1.5em;
+
+  // `width: 100%;` explicitly because:
+  //
+  // 1. it's what we want.
+  // 2. compensates for flexbox every.
+  //
+  // there are almost certainly other solutions, explore later.
+  width: 100%;
 }
 
 a {

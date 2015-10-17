@@ -1,0 +1,308 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  -webkit-transition: inherit;
+          transition: inherit; }
+
+html {
+  height: 100%; }
+
+iframe {
+  min-height: 100%; }
+
+body {
+  margin: 0; }
+
+iframe, .region--frame {
+  width: 100%;
+  border: none; }
+
+[contenteditable]:focus {
+  outline: none; }
+
+.context {
+  position: fixed;
+  width: 20%;
+  min-width: 12rem;
+  height: 100%;
+  top: 0;
+  right: 100%;
+  font-size: 1.25rem;
+  padding: 1em;
+  background-color: tomato;
+  -webkit-transition: -webkit-transform 200ms;
+          transition: transform 200ms;
+  cursor: pointer;
+  opacity: 0.75; }
+  .context:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin: 1rem 0;
+    width: 0.75rem;
+    height: 1rem;
+    background-color: #000;
+    -webkit-transition: width 200ms, border-color 200ms;
+            transition: width 200ms, border-color 200ms;
+    border-bottom: 3rem solid transparent; }
+  .context:hover:before {
+    width: 4rem;
+    border-bottom-color: tomato; }
+  .context.is-active {
+    -webkit-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+            transform: translateX(100%);
+    cursor: auto; }
+    .context.is-active:before {
+      display: none; }
+
+.context a {
+  display: block; }
+
+.context .icon {
+  width: 1.5em;
+  margin: 1em 0; }
+
+.region--frame {
+  background-color: #fff;
+  padding: 1em 1em 0;
+  overflow: scroll;
+  -webkit-transition-property: background-color;
+          transition-property: background-color;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms; }
+
+.region--frame.is-serializing {
+  color: #fff;
+  background-color: #fff; }
+
+.region--frame--singlet {
+  font-size: 18px; }
+  @media (min-width: 30em) {
+    .region--frame--singlet {
+      font-size: 20px; } }
+
+.region--frame--singlet .region--frame-inner {
+  max-width: 32em;
+  margin: auto; }
+
+.region--frame-inner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition-property: color,
+    background-color,
+    text-shadow,
+    font-size,
+    width,
+    min-width;
+          transition-property: color,
+    background-color,
+    text-shadow,
+    font-size,
+    width,
+    min-width;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms; }
+
+.ctl--handle {
+  border: solid;
+  border-width: 0 0.25em;
+  border-left-color: #e69999;
+  border-right-color: #99cce6;
+  cursor: -webkit-grab;
+  cursor: grab; }
+
+.ctl--styleChanger {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  height: 4em;
+  font-family: monospace;
+  color: inherit;
+  background-color: inherit;
+  border-color: currentColor;
+  opacity: 1; }
+
+.ctl--serialize {
+  font-family: monospace;
+  color: inherit;
+  background-color: inherit;
+  border-color: currentColor;
+  border-style: solid; }
+
+h1, h2, p, blockquote {
+  margin: 0;
+  line-height: 1.5; }
+
+h1, h2 {
+  font-weight: normal; }
+
+h1 {
+  margin-bottom: 0.5em;
+  font-size: 2.75em; }
+  @media (min-width: 60em) {
+    h1 {
+      font-size: 3em;
+      white-space: nowrap; } }
+
+h2 {
+  margin-bottom: 1.5em;
+  font-size: 1.375em; }
+  @media (min-width: 60em) {
+    h2 {
+      font-size: 1.5em; } }
+
+p {
+  margin-bottom: 1.5em;
+  width: 100%; }
+
+a {
+  color: inherit; }
+
+blockquote {
+  margin: 0 0 1.5em;
+  padding-left: 1em;
+  border-left: 0.25em solid currentColor; }
+
+hr {
+  width: 100%;
+  height: 1px;
+  margin: 0 0 1.5em;
+  border: none;
+  font-family: Baskerville;
+  font-size: 1.5em; }
+  hr:before {
+    content: '§';
+    width: 1em;
+    height: 1em;
+    color: inherit; }
+
+.col + hr {
+  margin: 2em 0 3em; }
+
+.footnotes {
+  width: 100%;
+  font-size: 0.9em; }
+
+.footnotes hr {
+  border: 1px solid currentColor; }
+  .footnotes hr:before {
+    content: ''; }
+
+.footnotes ol {
+  margin: 1.5em 1em;
+  padding-left: 1em; }
+
+.region--frame {
+  min-height: 100%; }
+
+.col {
+  padding: 0 1em; }
+  @media (min-width: 64em) {
+    .col {
+      width: 50%;
+      vertical-align: top; } }
+  @media (min-width: 90em) {
+    .col {
+      margin-left: 0;
+      width: 50%; } }
+
+.col:only-child {
+  width: 100%; }
+
+.col + .col:nth-child(odd) {
+  margin: 6.67% 0 0;
+  width: 100%; }
+  @media (min-width: 90em) {
+    .col + .col:nth-child(odd) {
+      width: 25%; } }
+
+@media (min-width: 64em) {
+  .col + .col {
+    margin-top: 6.67%; } }
+@media (min-width: 90em) {
+  .col + .col {
+    width: 25%; } }
+
+.col:nth-child(n+4) {
+  margin: 6.67% 0 0;
+  width: 100%; }
+  @media (min-width: 90em) {
+    .col:nth-child(n+4) {
+      width: 25%; } }
+
+.img, img {
+  display: block;
+  margin: 1em auto;
+  width: 100%;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+@media (min-width: 90em) {
+  .img--positioned {
+    margin-top: 0;
+    margin-right: 1em;
+    max-width: 50%; }
+  .img--left {
+    float: left; }
+  .img--right {
+    float: right; }
+  .col .img:first-child {
+    margin-top: 0; }
+  .col hr:first-child {
+    margin-top: 0;
+    margin-bottom: 3em; }
+    .col hr:first-child:before {
+      bottom: auto; } }
+
+.region--frame--singlet .img--positioned {
+  margin: 1em;
+  max-width: 25%; }
+
+.region--frame--singlet .img--left {
+  float: left; }
+
+.region--frame--singlet .img--right {
+  float: right; }
+
+.img--small {
+  max-width: 50%; }
+
+@media (min-width: 90em) {
+  .img--small.img--left {
+    max-width: 25%; }
+  .img--small.img--right {
+    max-width: 25%; } }
+
+.u-center {
+  text-align: center; }
+
+.u-absolute, .u-absolute--before:before, hr:before {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+
+.u-absolute--before, hr {
+  position: relative; }
+
+.b-dragging {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: col-resize; }
+

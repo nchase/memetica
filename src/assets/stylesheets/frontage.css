@@ -1,0 +1,26 @@
+@charset "UTF-8";
+@font-face {
+  src: url('../fonts/frontage-3d.otf');
+  font-family: 'Frontage 3D'; }
+
+.region--frame {
+  color: #fff;
+  background-color: lightblue;
+  border-bottom: 1em solid #fff; }
+
+h1 {
+  font-family: 'Frontage 3D'; }
+
+h2, p, blockquote {
+  font-family: monospace; }
+
+hr {
+  margin: 1.5em 0; }
+
+hr:before {
+  content: '❧';
+  font-family: 'Arial Unicode MS', 'Zapf Dingbats'; }
+
+.region--frame--singlet hr {
+  margin: 0 0 1.5em; }
+

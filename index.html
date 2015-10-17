@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="src/assets/stylesheets/base.css" />
+    <link rel="stylesheet" href="src/assets/stylesheets/medium-editor.css" />
+    <link rel="stylesheet" id="style" href=stylesheets/ />    <link rel="icon" href="favicon.png" />
+    <title>-</title>
+  </head>
+
+  <body class="region--frame region--frame--src_index_md region--frame--singlet">
+    <div
+          >
+      <div class="region--frame-inner">
+        <p><a href="001.md.html">Inattention At Scale</a></p>
+<p><a href="demo.md.html">Moss &amp; Steel [demo].</a></p>
+<p><a href="2015-09-27-time.md.html">Time</a></p>
+<p><a href="2015-10-11-addiction.md.html">Addiction</a></p>
+
+        <select class="ctl--styleChanger">
+          <option value="">none</option>
+
+          
+            <option
+                            value=src/assets/stylesheets/steel_moss>steel_moss
+            </option>
+          
+            <option
+                            value=src/assets/stylesheets/bauhaus>bauhaus
+            </option>
+          
+            <option
+                            value=src/assets/stylesheets/frontage>frontage
+            </option>
+          
+            <option
+                            value=src/assets/stylesheets/helveticult>helveticult
+            </option>
+          
+
+        </select>
+
+        
+      </div>
+    </div>
+    <div class="context has-toggle">
+      <a href="./">Home</a>
+      <a href="https://github.com/nchase/memetica">
+        <img class="icon" src="src//assets/images/octoface.svg" alt="GitHub" />
+      </a>
+    </div>
+
+    <script>
+      document.querySelector('.has-toggle').addEventListener('click', function(event){
+        if (event.target === event.currentTarget) {
+          event.preventDefault();
+        }
+
+        event.currentTarget.classList.add('is-active');
+        document.querySelector('body').classList.add('is-active--modal');
+      });
+
+      document.querySelector('body').addEventListener('click', function(event) {
+        if (event.currentTarget.classList.contains('is-active--modal')) {
+          document.querySelector('.is-active').classList.remove('is-active');
+          document.querySelector('.is-active--modal').classList.remove('is-active--modal');
+        }
+      }, true);
+    </script>
+    <script>
+      function serializeDocument(document) {
+        var request = new XMLHttpRequest();
+
+        request.open('PUT', 'serialize', true);
+        request.send(document);
+        window.document.body.classList.add('is-serializing');
+        request.onload = function(a,b,c) {
+          window.document.body.classList.remove('is-serializing');
+        };
+      }
+
+      function handleSerialize(event) {
+        var modKey = (navigator.platform.match("Mac") ? event.metaKey : event.ctrlKey)
+
+        if (event.type === 'click' || event.type === 'keydown' && modKey && event.keyCode === 83) {
+          event.preventDefault();
+          serializeDocument(document.body.querySelector('.region--frame-inner').innerHTML);
+        }
+      }
+
+      document.body.addEventListener('keydown', handleSerialize);
+
+      document.querySelector('.ctl--serialize') &&
+      document.querySelector('.ctl--serialize').addEventListener('click', handleSerialize);
+    </script>
+    <script src="src/assets/scripts/handleStyleChange.js"></script>
+    <script src="src/assets/scripts/medium-editor.js"></script>
+    <script>
+      var editor = new MediumEditor('[contenteditable]', {
+        buttons: [
+          'bold',
+          'italic',
+          'underline',
+          'anchor',
+          'quote',
+          'header1',
+          'header2'
+        ],
+        firstHeader: 'h1',
+        secondHeader: 'h2'
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="src/assets/stylesheets/base.css" />
+    <link rel="stylesheet" href="src/assets/stylesheets/medium-editor.css" />
+    <link rel="stylesheet" id="style" href=stylesheets/ />    <link rel="icon" href="favicon.png" />
+    <title>-</title>
+  </head>
+
+  <body class="region--frame region--frame--src_2015-10-11-addiction_md region--frame--singlet">
+    <div
+          >
+      <div class="region--frame-inner">
+        <h1 id="addiction">Addiction</h1>
+<p>With heroin usage back on the rise in some places and the way the mere existence of the the notion of an &quot;attention economy&quot; drives businesses around the world to create addictive content, addiction becomes an interesting topic to explore.</p>
+<p>Some, like neuroscience researcher Marc Lewis, <a href="http://www.theguardian.com/culture/2015/aug/30/marc-lewis-the-neuroscientist-who-believes-addiction-is-not-a-disease">believe that addiction is significantly more multifaceted</a> than the prevailing baseline model would have us believe.</p>
+<p>This other way of thinking holds that addiction is powerfully affected by environment and cognition.</p>
+<p>This could be dismissed as maverick or crackpot research if it wasn't in harmony with <a href="http://www.npr.org/sections/health-shots/2012/01/02/144431794/what-vietnam-taught-us-about-breaking-bad-habits">an extensive study</a> <a href="http://onlinelibrary.wiley.com/doi/10.1111/j.1521-0391.2010.00046.x/abstract">conducted on heroin-addicted vietnam veterans almost thirty years ago</a>. So what is it about addiction that we're missing, at large, that some, including the addicted, have figured out?</p>
+<p>And what can it teach us about how we engage with a world that increasingly asks for our attention?</p>
+<p>More productively, what can it teach us about <em>how</em> to engage with that world?</p>
+<p>And then, how do we go about becoming addicted to things that are good for us?</p>
+<hr />
+<p>New Hampshire and many other states in the northeast are in the midst of a heroin epidemic. Drug overdoses claim more lives (<a href="https://guinta.house.gov/media-center/press-releases/reps-guinta-and-kuster-lead-bipartisan-task-force-combat-heroin-epidemic">1</a>, <a href="https://guinta.house.gov/media-center/press-releases/reps-kuster-and-guinta-introduce-stop-abuse-act-address-heroin-epidemic">2</a>) in New Hampshire than any other preventable cause. Phillip Seymour Hoffman died in 2014 in NYC from an overdose of heroin.</p>
+<p>In a world where drug use could be dialed back by e.g. stricter law enforcement, punishment, and <a href="http://priceonomics.com/dare-the-anti-drug-program-that-never-actually/">drug prevention programs</a>, the War On Drugs would have been a success. Instead, as we find out more about what differentiates effective policy from that which damages people for little or no net gain, these initiatives are dissected and the damage is measured.</p>
+<p>Simultaneously, as the response to drug addiction has been met with fairly abortive attempts at curbing the side-effects of drug-fueled behavior and the ills of addiction, attempts at introducing stimuli that replicate the behavioral patterns of addiction manifest across a number of consumer industries.</p>
+
+        <select class="ctl--styleChanger">
+          <option value="">none</option>
+
+          
+            <option
+                            value=src/assets/stylesheets/steel_moss>steel_moss
+            </option>
+          
+            <option
+                            value=src/assets/stylesheets/bauhaus>bauhaus
+            </option>
+          
+            <option
+                            value=src/assets/stylesheets/frontage>frontage
+            </option>
+          
+            <option
+                            value=src/assets/stylesheets/helveticult>helveticult
+            </option>
+          
+
+        </select>
+
+        
+      </div>
+    </div>
+    <div class="context has-toggle">
+      <a href="./">Home</a>
+      <a href="https://github.com/nchase/memetica">
+        <img class="icon" src="src//assets/images/octoface.svg" alt="GitHub" />
+      </a>
+    </div>
+
+    <script>
+      document.querySelector('.has-toggle').addEventListener('click', function(event){
+        if (event.target === event.currentTarget) {
+          event.preventDefault();
+        }
+
+        event.currentTarget.classList.add('is-active');
+        document.querySelector('body').classList.add('is-active--modal');
+      });
+
+      document.querySelector('body').addEventListener('click', function(event) {
+        if (event.currentTarget.classList.contains('is-active--modal')) {
+          document.querySelector('.is-active').classList.remove('is-active');
+          document.querySelector('.is-active--modal').classList.remove('is-active--modal');
+        }
+      }, true);
+    </script>
+    <script>
+      function serializeDocument(document) {
+        var request = new XMLHttpRequest();
+
+        request.open('PUT', 'serialize', true);
+        request.send(document);
+        window.document.body.classList.add('is-serializing');
+        request.onload = function(a,b,c) {
+          window.document.body.classList.remove('is-serializing');
+        };
+      }
+
+      function handleSerialize(event) {
+        var modKey = (navigator.platform.match("Mac") ? event.metaKey : event.ctrlKey)
+
+        if (event.type === 'click' || event.type === 'keydown' && modKey && event.keyCode === 83) {
+          event.preventDefault();
+          serializeDocument(document.body.querySelector('.region--frame-inner').innerHTML);
+        }
+      }
+
+      document.body.addEventListener('keydown', handleSerialize);
+
+      document.querySelector('.ctl--serialize') &&
+      document.querySelector('.ctl--serialize').addEventListener('click', handleSerialize);
+    </script>
+    <script src="src/assets/scripts/handleStyleChange.js"></script>
+    <script src="src/assets/scripts/medium-editor.js"></script>
+    <script>
+      var editor = new MediumEditor('[contenteditable]', {
+        buttons: [
+          'bold',
+          'italic',
+          'underline',
+          'anchor',
+          'quote',
+          'header1',
+          'header2'
+        ],
+        firstHeader: 'h1',
+        secondHeader: 'h2'
+      });
+    </script>
+  </body>
+</html>

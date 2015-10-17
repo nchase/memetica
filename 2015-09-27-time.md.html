@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="src/assets/stylesheets/base.css" />
+    <link rel="stylesheet" href="src/assets/stylesheets/medium-editor.css" />
+    <link rel="stylesheet" id="style" href=stylesheets/ />    <link rel="icon" href="favicon.png" />
+    <title>-</title>
+  </head>
+
+  <body class="region--frame region--frame--src_2015-09-27-time_md region--frame--singlet">
+    <div
+          >
+      <div class="region--frame-inner">
+        <h1 id="time">Time</h1>
+<p>Lately I've been finding myself with less free time. Counterintuitively, I've been finding respite, and even intervals of increased clarity and focus in <em>wasting</em> time or engaging in activities that seem like a waste of time.</p>
+<hr />
+<p>In exchange for a more engaged station in the decision-making pipeline at work and an increased mentoring surface area, I've started allowing calendar software to manage large chunks of my time. This fairly stringent codification of time leads to greater awareness of how exactly my time is spent. Increased awareness coupled with the fact that I'm getting older makes me increasingly aware that my time is extremely limited and all of my options are trade-offs.</p>
+<p>And yet, somehow, with these sudden constraints and this painful awareness, wasting time is still a thing that I do. And if I didn't do it, I'd probably hate my life. I'd be less happy and less productive.</p>
+<p>Time-wasting is <em>play</em>. Play is meandering and wonderful. Play gives birth to new ideas.</p>
+<p><img class="img img--positioned img--right img--small" src="http://cloud.ahfr.org/87bce1c887682276315f.gif" /> I think the trick to all of this, for me anyway, is to leave enough slacktime in the schedule for new endeavors. And if you can't do that — and trust me, you won't always be able to — make the play, the time-wasting-activity, whatever it is: make it a practice or practiceable. Even if you don't like it that day. Even if it's a creative act and you don't have anything in mind to create, or the idea of creating reveals fear, anxiety, or impostorism, just do it.</p>
+<p>Yeah, just do it. Just go through the motions. The motions get results, they keep muscles strong and they keep neurons firing, strengthening connections and leading to breakthroughs.</p>
+
+        <select class="ctl--styleChanger">
+          <option value="">none</option>
+
+          
+            <option
+                            value=src/assets/stylesheets/steel_moss>steel_moss
+            </option>
+          
+            <option
+                            value=src/assets/stylesheets/bauhaus>bauhaus
+            </option>
+          
+            <option
+                            value=src/assets/stylesheets/frontage>frontage
+            </option>
+          
+            <option
+                            value=src/assets/stylesheets/helveticult>helveticult
+            </option>
+          
+
+        </select>
+
+        
+      </div>
+    </div>
+    <div class="context has-toggle">
+      <a href="./">Home</a>
+      <a href="https://github.com/nchase/memetica">
+        <img class="icon" src="src//assets/images/octoface.svg" alt="GitHub" />
+      </a>
+    </div>
+
+    <script>
+      document.querySelector('.has-toggle').addEventListener('click', function(event){
+        if (event.target === event.currentTarget) {
+          event.preventDefault();
+        }
+
+        event.currentTarget.classList.add('is-active');
+        document.querySelector('body').classList.add('is-active--modal');
+      });
+
+      document.querySelector('body').addEventListener('click', function(event) {
+        if (event.currentTarget.classList.contains('is-active--modal')) {
+          document.querySelector('.is-active').classList.remove('is-active');
+          document.querySelector('.is-active--modal').classList.remove('is-active--modal');
+        }
+      }, true);
+    </script>
+    <script>
+      function serializeDocument(document) {
+        var request = new XMLHttpRequest();
+
+        request.open('PUT', 'serialize', true);
+        request.send(document);
+        window.document.body.classList.add('is-serializing');
+        request.onload = function(a,b,c) {
+          window.document.body.classList.remove('is-serializing');
+        };
+      }
+
+      function handleSerialize(event) {
+        var modKey = (navigator.platform.match("Mac") ? event.metaKey : event.ctrlKey)
+
+        if (event.type === 'click' || event.type === 'keydown' && modKey && event.keyCode === 83) {
+          event.preventDefault();
+          serializeDocument(document.body.querySelector('.region--frame-inner').innerHTML);
+        }
+      }
+
+      document.body.addEventListener('keydown', handleSerialize);
+
+      document.querySelector('.ctl--serialize') &&
+      document.querySelector('.ctl--serialize').addEventListener('click', handleSerialize);
+    </script>
+    <script src="src/assets/scripts/handleStyleChange.js"></script>
+    <script src="src/assets/scripts/medium-editor.js"></script>
+    <script>
+      var editor = new MediumEditor('[contenteditable]', {
+        buttons: [
+          'bold',
+          'italic',
+          'underline',
+          'anchor',
+          'quote',
+          'header1',
+          'header2'
+        ],
+        firstHeader: 'h1',
+        secondHeader: 'h2'
+      });
+    </script>
+  </body>
+</html>

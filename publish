@@ -2,16 +2,13 @@
 
 echo -e "\n"
 
-if [ -e src/index.md.html ]
-then
-  echo -e "removing src/index.md.html\n"
-  rm src/index.md.html
-fi
-
-for document in $(find src ! -name 'src/index.md' -iname \*.md); do
+for document in $(find src ! -name 'index.md' -iname \*.md); do
   echo "generating markup for $document"
 
-  `cat $document | node columnize.js | pandoc --from=markdown --to=html > $(echo $document | sed 's/.md/.md.html/')`
+  `babel-node ejs-cli.js $document > $(echo $document | sed 's/.md/.md.html/' | sed 's/src\///')`
 done
 
-echo -e "done.\n\n"
+echo "generating markup for src/index.md"
+`babel-node ejs-cli.js src/index.md | sed 's/\.md/\.md\.html/'  > index.html`
+
+echo -e "\ndone.\n\n"

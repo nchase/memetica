@@ -17,6 +17,10 @@ hr:before {
   background-color: #000;
 }
 
+.region--frame--singlet hr {
+  margin: 0 0 1.5em;
+}
+
 .col + hr {
   margin: 2em 0 3em;
 }

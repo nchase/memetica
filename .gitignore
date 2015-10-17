@@ -2,5 +2,6 @@ node_modules
 !node_modules/me
 !node_modules/rook
 npm-debug.log
-src/*.md.html
+*.html
+src/assets/stylesheets/*.css
 

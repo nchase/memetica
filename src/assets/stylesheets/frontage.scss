@@ -26,3 +26,7 @@ hr:before {
   content: '❧';
   font-family: 'Arial Unicode MS', 'Zapf Dingbats';
 }
+
+.region--frame--singlet hr {
+  margin: 0 0 1.5em;
+}

@@ -33,6 +33,10 @@ hr:before {
   background-color: #ffff00;
 }
 
+.region--frame--singlet hr {
+  margin: 0 0 1.5em;
+}
+
 .col + hr {
   margin: 2em 0 3em;
 }

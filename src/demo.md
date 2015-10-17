@@ -20,7 +20,7 @@
 
   Rest assured that I don't think you made this album operating under the premise I'm about to parade around; but I learned a long time ago that if I limited myself to thinking about music the way the music makers do, I'd be bored as shit.
 
-  <img class="img img--right" src="http://cloud.ahfr.org/f24929a0407db76c9747.jpg" />
+  <img class="img img--positioned img--right" src="http://cloud.ahfr.org/f24929a0407db76c9747.jpg" />
 
   That being said, like Neil Armstrong, you went somewhere, did something, then came back and realized your entire creative life had been building towards a moment that just passed you by. You probably should have flown into a mountain right after you got done victory lapping this album. Freeze the frame it all at that ideal moment.
 

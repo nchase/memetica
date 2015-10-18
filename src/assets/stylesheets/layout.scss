@@ -54,15 +54,14 @@ iframe,
 
   &:hover:before {
     width: 4rem;
-    border-bottom-color: currentColor;
   }
 
   &.is-active {
     transform: translateX(100%);
     cursor: auto;
 
-    &:before {
-      display: none;
+    &:hover:before {
+      width: 0.75rem;
     }
   }
 }

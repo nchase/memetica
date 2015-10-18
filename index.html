@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="src/assets/stylesheets/base.css" />
-    <link rel="stylesheet" href="src/assets/stylesheets/medium-editor.css" />
     <link rel="stylesheet" id="style" href=stylesheets/ />    <link rel="icon" href="favicon.png" />
     <title>-</title>
   </head>
@@ -78,48 +77,6 @@
         }
       }, true);
     </script>
-    <script>
-      function serializeDocument(document) {
-        var request = new XMLHttpRequest();
-
-        request.open('PUT', 'serialize', true);
-        request.send(document);
-        window.document.body.classList.add('is-serializing');
-        request.onload = function(a,b,c) {
-          window.document.body.classList.remove('is-serializing');
-        };
-      }
-
-      function handleSerialize(event) {
-        var modKey = (navigator.platform.match("Mac") ? event.metaKey : event.ctrlKey)
-
-        if (event.type === 'click' || event.type === 'keydown' && modKey && event.keyCode === 83) {
-          event.preventDefault();
-          serializeDocument(document.body.querySelector('.region--frame-inner').innerHTML);
-        }
-      }
-
-      document.body.addEventListener('keydown', handleSerialize);
-
-      document.querySelector('.ctl--serialize') &&
-      document.querySelector('.ctl--serialize').addEventListener('click', handleSerialize);
-    </script>
     <script src="src/assets/scripts/handleStyleChange.js"></script>
-    <script src="src/assets/scripts/medium-editor.js"></script>
-    <script>
-      var editor = new MediumEditor('[contenteditable]', {
-        buttons: [
-          'bold',
-          'italic',
-          'underline',
-          'anchor',
-          'quote',
-          'header1',
-          'header2'
-        ],
-        firstHeader: 'h1',
-        secondHeader: 'h2'
-      });
-    </script>
   </body>
 </html>

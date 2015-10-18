@@ -54,7 +54,7 @@ iframe,
 
   &:hover:before {
     width: 4rem;
-    border-bottom-color: tomato;
+    border-bottom-color: currentColor;
   }
 
   &.is-active {
@@ -70,9 +70,18 @@ iframe,
 .context a {
   display: block;
 }
-.context .icon {
-  width: 1.5em;
+.context .icon-container {
   margin: 1em 0;
+}
+
+.icon-container {
+  display: inline-block;
+  fill: currentColor;
+}
+
+.icon-container .icon {
+  width: 1.5em;
+  height: 1.5em;
 }
 
 .region--frame {

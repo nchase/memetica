@@ -34,7 +34,7 @@ iframe,
   right: 100%;
   font-size: 1.25rem;
   padding: 1em;
-  background-color: tomato;
+  background-color: inherit;
   transition: transform 200ms;
   cursor: pointer;
   opacity: 0.75;
@@ -47,7 +47,7 @@ iframe,
     margin: 1rem 0;
     width: 0.75rem;
     height: 1rem;
-    background-color: #000;
+    background-color: currentColor;
     transition: width 200ms, border-color 200ms;
     border-bottom: 3rem solid transparent;
   }

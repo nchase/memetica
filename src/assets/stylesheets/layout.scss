@@ -37,11 +37,14 @@ iframe,
   background-color: inherit;
   transition: transform 200ms;
   cursor: pointer;
-  opacity: 0.75;
+  opacity: 0.8;
 
-  &:before {
+  &:before,
+  &:after {
     content: '';
     position: absolute;
+  }
+  &:before {
     top: 0;
     left: 100%;
     margin: 1rem 0;
@@ -50,6 +53,14 @@ iframe,
     background-color: currentColor;
     transition: width 200ms, border-color 200ms;
     border-bottom: 3rem solid transparent;
+  }
+  &:after {
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(0, 0%, 100%, 0.2);
   }
 
   &:hover:before {

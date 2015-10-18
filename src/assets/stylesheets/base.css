@@ -47,15 +47,14 @@ iframe, .region--frame {
             transition: width 200ms, border-color 200ms;
     border-bottom: 3rem solid transparent; }
   .context:hover:before {
-    width: 4rem;
-    border-bottom-color: currentColor; }
+    width: 4rem; }
   .context.is-active {
     -webkit-transform: translateX(100%);
         -ms-transform: translateX(100%);
             transform: translateX(100%);
     cursor: auto; }
-    .context.is-active:before {
-      display: none; }
+    .context.is-active:hover:before {
+      width: 0.75rem; }
 
 .context a {
   display: block; }

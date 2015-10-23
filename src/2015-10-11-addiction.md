@@ -23,9 +23,7 @@ that some, including the addicted, have figured out?
 And what can it teach us about how we engage with a world that
 increasingly asks for our attention?
 
-More productively, what can it teach us about _how_ to engage with that world?
-
-And then, how do we go about becoming addicted to things that are good for us?
+And how do we go about becoming addicted to things that are good for us?
 
 ---
 
@@ -42,4 +40,4 @@ and we are forced to rethink policy.
 As the response to drug addiction has been met with these weak attempts
 at curbing the side-effects of drug-fueled behavior and the ills of addiction,
 attempts at introducing stimuli that replicate the behavioral patterns of addiction
-have manifest across a number of consumer industries to really excellent economic response.
+have manifest across a number of consumer industries to really strong economic response.

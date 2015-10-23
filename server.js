@@ -36,6 +36,7 @@ app.get(/\/([^\s]+.(?:md|html))?$/, function(request, response) {
   response.render('layout', {
     bodyClass: `region--frame region--frame--${ frame.replace(/[^_a-zA-Z0-9-]+/g, '_')} ${singleColumn ? 'region--frame--singlet' : ''}`,
     data: data,
+    prefix: process.env.prefix || 'src/',
     frame: frame,
     frameContent: frameContent,
     published: request.query.published,
@@ -56,25 +57,24 @@ function serveIndex(request, response) {
   response.render('layout', {
     bodyClass: `region--frame region--frame--${ frame.replace(/[^_a-zA-Z0-9-]+/g, '_')}`,
     data: data,
+    prefix: process.env.prefix || 'src/',
     frameContent: frameContent,
     published: true,
     requestStyle: request.query.style || request.cookies.style
   });
 }
 
-app.get('/stylesheets/base.css', function(request, response) {
+function getStylesheet(request, response) {
+  var stylesheet = request.params.style || 'base';
+
   response.set('Content-Type', 'text/css');
   response.send(postcss([autoprefixer]).process(sass.renderSync({
-    file: process.cwd() + '/src/assets/stylesheets/base.scss'
+    file: process.cwd() + '/src/assets/stylesheets/' + stylesheet + '.scss'
   }).css).css);
-});
+}
 
-app.get('/stylesheets/:style.css', function(request, response) {
-  response.set('Content-Type', 'text/css');
-  response.send(postcss[autoprefixer].process(sass.renderSync({
-    file: process.cwd() + '/src/assets/stylesheets/' + request.params.style + '.scss'
-  }).css).css);
-});
+app.get('/stylesheets/:style.css', getStylesheet);
+app.get('/src/assets/stylesheets/:style.css', getStylesheet);
 
 app.put('/serialize', function(request, response) {
   console.log(serialize(request.body));
@@ -82,6 +82,7 @@ app.put('/serialize', function(request, response) {
 });
 
 app.use(express.static(__dirname + '/src/assets'));
+app.use('/src/assets', express.static(__dirname + '/src/assets'));
 
 var invokeArgs = process.argv.slice(2).join(' ');
 

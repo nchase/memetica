@@ -38,6 +38,7 @@ app.get(/\/([^\s]+.(?:md|html))?$/, function(request, response) {
     data: data,
     prefix: process.env.prefix || 'src/',
     header: '',
+    footer: '',
     frame: frame,
     frameContent: frameContent,
     published: request.query.published,
@@ -55,6 +56,7 @@ function serveIndex(request, response) {
   var frameContent = require('./readFile')(data.frames[0]).toString();
 
   var header = require('./readFile')('src/header', {raw: true}).toString();
+  var footer = require('./readFile')('src/footer', {raw: true}).toString();
 
   var singleColumn = frameContent.match(/(\|\|\||<div class="col">)/) === null;
 
@@ -63,6 +65,7 @@ function serveIndex(request, response) {
     data: data,
     prefix: process.env.prefix || 'src/',
     header: header,
+    footer: footer,
     frameContent: frameContent,
     published: true,
     requestStyle: request.query.style || request.cookies.style

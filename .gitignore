@@ -3,5 +3,7 @@ node_modules
 !node_modules/rook
 npm-debug.log
 *.html
+!src/layout.html
+!src/header.html
 src/assets/stylesheets/*.css
 

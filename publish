@@ -9,6 +9,6 @@ for document in $(find src ! -name 'index.md' -iname \*.md); do
 done
 
 echo "generating markup for src/index.md"
-`babel-node ejs-cli.js src/index.md | sed 's/\.md/\.md\.html/'  > index.html`
+`babel-node ejs-cli.js src/index.md src/header.html | sed 's/\.md/\.md\.html/'  > index.html`
 
 echo -e "\ndone.\n\n"

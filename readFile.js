@@ -2,7 +2,11 @@ var fs = require('fs');
 var execSync = require('child_process').execSync;
 var marked = require('marked');
 
-module.exports = function(file) {
+module.exports = function(file, options) {
+  if (options && options.raw) {
+    return fs.readFileSync(file + '.html').toString();
+  }
+
   if (process.env.NODE_ENV !== 'production') {
     try {
       fs.readFileSync(file);

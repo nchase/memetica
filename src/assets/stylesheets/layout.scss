@@ -155,6 +155,10 @@ iframe,
   &:focus {
     outline-color: currentColor;
   }
+
+  &::placeholder {
+    color: inherit;
+  }
 }
 
 .decorator--footer-inputText {

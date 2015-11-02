@@ -243,6 +243,8 @@ p {
 
 a {
   color: inherit; }
+  a:focus {
+    outline-color: currentColor; }
 
 blockquote {
   margin: 0 0 1.5em;

@@ -25,24 +25,6 @@
       <div class="region--frame-inner">
         <%- header -%>
         <%- frameContent -%>
-
-        <select class="ctl--styleChanger">
-          <option value="">none</option>
-
-          <% data.styles.forEach(function(style, index) { %>
-            <option
-              <%- style === requestStyle ? 'selected' : '' -%>
-              value=<%- prefix %>assets/stylesheets/<%= style %>><%=style %>
-            </option>
-          <% }); %>
-
-        </select>
-
-        <% if (!published) { %>
-          <button class="ctl--serialize">
-            Save
-          </button>
-        <% } %>
       </div>
     </div>
     <div class="context has-toggle">
@@ -54,6 +36,23 @@
           </svg>
         </span>
       </a>
+      <select class="ctl--styleChanger">
+        <option value="">none</option>
+
+        <% data.styles.forEach(function(style, index) { %>
+          <option
+            <%- style === requestStyle ? 'selected' : '' -%>
+            value=<%- prefix %>assets/stylesheets/<%= style %>><%=style %>
+          </option>
+        <% }); %>
+
+      </select>
+
+      <% if (!published) { %>
+        <button class="ctl--serialize">
+          Save
+        </button>
+      <% } %>
     </div>
 
     <script>

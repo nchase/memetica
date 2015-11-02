@@ -277,6 +277,10 @@ p {
 
 a {
   color: inherit;
+
+  &:focus {
+    outline-color: currentColor;
+  }
 }
 
 blockquote {

@@ -1,0 +1,31 @@
+<div class="decorator decorator--footer">
+  <hr class="decorator-break" />
+  <form
+    action="https://tinyletter.com/nchase"
+    method="post"
+    target="popupwindow"
+    onsubmit="window.open('https://tinyletter.com/nchase', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"
+  >
+    <input type="hidden" value="1" name="embed" />
+    <label
+      for="emailList"
+      class="decorator--footer-label"
+    >
+      Subscribe for new content notifications:
+    </label>
+    <input
+      name="email"
+      type="text"
+      placeholder="Email Address"
+      class="decorator--footer-input decorator--footer--inputText"
+      id="emailList"
+    />
+    <button
+      type="submit"
+      class="decorator--footer-input decorator--footer-inputSubmit"
+      value="Subscribe"
+    >
+      Subscribe
+    </button>
+  </form>
+</div>

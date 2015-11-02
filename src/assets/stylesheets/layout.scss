@@ -135,6 +135,37 @@ iframe,
   }
 }
 
+.decorator--footer {
+  margin-bottom: 1em;
+}
+
+.decorator--footer-label {
+  display: block;
+  margin-bottom: 1em;
+}
+
+.decorator--footer-input {
+  padding: 0.5em 1em;
+  font-size: 0.8em;
+  font-family: inherit;
+  color: currentColor;
+  background-color: inherit;
+  border: 1px solid currentColor;
+
+  &:focus {
+    outline-color: currentColor;
+  }
+}
+
+.decorator--footer-inputText {
+  width: 20%;
+  min-width: 9em;
+}
+
+.decorator--footer-inputSubmit {
+  cursor: pointer;
+}
+
 .region--frame {
   background-color: #fff;
   padding: 1em 1em 0;

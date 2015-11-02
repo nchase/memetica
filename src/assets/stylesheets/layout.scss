@@ -94,6 +94,42 @@ iframe,
   height: 1.5em;
 }
 
+.header {
+  margin-bottom: 1em;
+  width: 100%;
+  text-align: center;
+
+  @media (min-width: 30em) {
+    // [separately] blow out header by 10% on each side:
+    margin: 0 -10% 1em;
+    width: 120%;
+  }
+}
+
+.header-icon {
+  @media (min-width: 30em) {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 4em;
+  }
+}
+
+.header-text {
+  @media (min-width: 30em) {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+.header-break {
+  margin: 1em 0 !important;
+  border-bottom: 1px solid currentColor;
+
+  &:before {
+    content: '' !important;
+  }
+}
+
 .region--frame {
   background-color: #fff;
   padding: 1em 1em 0;

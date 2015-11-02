@@ -95,14 +95,13 @@ iframe,
 }
 
 .header {
+  margin-top: 5em;
   margin-bottom: 1em;
   width: 100%;
   text-align: center;
 
-  @media (min-width: 30em) {
-    // [separately] blow out header by 10% on each side:
-    margin: 0 -10% 1em;
-    width: 120%;
+  @media (min-width: 55em) {
+    margin-top: 0;
   }
 }
 
@@ -115,6 +114,8 @@ iframe,
 }
 
 .header-text {
+  margin-bottom: 0;
+
   @media (min-width: 30em) {
     display: inline-block;
     vertical-align: middle;

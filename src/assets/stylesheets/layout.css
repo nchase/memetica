@@ -125,6 +125,14 @@ iframe, .region--frame {
   border: 1px solid currentColor; }
   .decorator--footer-input:focus {
     outline-color: currentColor; }
+  .decorator--footer-input::-webkit-input-placeholder {
+    color: inherit; }
+  .decorator--footer-input::-moz-placeholder {
+    color: inherit; }
+  .decorator--footer-input:-ms-input-placeholder {
+    color: inherit; }
+  .decorator--footer-input::placeholder {
+    color: inherit; }
 
 .decorator--footer-inputText {
   width: 20%;

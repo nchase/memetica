@@ -37,6 +37,7 @@ app.get(/\/([^\s]+.(?:md|html))?$/, function(request, response) {
     bodyClass: `region--frame region--frame--${ frame.replace(/[^_a-zA-Z0-9-]+/g, '_')} ${singleColumn ? 'region--frame--singlet' : ''}`,
     data: data,
     prefix: process.env.prefix || 'src/',
+    header: '',
     frame: frame,
     frameContent: frameContent,
     published: request.query.published,
@@ -53,11 +54,15 @@ function serveIndex(request, response) {
 
   var frameContent = require('./readFile')(data.frames[0]).toString();
 
+  var header = require('./readFile')('src/header', {raw: true}).toString();
+
+  var singleColumn = frameContent.match(/(\|\|\||<div class="col">)/) === null;
 
   response.render('layout', {
-    bodyClass: `region--frame region--frame--${ frame.replace(/[^_a-zA-Z0-9-]+/g, '_')}`,
+    bodyClass: `region--frame region--frame--${ frame.replace(/[^_a-zA-Z0-9-]+/g, '_')} ${singleColumn ? 'region--frame--singlet' : ''}`,
     data: data,
     prefix: process.env.prefix || 'src/',
+    header: header,
     frameContent: frameContent,
     published: true,
     requestStyle: request.query.style || request.cookies.style

@@ -27,7 +27,6 @@ And how do we go about becoming addicted to things that are good for us?
 
 ---
 
-New Hampshire is one of the states that has been hit particularly hard by the heroin epidemic.
 Drug overdoses claim more lives ([1](https://guinta.house.gov/media-center/press-releases/reps-guinta-and-kuster-lead-bipartisan-task-force-combat-heroin-epidemic), [2](https://guinta.house.gov/media-center/press-releases/reps-kuster-and-guinta-introduce-stop-abuse-act-address-heroin-epidemic)) in New Hampshire than any other preventable cause. A week before I started writing this, seventy-five people overdosed in heroin in Chicago over a weekend.
 Actor Phillip Seymour Hoffman died in 2014 in NYC from an overdose of heroin. Three times as many people die in New Jersey from heroin overdoses than any other state.
 

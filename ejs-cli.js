@@ -1,10 +1,17 @@
 #!/usr/bin/env node
 
+// todo: add an option manager like node-optimist.
+
 var ejs = require('ejs');
 var fs = require('fs');
 var execSync = require('child_process').execSync;
 
 var contentPath = process.argv[2];
+
+if (!contentPath) {
+  console.error('error: no path provided.')
+  process.exit(1);
+}
 
 var frame = contentPath;
 
@@ -12,9 +19,15 @@ var content = fs.readFileSync(contentPath).toString();
 
 var singleColumn = content.match(/(\|\|\||<div class="col">)/) === null;
 
-var layoutPath = process.argv[3] || './src/layout.html';
+var layoutPath = './src/layout.html';
 
 var layout = fs.readFileSync(layoutPath).toString();
+
+var header = '';
+
+if (process.argv[3]) {
+  header = fs.readFileSync(process.argv[3]).toString();
+}
 
 content = execSync(
   `
@@ -34,6 +47,7 @@ process.stdout.write(ejs.render(layout, {
     ]
   },
   frameContent: content,
+  header: header,
   prefix: process.env.prefix || 'src/',
   requestStyle: '',
   bodyClass: `region--frame region--frame--${ frame.replace(/[^_a-zA-Z0-9-]+/g, '_')} ${singleColumn ? 'region--frame--singlet' : ''}`,

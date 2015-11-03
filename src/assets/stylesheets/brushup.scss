@@ -1,0 +1,32 @@
+@font-face {
+  src: url('../fonts/brushup.otf');
+  font-family: 'Brush Up';
+}
+
+
+.region--frame {
+  color: #fff;
+  background-color: #FF5757;
+  border-bottom: 1em solid currentColor;
+}
+
+h1 {
+  font-family: 'Brush Up';
+}
+
+h2, p, blockquote, ol, ul {
+  font-family: monospace;
+}
+
+hr {
+  margin: 1.5em 0;
+}
+
+hr:before {
+  content: '❧';
+  font-family: 'Arial Unicode MS', 'Zapf Dingbats';
+}
+
+.region--frame--singlet hr {
+  margin: 0 0 1.5em;
+}

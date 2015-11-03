@@ -289,6 +289,10 @@ blockquote {
   border-left: 0.25em solid currentColor;
 }
 
+blockquote p {
+  margin-bottom: 0;
+}
+
 hr {
   @extend .u-absolute--before;
 

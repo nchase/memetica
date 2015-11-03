@@ -6,6 +6,13 @@ function handleStyleChange(event) {
 document.querySelector('.ctl--styleChanger').addEventListener('change', handleStyleChange);
 
 document.addEventListener('DOMContentLoaded', function() {
+  if (!document.getElementById('style')) {
+    var styleRelTag = document.createElement('link');
+    styleRelTag.setAttribute('rel', 'stylesheet');
+    styleRelTag.setAttribute('id', 'style');
+    document.getElementsByTagName('head')[0].appendChild(styleRelTag);
+  }
+
   var cookieValue = window.location.search.match(/(.*?)=([^\&]*)&?/) &&
     window.location.search.match(/(.*?)=([^\&]*)&?/)[2];
 

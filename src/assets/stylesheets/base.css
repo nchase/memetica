@@ -139,6 +139,7 @@ iframe, .region--frame {
   min-width: 9em; }
 
 .decorator--footer-inputSubmit {
+  margin-bottom: 1em;
   cursor: pointer; }
 
 .region--frame {
@@ -253,6 +254,10 @@ blockquote {
 
 blockquote p {
   margin-bottom: 0; }
+
+small {
+  display: block;
+  font-size: 0.7em; }
 
 hr {
   width: 100%;

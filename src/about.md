@@ -9,7 +9,7 @@
 - [frameless.ahfr.org](http://frameless.ahfr.org/):
   Fun demo site from May-June 2015. Core concept: two different ways of describing who I am.
   Has a few bells, whistles, a "drag handle."
-- [m.ahfr.org](m.ahfr.org):
+- [m.ahfr.org](http://m.ahfr.org):
   Project formerly known as 'Medium' - collection of quotes and links
   with a few original pieces content. Changed name after Medium.com became a thing.
 - [forum](https://github.com/twinlabs/forum):
@@ -31,4 +31,4 @@
 
 ---
 
-- [github.com/nchase](github.com/nchase)
+- [github.com/nchase](https://github.com/nchase)

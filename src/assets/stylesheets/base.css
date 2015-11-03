@@ -215,7 +215,7 @@ iframe, .region--frame {
   border-color: currentColor;
   border-style: solid; }
 
-h1, h2, p, blockquote {
+h1, h2, p, blockquote, ol, ul {
   margin: 0;
   line-height: 1.5; }
 
@@ -237,7 +237,7 @@ h2 {
     h2 {
       font-size: 1.5em; } }
 
-p {
+p, ol, ul {
   margin-bottom: 1.5em;
   width: 100%; }
 
@@ -250,6 +250,9 @@ blockquote {
   margin: 0 0 1.5em;
   padding-left: 1em;
   border-left: 0.25em solid currentColor; }
+
+blockquote p {
+  margin-bottom: 0; }
 
 hr {
   width: 100%;

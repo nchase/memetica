@@ -234,7 +234,7 @@ iframe,
   border-style: solid;
 }
 
-h1, h2, p, blockquote {
+h1, h2, p, blockquote, ol, ul {
   margin: 0;
   line-height: 1.5;
 }
@@ -263,7 +263,7 @@ h2 {
   }
 }
 
-p {
+p, ol, ul {
   margin-bottom: 1.5em;
 
   // `width: 100%;` explicitly because:

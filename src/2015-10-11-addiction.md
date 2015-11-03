@@ -63,6 +63,20 @@
   Opiod addiction leads to heroin use and heroin addiction, and heroin-related deaths
   quadrupled between 2002 and 2013. 120 Americans die every day from drug overdoses, more than from car crashes.[^6]
 
+  ---
+
+  Facebook's primary source of revenue is advertising.
+  Google's primary source of revenue is advertising.
+  Instagram's primary source of revenue is advertising.
+  Twitter's primary source of revenue is advertising.
+  Television's primary source of revenue is advertising.
+
+  Advertising isn't the only business model in the world, but it is incredibly
+  common in many of the realms we engage with on a regular and repeated basis.
+  And the best way to justify the highest number of dollars from advertisers
+  is by creating experiences that demand and engage the advertisee's attention.
+  Establishing and preserving an addictive environment is a great way of
+  keeping attention.
 
 ---
 
@@ -79,7 +93,8 @@ I think the lower-order self, the part of us which is closest to our animal natu
 is the self that is most "human." Humanity is a species that is deeply emotional
 in spite of great boasts about our achievements of knowledge, strategy, engineering, etc.
 Our core "humanness" - this animal part - causes us to respond unfailingly to the same
-classical and operant conditioning mechanisms that early-to-mid 20th century explored.
+classical and operant conditioning mechanisms that early-to-mid 20th century psychology
+pioneers like B.F. Skinner and Ivan Pavlov explored.
 
 The modern environment (anthropocene, quantified, processed, surveilled) leaves us
 open to being exposed-to and placed-under conditioning by the data processors
@@ -100,10 +115,9 @@ than the consequence that feeds the behavior. Find consequences that you like
 
 
 [^1]: [Festival of Dangerous Ideas 2015 - Marc Lewis: the neuroscientist who believes addiction is not a disease](http://www.theguardian.com/culture/2015/aug/30/marc-lewis-the-neuroscientist-who-believes-addiction-is-not-a-disease)
-[^2]: [What Vietnam Taught Us About Breaking Bad Habits
-](http://www.npr.org/sections/health-shots/2012/01/02/144431794/what-vietnam-taught-us-about-breaking-bad-habits)
+[^2]: [What Vietnam Taught Us About Breaking Bad Habits](http://www.npr.org/sections/health-shots/2012/01/02/144431794/what-vietnam-taught-us-about-breaking-bad-habits)
 [^3]: [Vietnam Veterans Three Years after Vietnam: How Our Study Changed Our View of Heroin (1977)](http://onlinelibrary.wiley.com/doi/10.1111/j.1521-0391.2010.00046.x/abstract)
 [^4]: [Guinta and Kuster Lead Bipartisan Task Force to Combat The Heroin Epidemic](https://guinta.house.gov/media-center/press-releases/reps-guinta-and-kuster-lead-bipartisan-task-force-combat-heroin-epidemic)
 [^5]: [Priceonomics - DARE: The Anti-Drug Program That Never Actually Worked](http://priceonomics.com/dare-the-anti-drug-program-that-never-actually/)
 [^6]: [Barack Obama on Twitter: "Heroin-related deaths nearly quadrupled between 2002 and 2013."](https://twitter.com/POTUS/status/656891501520130048)
-[^7]: Revisit the Vietnam war article for more on environment.
+[^7]: Revisit "What Vietnam Taught Us About Breaking Bad Habits" for more on environment.

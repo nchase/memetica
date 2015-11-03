@@ -11,7 +11,7 @@
   Has a few bells, whistles, a "drag handle."
 - [m.ahfr.org](http://m.ahfr.org):
   Project formerly known as 'Medium' - collection of quotes and links
-  with a few original pieces content. Changed name after Medium.com became a thing.
+  with a few original pieces content. Changed name after Medium.com became a thing. Rudimentary Vim keybindings.
 - [forum](https://github.com/twinlabs/forum):
   Websockets + Node software that I wrote to replace our very-old phpBB.
   Used in a production environment since December 2014.

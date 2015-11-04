@@ -144,6 +144,7 @@ iframe, .region--frame {
 
 .region--frame {
   background-color: #fff;
+  border-bottom: 1em solid currentColor;
   padding: 1em 1em 0;
   overflow: scroll;
   -webkit-transition-property: background-color;

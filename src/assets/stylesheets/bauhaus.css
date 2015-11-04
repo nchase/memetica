@@ -5,7 +5,7 @@
 .region--frame {
   color: #ffff00;
   background-color: #272727;
-  border-bottom: 1em solid #636363; }
+  border-bottom-color: #636363; }
 
 h1, h2, blockquote {
   font-family: Bauhaus; }

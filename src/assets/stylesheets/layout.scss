@@ -256,6 +256,12 @@ h1 {
   }
 }
 
+.region--frame--singlet h1 {
+  @media (min-width: 60em) {
+    white-space: normal;
+  }
+}
+
 h2 {
   margin-bottom: 1.5em;
   font-size: 1.375em;

@@ -1,3 +1,5 @@
+[Font Trimming](2015-11-04-fonts.md)
+
 [Grids](2015-11-02-grids.md)
 
 [Addiction](2015-10-11-addiction.md)

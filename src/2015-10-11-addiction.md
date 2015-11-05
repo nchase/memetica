@@ -105,7 +105,7 @@ who only see us as market participants. This is good behavior when the market
 and the entities participating in the market are the first-class citizens,
 but it all-too-often reduces the human forces involved in the consumer activity
 to second-class citizens. This is toxic. Illuminatingly, the traits that make us
-susceptible to this conditioning can be re-tooled to free us from this conditioning.
+susceptible to this conditioning can be re-tooled to free us from this conditioning.[^7]
 
 
 ---
@@ -114,11 +114,27 @@ susceptible to this conditioning can be re-tooled to free us from this condition
 
 
 Take your ability to reflect and use it to subvert your behavior.
-Use classical conditioning against itself. Classical is mostly your environment.
-To the best of your ability[^7], change your environment if it doesn't suit the behavior you want.
-Use operant conditioning against itself. Find something greater, psychologically,
+Use _classical conditioning_ against itself. _Classical_ is mostly your environment.
+If you can change your environment, and your environment is toxic,
+change your environment.
+
+Use _operant conditioning_ against itself. Find something greater, psychologically,
 than the consequence that feeds the behavior. Find consequences that you like
-(e.g. outcomes that you aspire to) and use them to drive your behaviors. You might just become a better person.
+(e.g. outcomes that you aspire to) and use them to drive your behaviors.
+
+Human behavior is complicated but seemingly predictable and controllable.
+After we curb our addiction to using human behavior to empty the pockets
+and minds of other humans, maybe we can start using human behavior
+to power some of the things we really need on a micro level
+(e.g. better education at home and in schools) and a macro level
+(e.g. environmental protection, sustainability).
+
+Along the path to these goals, we can stop and see ourselves for
+who we really are as we learn more about how humanity functions.
+
+If you put forth the effort to do this, you might just become a better person.
+And maybe you'll help someone else along the way too.
+
 
 
 [^1]: [Festival of Dangerous Ideas 2015 - Marc Lewis: the neuroscientist who believes addiction is not a disease](http://www.theguardian.com/culture/2015/aug/30/marc-lewis-the-neuroscientist-who-believes-addiction-is-not-a-disease)
@@ -127,4 +143,4 @@ than the consequence that feeds the behavior. Find consequences that you like
 [^4]: [Guinta and Kuster Lead Bipartisan Task Force to Combat The Heroin Epidemic](https://guinta.house.gov/media-center/press-releases/reps-guinta-and-kuster-lead-bipartisan-task-force-combat-heroin-epidemic)
 [^5]: [Priceonomics - DARE: The Anti-Drug Program That Never Actually Worked](http://priceonomics.com/dare-the-anti-drug-program-that-never-actually/)
 [^6]: [Barack Obama on Twitter: "Heroin-related deaths nearly quadrupled between 2002 and 2013."](https://twitter.com/POTUS/status/656891501520130048)
-[^7]: Revisit "What Vietnam Taught Us About Breaking Bad Habits" for more on environment.
+[^7]: A drug called Naloxone has been around since 1961. It's cheap and the World Health Organization lists it as one of the most important medications needed in a basic health system. The drug reverses opiate overdoses.

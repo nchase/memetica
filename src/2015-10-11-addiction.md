@@ -83,16 +83,19 @@
 
 ## Deceiving The Monkey, Or, Conditioning-Hacking
 
-Humans are complex, yet stupid. Our higher-order functions are deeply complex.
+Humans are complex, yet stupid. Our higher-order functions are deeply nuanced,
+built on top of machinery of flesh and neural networks.
 We construct vast ontologies expressed through linguistic symbols mapped to
-human expressions and human-generated media. We layer law and social systems
-on top of this basework. We use these structures &mdash; structures like law &mdash;
+human expressions, human-made objects, and human-centric notions.
+We layer law and social systems on top of this basework.
+We use these structures &mdash; structures like law &mdash;
 to defend or curb aspects of our lower-order selves.
 
 I think the lower-order self, the part of us which is closest to our animal nature,
-is the self that is most "human." Humanity is a species that is deeply emotional
-in spite of great boasts about our achievements of knowledge, strategy, engineering, etc.
-Our core "humanness" - this animal part - causes us to respond unfailingly to the same
+is the self that is most "human" &mdash; at least in the ways that we tend to
+define ourselves these days. Humanity is a species that is deeply emotional
+in spite of great boasts about our achievements in knowledge, strategy, engineering, etc.
+Our core "humanness" - these animal parts - cause us to respond unfailingly to the same
 classical and operant conditioning mechanisms that early-to-mid 20th century psychology
 pioneers like B.F. Skinner and Ivan Pavlov explored.
 
@@ -104,14 +107,18 @@ but it all-too-often reduces the human forces involved in the consumer activity
 to second-class citizens. This is toxic. Illuminatingly, the traits that make us
 susceptible to this conditioning can be re-tooled to free us from this conditioning.
 
+
+---
+
+## Rerouting The Bullseye
+
+
 Take your ability to reflect and use it to subvert your behavior.
 Use classical conditioning against itself. Classical is mostly your environment.
 To the best of your ability[^7], change your environment if it doesn't suit the behavior you want.
 Use operant conditioning against itself. Find something greater, psychologically,
 than the consequence that feeds the behavior. Find consequences that you like
 (e.g. outcomes that you aspire to) and use them to drive your behaviors. You might just become a better person.
-
-
 
 
 [^1]: [Festival of Dangerous Ideas 2015 - Marc Lewis: the neuroscientist who believes addiction is not a disease](http://www.theguardian.com/culture/2015/aug/30/marc-lewis-the-neuroscientist-who-believes-addiction-is-not-a-disease)

@@ -10,7 +10,7 @@
     <title>-</title>
   </head>
 
-  <body class="region--frame region--frame--src_index_md region--frame--singlet">
+  <body class="region--frame region--frame--src_2015-11-04-fonts_md region--frame--singlet">
     <svg style="display: none">
       <symbol viewBox="0 0 1024 1024" id="octoface">
         <path d="M940.812 277.688c8.25-20.219 35.375-101.75-8.562-211.906 0 0-67.375-21.312-219.875 82.906C648.5 131.125 579.875 128.5 512 128.5c-67.906 0-136.438 2.625-200.5 20.25C159.031 44.46900000000005 91.719 65.78099999999995 91.719 65.78099999999995 47.812 176 74.938 257.46900000000005 83.188 277.688 31.5 333.562 0 404.875 0 492.344 0 821.562 213.25 896 510.844 896 808.562 896 1024 821.562 1024 492.344 1024 404.875 992.5 333.562 940.812 277.688zM512 833c-211.406 0-382.781-9.875-382.781-214.688 0-48.938 24.062-94.595 65.344-132.312 68.75-62.969 185.281-29.688 317.438-29.688 132.25 0 248.625-33.281 317.438 29.625 41.312 37.78 65.438 83.312 65.438 132.312C894.875 823.125 723.375 833 512 833zM351.156 512.438c-42.469 0-76.906 51.062-76.906 114.188s34.438 114.312 76.906 114.312c42.375 0 76.812-51.188 76.812-114.312S393.531 512.438 351.156 512.438zM672.875 512.438C630.5 512.438 596 563.5 596 626.625s34.5 114.312 76.875 114.312 76.812-51.188 76.812-114.312C749.75 563.5 715.312 512.438 672.875 512.438z" />
@@ -22,69 +22,43 @@
     <div
           >
       <div class="region--frame-inner">
-        <div class="decorator decorator--header">
-  <p>
-    Noah Chase is a software engineer who lives and works
-    outside of DC in Silver Spring, Maryland.
-    <a href="/about.md.html">About Me</a>
-  </p>
-
-  <hr class="decorator-break" />
-
-  <div class="decorator--header-icon">
-    <svg style="fill: currentColor; width: 100px;">
-      <use xlink:href="#goat"></use>
-    </svg>
-  </div>
-
-  <h1 class="decorator--header-text">
-    Essays &amp; Articles
-  </h1>
-
-  <hr class="decorator-break" />
+                <h1 id="font-optimization-through-subsetting">Font Optimization Through Subsetting</h1>
+<p>Web fonts have come a long way in the last few years. There are as many great options as there are creative people in the world. Many decent options are free or available for a reasonable fee.</p>
+<p>We can use fonts and font combinations as tools of expression and creativity. We can impress certain <em>feelings</em> upon our users through expert font usage, which can lead to powerful, satisfying ends for all participants.</p>
+<p>But fonts can also make the web slow. In the interest of a fast web, how can we make fonts faster?</p>
+<hr />
+<p>Recently I found a font that I really liked and I started using it on one of my sites.<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a> As usual, I found myself doing some light performance profiling of the page some time thereafter.</p>
+<p>I was horrified to discover that the font weighed in at a whopping <code>1.1MB</code>, roughly 10x the size of the entirety of the rest of the content and assets, literally everything else coming down through the pipe.</p>
+<p>I thought this would be a great time to investigate <em>why</em> the font was so large and I hoped it would give me an opportunity to try an optimization I was curious about.</p>
+<hr />
+<h2 id="subsetting">Subsetting</h2>
+<p>The optimization I was interested in was <em>Font Subsetting</em>. This is just the process of taking each <em>glyph</em> (or character) in the font and removing the ones you don't need.</p>
+<p>The font contained 421 glyphs and I was pretty sure I didn't need them all.</p>
+<p>I loaded the font into <a href="http://fontforge.github.io">FontForge</a><a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a> and thought about my use case: I was only going to be using the font to write title-sized/display content in English, with the additional potential for very basic English punctuation. Knowing this, I got rid of everything that wasn't an English-language alphanumeric or basic English punctuation.</p>
+<p>When I re-generated the font, I was down to 96 glyphs and the new file size was roughly 33% of the original filesize.</p>
+<p><code>330KB</code> for a font isn't even close to excellent — pages should be much smaller — but it's an example of the kind of improvement you can see from font subsetting.</p>
+<hr />
+<h2 id="how-can-we-do-font-subsetting">How can we do font subsetting?</h2>
+<p><a href="http://fontforge.github.io">FontForge</a> is a free/open source that will let you edit fonts and output changes to a wide variety of formats. This is what I used for my investigation.</p>
+<p><a href="http://www.subsetter.com/">FF Subsetter</a> is an online tool that claims to automatically optimize fonts. I didn't have any luck with it, but I only tried one font.</p>
+<p>Font Squirrel has a <a href="http://www.fontsquirrel.com/tools/webfont-generator">webfont generator</a> that does some optimization. The output that it gave me was significantly smaller — <code>660KB</code> — a decent optimization, but not even close to what I was able to get. There are a lot of optional tweaks here that might deliver better performance.</p>
+<p>Google Fonts will let you selectively choose <em>which</em> characters to render. You can read more about that feature <a href="https://developers.google.com/fonts/docs/getting_started?hl=en#Optimizing_Requests">here</a> under the 'Optimizing Requests' heading.</p>
+<p>Lastly, there's the Glyphs app, which is a very sophisticated font creating and editing tool, but unlike the other options here it isn't free. <a href="https://glyphsapp.com" class="uri">https://glyphsapp.com</a></p>
+<hr />
+<h2 id="other-places-to-read-about-subsetting">Other places to read about subsetting:</h2>
+<ul>
+<li><p><a href="http://alistapart.com/article/fonts-at-the-crossing">A List Apart - Web Fonts at the Crossing</a></p></li>
+<li><p><a href="http://thenewcode.com/878/Slash-Page-Load-Times-With-CSS-Font-Subsetting">Slash Page Load Times With CSS Font Subsetting</a></p></li>
+<li><p><a href="http://www.sitepoint.com/joy-of-subsets-web-fonts/">The Joy of Subsets: Crossbreeding Web Fonts</a></p></li>
+</ul>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>In fact, the site was this site. See the header font for the 'brushup' font style.<a href="#fnref1">↩</a></p></li>
+<li id="fn2"><p>I had serious trouble getting FontForge installed on Mac OS 10.11. I tried installing the app as described on the FontForge webpage linked above and I also tried via a couple of Homebrew formulas. There are a handful of recent issues on GitHub (<a href="https://github.com/fontforge/fontforge/issues/2542">like this one</a>) where people are talking about the problem and how to solve it. Ultimately what worked for me was using the <code>.dmg</code> referred to in <a href="https://github.com/fontforge/fontforge/issues/2530#issuecomment-148997584">this issue</a>.<a href="#fnref2">↩</a></p></li>
+</ol>
 </div>
-
-        <p><a href="2015-11-04-fonts.md.html">Font Trimming</a></p>
-<p><a href="2015-11-02-grids.md.html">Grids</a></p>
-<p><a href="2015-10-11-addiction.md.html">Addiction</a></p>
-<p><a href="2015-09-27-time.md.html">Time</a></p>
-<p><a href="001.md.html">Inattention At Scale</a></p>
-<p><a href="demo.md.html">Moss &amp; Steel [demo].</a></p>
-        <div class="decorator decorator--footer">
-  <hr class="decorator-break" />
-  <form
-    action="https://tinyletter.com/nchase"
-    method="post"
-    target="popupwindow"
-    onsubmit="window.open('https://tinyletter.com/nchase', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"
-  >
-    <input type="hidden" value="1" name="embed" />
-    <label
-      for="emailList"
-      class="decorator--footer-label"
-    >
-      Subscribe for email updates:
-    </label>
-    <input
-      name="email"
-      type="text"
-      placeholder="Email Address"
-      class="decorator--footer-input decorator--footer--inputText"
-      id="emailList"
-    />
-    <button
-      type="submit"
-      class="decorator--footer-input decorator--footer-inputSubmit"
-      value="Subscribe"
-    >
-      Subscribe
-    </button>
-    <small>
-      I do not abuse email.
-    </small>
-  </form>
-</div>
-      </div>
+              </div>
     </div>
     <div class="context has-toggle">
       <a href="./">Home</a>

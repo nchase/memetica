@@ -232,6 +232,10 @@ h1 {
       font-size: 3em;
       white-space: nowrap; } }
 
+@media (min-width: 60em) {
+  .region--frame--singlet h1 {
+    white-space: normal; } }
+
 h2 {
   margin-bottom: 1.5em;
   font-size: 1.375em; }

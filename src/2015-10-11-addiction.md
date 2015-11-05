@@ -107,14 +107,18 @@ but it all-too-often reduces the human forces involved in the consumer activity
 to second-class citizens. This is toxic. Illuminatingly, the traits that make us
 susceptible to this conditioning can be re-tooled to free us from this conditioning.
 
+
+---
+
+## Rerouting The Bullseye
+
+
 Take your ability to reflect and use it to subvert your behavior.
 Use classical conditioning against itself. Classical is mostly your environment.
 To the best of your ability[^7], change your environment if it doesn't suit the behavior you want.
 Use operant conditioning against itself. Find something greater, psychologically,
 than the consequence that feeds the behavior. Find consequences that you like
 (e.g. outcomes that you aspire to) and use them to drive your behaviors. You might just become a better person.
-
-
 
 
 [^1]: [Festival of Dangerous Ideas 2015 - Marc Lewis: the neuroscientist who believes addiction is not a disease](http://www.theguardian.com/culture/2015/aug/30/marc-lewis-the-neuroscientist-who-believes-addiction-is-not-a-disease)

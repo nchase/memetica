@@ -3,6 +3,7 @@ module.exports = {
     'src/demo.md'
   ],
   styles: [
+    'robots',
     'wild',
     'brushup',
     'grid',

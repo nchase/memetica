@@ -349,9 +349,8 @@ hr {
 }
 
 .col {
-  padding: 0 1em;
-
   @media (min-width: 64em) {
+    padding: 0 1em;
     width: 50%;
     vertical-align: top;
   }

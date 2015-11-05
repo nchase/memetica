@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   if (!cookieValue) {
-    cookieValue = 'src/assets/stylesheets/grid';
+    cookieValue = 'src/assets/stylesheets/robots';
   }
 
   var evt = new Event('change');

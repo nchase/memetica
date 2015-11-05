@@ -83,16 +83,19 @@
 
 ## Deceiving The Monkey, Or, Conditioning-Hacking
 
-Humans are complex, yet stupid. Our higher-order functions are deeply complex.
+Humans are complex, yet stupid. Our higher-order functions are deeply nuanced,
+built on top of machinery of flesh and neural networks.
 We construct vast ontologies expressed through linguistic symbols mapped to
-human expressions and human-generated media. We layer law and social systems
-on top of this basework. We use these structures &mdash; structures like law &mdash;
+human expressions, human-made objects, and human-centric notions.
+We layer law and social systems on top of this basework.
+We use these structures &mdash; structures like law &mdash;
 to defend or curb aspects of our lower-order selves.
 
 I think the lower-order self, the part of us which is closest to our animal nature,
-is the self that is most "human." Humanity is a species that is deeply emotional
-in spite of great boasts about our achievements of knowledge, strategy, engineering, etc.
-Our core "humanness" - this animal part - causes us to respond unfailingly to the same
+is the self that is most "human" &mdash; at least in the ways that we tend to
+define ourselves these days. Humanity is a species that is deeply emotional
+in spite of great boasts about our achievements in knowledge, strategy, engineering, etc.
+Our core "humanness" - these animal parts - cause us to respond unfailingly to the same
 classical and operant conditioning mechanisms that early-to-mid 20th century psychology
 pioneers like B.F. Skinner and Ivan Pavlov explored.
 

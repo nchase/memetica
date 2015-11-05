@@ -31,7 +31,7 @@
 <p>I was horrified to discover that the font weighed in at a whopping <code>1.1MB</code>, roughly 10x the size of the entirety of the rest of the content and assets, literally everything else coming down through the pipe.</p>
 <p>I thought this would be a great time to investigate <em>why</em> the font was so large and I hoped it would give me an opportunity to try an optimization I was curious about.</p>
 <hr />
-<h2 id="subsetting">Subsetting</h2>
+<h2 id="subsetting-case-study-66-improvement">Subsetting Case Study: 66% Improvement</h2>
 <p>The optimization I was interested in was <em>Font Subsetting</em>. This is just the process of taking each <em>glyph</em> (or character) in the font and removing the ones you don't need.</p>
 <p>The font contained 421 glyphs and I was pretty sure I didn't need them all.</p>
 <p>I loaded the font into <a href="http://fontforge.github.io">FontForge</a><a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a> and thought about my use case: I was only going to be using the font to write title-sized/display content in English, with the additional potential for very basic English punctuation. Knowing this, I got rid of everything that wasn't an English-language alphanumeric or basic English punctuation.</p>

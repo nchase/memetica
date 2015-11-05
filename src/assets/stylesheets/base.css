@@ -296,16 +296,15 @@ hr {
 .region--frame {
   min-height: 100%; }
 
-.col {
-  padding: 0 1em; }
-  @media (min-width: 64em) {
-    .col {
-      width: 50%;
-      vertical-align: top; } }
-  @media (min-width: 90em) {
-    .col {
-      margin-left: 0;
-      width: 50%; } }
+@media (min-width: 64em) {
+  .col {
+    padding: 0 1em;
+    width: 50%;
+    vertical-align: top; } }
+@media (min-width: 90em) {
+  .col {
+    margin-left: 0;
+    width: 50%; } }
 
 .col:only-child {
   width: 100%; }

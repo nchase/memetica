@@ -1,0 +1,25 @@
+@charset "UTF-8";
+@font-face {
+  src: url('../fonts/calluna-sans.otf');
+  font-family: 'Calluna Sans'; }
+
+.region--frame {
+  color: #2E303A;
+  font-family: Georgia, serif; }
+
+h1 {
+  font-family: 'Calluna Sans'; }
+
+hr {
+  margin: 1.5em 0; }
+
+hr:before {
+  content: '❧';
+  font-family: 'Arial Unicode MS', 'Zapf Dingbats'; }
+
+.region--frame--singlet hr {
+  margin: 0 0 1.5em; }
+
+a {
+  color: #ad141e; }
+

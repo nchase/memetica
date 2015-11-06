@@ -4,17 +4,18 @@
 
   ---
 
-  ## America is being ravaged by heroin and heroin-like prescription drugs that affect us through the mechanism of addiction.  Simultaneously, the notion of the "Attention Economy" has driven businesses to create addictive experiences.
+  ## America is being ravaged by heroin and heroin-like prescription drugs. The reverberations of addiction are waves that corrode societies and poison entire regions, sometimes more multiple generations, pulling downward with riptide gravity. Simultaneously, the notion of the "Attention Economy" has driven businesses to create addictive experiences, corrosive in their own way.
 
-  Addiction is incredibly complex. It's like a horse of physiological
+  Addiction is incredibly complex. It's a horse of physiological
   mechanisms tied to a cart full of memories and personality traits that
-  chain themselves together to produce psychological triggers.
+  chain themselves together to produce the psychological triggers
+  that catalyze what we define as addiction.
 
 
   Neuroscience researcher Marc Lewis argues that this complex relationship
   makes addiction less a disease than a behavioral problem where addiction
   is powerfully affected by environment and cognition.[^1] In fact, he says,
-  _Addiction shouldn't be considered a disease at all_.
+  Addiction shouldn't be considered a disease at all.
 
   This could be dismissed as maverick ideation or crackpot theorizing
   if it wasn't in harmony with an extensive study conducted on

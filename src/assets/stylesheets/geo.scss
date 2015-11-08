@@ -53,10 +53,11 @@
   display: block;
 }
 
-.decorator--header-icon svg {
+.decorator--header-icon-structure {
+  fill: none;
   @include box($animationSpeed: 2000ms);
 }
 
-.decorator--header-icon svg use {
+.decorator--header-icon-structure-data {
   display: none;
 }

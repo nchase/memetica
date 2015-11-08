@@ -1,6 +1,6 @@
 @mixin box(
   $position: static,
-  $animate: true,
+  $animation: rota,
   $animationSpeed: 1000ms,
   $size: 100px,
   $color: #fff
@@ -18,12 +18,21 @@
   width: $size;
   height: $size;
   box-shadow: inset 0 0 0 1px $color;
-  animation: rota $animationSpeed infinite;
+  animation: $animation $animationSpeed;
+  animation-iteration-count: 30;
 }
 
 @keyframes rota {
   to {
     transform: rotate(0.5turn);
+  }
+}
+
+
+@keyframes rota--frame {
+  to {
+    transform: rotate(0.5turn) scale(0.75);
+    opacity: 0;
   }
 }
 
@@ -37,7 +46,9 @@
 .region--frame-inner {
   &:before {
     content: '';
-    @include box($position: fixed, $animationSpeed: 6000ms, $size: 25vw, $color: hsla(0, 0, 100%, 0.15));
+    @include box($position: fixed, $animation: rota--frame, $animationSpeed: 1250ms, $size: 33vw);
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
   }
 }
 

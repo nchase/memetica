@@ -101,6 +101,12 @@ iframe, .region--frame {
     vertical-align: middle;
     margin-right: 4em; } }
 
+.decorator--header-icon-svg {
+  fill: currentColor; }
+
+.decorator--header-icon-svg--goat {
+  width: 100px; }
+
 .decorator--header-text {
   margin-bottom: 0;
   white-space: normal; }

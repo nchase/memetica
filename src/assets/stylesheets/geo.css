@@ -37,7 +37,8 @@
 .decorator--header-text {
   display: block; }
 
-.decorator--header-icon svg {
+.decorator--header-icon-structure {
+  fill: none;
   position: static;
   width: 100px;
   height: 100px;
@@ -45,6 +46,6 @@
   -webkit-animation: rota 2000ms infinite;
           animation: rota 2000ms infinite; }
 
-.decorator--header-icon svg use {
+.decorator--header-icon-structure-data {
   display: none; }
 

@@ -1,0 +1,34 @@
+.region--frame {
+  color: #fff;
+  background-color: #000;
+}
+
+.decorator--header-pageTitleContainer {
+  margin: 0 3em;
+}
+
+.decorator--header-icon {
+  display: block;
+  margin: 3em 0;
+}
+.decorator--header-text {
+  display: block;
+}
+
+.decorator--header-icon svg {
+  fill: currentColor;
+  width: 100px;
+  box-shadow: inset 0 0 0 1px currentColor;
+  height: 100px;
+  animation: rota 1000ms infinite;
+}
+
+.decorator--header-icon svg use {
+  display: none;
+}
+
+@keyframes rota {
+  to {
+    transform: rotate(0.5turn);
+  }
+}

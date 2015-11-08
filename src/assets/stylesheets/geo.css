@@ -1,6 +1,31 @@
+@-webkit-keyframes rota {
+  to {
+    -webkit-transform: rotate(0.5turn);
+            transform: rotate(0.5turn); } }
+
+@keyframes rota {
+  to {
+    -webkit-transform: rotate(0.5turn);
+            transform: rotate(0.5turn); } }
+
+/* --- the rest: --- */
 .region--frame {
   color: #fff;
   background-color: #000; }
+
+.region--frame-inner:before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 25vw;
+  height: 25vw;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15);
+  -webkit-animation: rota 6000ms infinite;
+          animation: rota 6000ms infinite; }
 
 .decorator--header-pageTitleContainer {
   margin: 0 3em; }
@@ -13,23 +38,13 @@
   display: block; }
 
 .decorator--header-icon svg {
-  fill: currentColor;
+  position: static;
   width: 100px;
-  box-shadow: inset 0 0 0 1px #fff;
   height: 100px;
-  -webkit-animation: rota 1000ms infinite;
-          animation: rota 1000ms infinite; }
+  box-shadow: inset 0 0 0 1px #fff;
+  -webkit-animation: rota 2000ms infinite;
+          animation: rota 2000ms infinite; }
 
 .decorator--header-icon svg use {
   display: none; }
-
-@-webkit-keyframes rota {
-  to {
-    -webkit-transform: rotate(0.5turn);
-            transform: rotate(0.5turn); } }
-
-@keyframes rota {
-  to {
-    -webkit-transform: rotate(0.5turn);
-            transform: rotate(0.5turn); } }
 

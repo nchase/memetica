@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   if (!cookieValue) {
-    cookieValue = 'src/assets/stylesheets/geo';
+    cookieValue = 'src/assets/stylesheets/dinn';
   }
 
   var evt = new Event('change');

@@ -1,0 +1,86 @@
+@mixin box(
+  $content: null,
+  $position: static,
+  $animation: rota,
+  $animationSpeed: 1000ms,
+  $size: 100px,
+  $color: #000
+) {
+  position: $position;
+
+  width: $size;
+  height: $size;
+  box-shadow: inset 0 0 0 1px $color;
+  animation: $animation $animationSpeed;
+  animation-iteration-count: 30;
+  animation-fill-mode: forwards;
+
+  @if $content {
+    width: auto;
+    height: auto;
+    box-shadow: none;
+
+    &:before {
+      @extend .u-absolute;
+      content: $content;
+      font-size: 100px;
+      color: #fff;
+      text-shadow: 0 1px 2px #191919;
+      animation: inherit;
+      animation-fill-mode: forwards;
+      animation-iteration-count: 1;
+    }
+  }
+
+  @if $position == "fixed" {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+}
+
+@keyframes rota {
+  from {
+    text-shadow: 0 1px;
+  }
+}
+
+/* --- the rest: --- */
+
+.region--frame {
+  color: #2f2f2f;
+}
+
+.decorator--header-pageTitleContainer {
+  margin: 0 3em;
+}
+
+.decorator--header-icon {
+  display: block;
+  margin: 3em 0;
+}
+.decorator--header-text {
+  display: block;
+}
+
+.decorator--header-icon-svg {
+  display: none;
+}
+.decorator--header-icon-div {
+  display: block;
+  @include box($content: '§', $animationSpeed: 2000ms);
+}
+
+.decorator--header-icon-structure-data {
+  display: none;
+}
+
+hr {
+  text-shadow: 0 1px 2px hsla(0, 0%, 0%, 0.5);
+}
+
+.decorator-break {
+  color: #2f2f2f;
+}

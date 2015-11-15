@@ -50,6 +50,7 @@
 /* --- the rest: --- */
 
 .region--frame {
+  color: #2f2f2f;
 }
 
 .decorator--header-pageTitleContainer {
@@ -74,4 +75,12 @@
 
 .decorator--header-icon-structure-data {
   display: none;
+}
+
+hr {
+  text-shadow: 0 1px 2px hsla(0, 0%, 0%, 0.5);
+}
+
+.decorator-break {
+  color: #2f2f2f;
 }

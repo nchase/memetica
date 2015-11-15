@@ -45,6 +45,7 @@ content = execSync(
 process.stdout.write(ejs.render(layout, {
   data: {
     styles: [
+      'dinn',
       'geo',
       'robots',
       'wild',

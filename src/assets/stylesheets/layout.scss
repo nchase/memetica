@@ -132,6 +132,10 @@ iframe,
   width: 100px;
 }
 
+.decorator--header-icon-div {
+  display: none;
+}
+
 .decorator--header-text {
   margin-bottom: 0;
   white-space: normal;
@@ -156,6 +160,7 @@ iframe,
   font-size: 0.8em;
   font-family: inherit;
   color: currentColor;
+  text-shadow: inherit;
   background-color: inherit;
   border: 1px solid currentColor;
 

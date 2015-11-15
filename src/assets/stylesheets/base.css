@@ -2,7 +2,7 @@
 * {
   box-sizing: border-box;
   -webkit-transition: inherit;
-          transition: inherit; }
+  transition: inherit; }
 
 html {
   height: 100%; }
@@ -31,7 +31,9 @@ iframe, .region--frame {
   padding: 1em;
   background-color: inherit;
   -webkit-transition: -webkit-transform 200ms;
-          transition: transform 200ms;
+  transition: -webkit-transform 200ms;
+  transition: transform 200ms;
+  transition: transform 200ms, -webkit-transform 200ms;
   cursor: pointer;
   opacity: 0.8; }
   .context:before, .context:after {
@@ -45,7 +47,7 @@ iframe, .region--frame {
     height: 1rem;
     background-color: currentColor;
     -webkit-transition: width 200ms, border-color 200ms;
-            transition: width 200ms, border-color 200ms;
+    transition: width 200ms, border-color 200ms;
     border-bottom: 3rem solid transparent; }
   .context:after {
     z-index: -1;
@@ -154,7 +156,7 @@ iframe, .region--frame {
   padding: 1em 1em 0;
   overflow: scroll;
   -webkit-transition-property: background-color;
-          transition-property: background-color;
+  transition-property: background-color;
   -webkit-transition-duration: 300ms;
           transition-duration: 300ms; }
 
@@ -190,7 +192,7 @@ iframe, .region--frame {
     font-size,
     width,
     min-width;
-          transition-property: color,
+  transition-property: color,
     background-color,
     text-shadow,
     font-size,

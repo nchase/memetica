@@ -60,7 +60,7 @@
   background-color: inherit;
   border: 0.1em solid currentColor;
   -webkit-transition: none;
-          transition: none; }
+  transition: none; }
 
 .medium-editor-toolbar ul, .medium-editor-anchor-preview ul {
   margin: 0;
@@ -80,7 +80,9 @@
   background-color: transparent;
   border: none;
   -webkit-transition: -webkit-transform 100ms;
-          transition: transform 100ms; }
+  transition: -webkit-transform 100ms;
+  transition: transform 100ms;
+  transition: transform 100ms, -webkit-transform 100ms; }
   .medium-editor-toolbar li button:hover, .medium-editor-anchor-preview li button:hover {
     -webkit-transform: translateY(0.25em);
         -ms-transform: translateY(0.25em);

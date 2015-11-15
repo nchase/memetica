@@ -59,31 +59,36 @@
 
   If we remove all of the kitschy, shitty parts of Twin Peaks _the show_
   and combine it with Fire Walk With Me _the movie_, we're left with something
-  powerful that casts a long shadow on stuff like the _Survival Horror_
-  video game genre (, early entries in the _Silent Hill_ series in particular),
-  with scenes that are the closest thing to a complete nightmare that I've
-  ever seen. Furthermore, this combination of things crosses the
-  television-film divide with a high level of grace and consistency. But in
-  doing this — in stripping the 'junk food' segments out of Twin Peaks — we lose
-  a lot of personality and emotion. Twin Peaks becomes timeless but it also
-  becomes stark and, frankly, more boring. It becomes reference material.
-  It ceases to be enjoyable for the million different little stupid reasons
-  that kept you watching it in the first place. In this exercise,
-  it ceases to be television.
+  powerful that casts a long shadow on early entries in the _Silent Hill_
+  series in the  _Survival Horror_ video game genre - all are stunningly-realized
+  depictions of complete nightmare scenarios.
+
+  ---
+
+  In Twin Peaks, these terror-bound properties cross the television-film divide with a
+  high level of grace and consistency. But in stripping the 'junk food'
+  segments out of the show we lose a lot of its personality and emotion.
+  In trope reduction, Twin Peaks is made timeless and more accessible, but it
+  also becomes stark and, frankly, more boring.  It becomes excellent
+  reference material but it ceases to be television.
 
   ---
 
   If we combine the TV/film _Twin Peaks_ and leave all of the content intact,
   however, we end up with a fascinating composite work that demonstrates
   a key feature of most things that David Lynch gets credit for.
-  It reaches into itself and each of the individual works that it contains,
+  It's weird, it's scary, it's fun, it's _in-place_, and it reaches into itself
   to perform Lynch's plot mutation trick, identified above.
 
-  Here are some places where you can find it:
+  Here are some places where you can find the trick:
 
-  1. the point in _Fire Walk With Me_ referenced earlier,
+  1. Midway through _Fire Walk With Me_,
   2. the show, when the plot starts to go awry,
-  3. the connecting point between the film and the television show.
+  3. the point in the plot's trajectory that connects the film and the show.
+
+---
+
+![](http://cloud.ahfr.org/7277ad9b42da5df1a9ae.jpg)
 
 ---
 
@@ -98,7 +103,7 @@ The role may have been the high point of the actor's professional life.
 Coming in three years after the movie, this death, though sad, cannot possibly
 be considered significant, eerie, or 'oddly coincidental', no - but it is near
 enough to true significance to serve as a metaphor for what the end of the
-series represents to me: the death of a unique thing on television.
+series represents to me.
 
 
 [^1]:[Anatomy of a Fascinating Disaster: Fire Walk With Me](http://www.grantland.com/story/_/id/8311326/twenty-things-david-lynch-fire-walk-its-20th-anniversary)

@@ -335,6 +335,12 @@ hr {
   margin: 2em 0 3em;
 }
 
+.col + hr + figure + hr,
+.col + hr + .figure + hr {
+  margin-top: 1em;
+  margin-bottom: 3em;
+}
+
 .footnotes {
   width: 100%;
   font-size: 0.9em;
@@ -410,6 +416,15 @@ img {
   background-size: cover;
 }
 
+figure,
+.figure {
+  margin: auto;
+}
+
+.col + hr + figure,
+.col + hr + .figure {
+  margin: 1em auto;
+}
 
 @media (min-width: 90em) {
   .img--positioned {

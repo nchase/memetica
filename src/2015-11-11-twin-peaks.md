@@ -25,7 +25,7 @@
   spread out over two seasons and nearly 25 hours or even _Northern Exposure_
   passed through a _Silent Hill_ filter.
 
-  ![Twin Peaks: The Red Room][opener]
+  ![](http://cloud.ahfr.org/images/a59aeeb7b7683ac973a373fb92439a6f_o.jpg)
 
 |||
 
@@ -104,5 +104,3 @@ series represents to me: the death of a unique thing on television.
 [^1]:[Anatomy of a Fascinating Disaster: Fire Walk With Me](http://www.grantland.com/story/_/id/8311326/twenty-things-david-lynch-fire-walk-its-20th-anniversary)
 
 [^2]:From [Wikipedia](http://en.wikipedia.org/wiki/Killer_BOB#Conceptual_history):
-
-[opener]: http://cloud.ahfr.org/images/a59aeeb7b7683ac973a373fb92439a6f_o.jpg

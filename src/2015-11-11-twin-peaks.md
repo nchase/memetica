@@ -97,8 +97,8 @@ three years after the release of _Fire Walk With Me_. His role on Twin Peaks
 was not planned. In fact, the character was conceived completely off-the-cuff;
 the idea for the role was prompted by a fortunate mistake[^2].
 
-Happenstance as it may have been, BOB is an unforgettable and iconic character.
-The role may have been the high point of the actor's professional life.
+This mistake resulted in an unforgettable and iconic character and perhaps
+the high point of the actor's professional life.
 
 Coming in three years after the movie, this death, though sad, cannot possibly
 be considered significant, eerie, or 'oddly coincidental', no - but it is near

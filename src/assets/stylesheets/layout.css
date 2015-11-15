@@ -91,11 +91,7 @@ iframe, .region--frame {
     content: '' !important; }
 
 .decorator--header {
-  margin-top: 5em;
   margin-bottom: 1em; }
-  @media (min-width: 55em) {
-    .decorator--header {
-      margin-top: 0; } }
 
 @media (min-width: 30em) {
   .decorator--header-icon {

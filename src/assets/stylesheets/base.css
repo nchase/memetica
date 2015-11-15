@@ -109,6 +109,9 @@ iframe, .region--frame {
 .decorator--header-icon-svg--goat {
   width: 100px; }
 
+.decorator--header-icon-div {
+  display: none; }
+
 .decorator--header-text {
   margin-bottom: 0;
   white-space: normal; }
@@ -129,6 +132,7 @@ iframe, .region--frame {
   font-size: 0.8em;
   font-family: inherit;
   color: currentColor;
+  text-shadow: inherit;
   background-color: inherit;
   border: 1px solid currentColor; }
   .decorator--footer-input:focus {
@@ -288,6 +292,10 @@ hr {
 .col + hr {
   margin: 2em 0 3em; }
 
+.col + hr + figure + hr, .col + hr + .figure + hr {
+  margin-top: 1em;
+  margin-bottom: 3em; }
+
 .footnotes {
   width: 100%;
   font-size: 0.9em; }
@@ -345,6 +353,12 @@ hr {
   max-width: 100%;
   background-repeat: no-repeat;
   background-size: cover; }
+
+figure, .figure {
+  margin: auto; }
+
+.col + hr + figure, .col + hr + .figure {
+  margin: 1em auto; }
 
 @media (min-width: 90em) {
   .img--positioned {

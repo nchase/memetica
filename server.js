@@ -67,7 +67,7 @@ function serveIndex(request, response) {
     header: header,
     footer: footer,
     frameContent: frameContent,
-    published: true,
+    published: request.query.published,
     requestStyle: request.query.style || request.cookies.style
   });
 }

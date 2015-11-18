@@ -21,8 +21,8 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   if (!cookieValue) {
-    cookieValue = document.cookie.match(/style=(.+);?/) &&
-      document.cookie.match(/style=(.+);?/)[1];
+    cookieValue = document.cookie.match(/style=(.[^;]+);?/) &&
+      document.cookie.match(/style=(.[^;]+);?/)[1];
   }
 
   if (!cookieValue) {

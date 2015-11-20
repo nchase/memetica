@@ -11,6 +11,11 @@
 
 h1 {
   font-family: 'Calluna Sans';
+  border-bottom: 2px solid currentColor;
+}
+
+.decorator--header-text {
+  border-bottom-width: 0;
 }
 
 hr {

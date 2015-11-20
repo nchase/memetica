@@ -8,7 +8,11 @@
   font-family: Georgia, serif; }
 
 h1 {
-  font-family: 'Calluna Sans'; }
+  font-family: 'Calluna Sans';
+  border-bottom: 2px solid currentColor; }
+
+.decorator--header-text {
+  border-bottom-width: 0; }
 
 hr {
   margin: 1.5em 0; }

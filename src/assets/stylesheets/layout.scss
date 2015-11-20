@@ -134,6 +134,7 @@ iframe,
 .decorator--header-text {
   margin-bottom: 0;
   white-space: normal;
+  border-bottom-width: 0;
 
   @media (min-width: 30em) {
     display: inline-block;
@@ -256,6 +257,7 @@ h2 {
 h1 {
   margin-bottom: 0.5em;
   font-size: 2.75em;
+  border-bottom: 2px solid currentColor;
 
   @media (min-width: 60em) {
     font-size: 3em;

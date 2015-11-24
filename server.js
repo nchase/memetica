@@ -42,6 +42,7 @@ app.get(/\/([^\s]+.(?:md|html))?$/, function(request, response) {
     frame: frame,
     frameContent: frameContent,
     published: true,
+    notrack: true,
     requestStyle: request.query.style || request.cookies.style
   });
 });
@@ -68,6 +69,7 @@ function serveIndex(request, response) {
     footer: footer,
     frameContent: frameContent,
     published: true,
+    notrack: true,
     requestStyle: request.query.style || request.cookies.style
   });
 }

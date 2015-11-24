@@ -41,7 +41,7 @@ app.get(/\/([^\s]+.(?:md|html))?$/, function(request, response) {
     footer: '',
     frame: frame,
     frameContent: frameContent,
-    published: request.query.published,
+    published: true,
     requestStyle: request.query.style || request.cookies.style
   });
 });
@@ -67,7 +67,7 @@ function serveIndex(request, response) {
     header: header,
     footer: footer,
     frameContent: frameContent,
-    published: request.query.published,
+    published: true,
     requestStyle: request.query.style || request.cookies.style
   });
 }

@@ -11,5 +11,3 @@
 [Time](2015-09-27-time.md)
 
 [Inattention At Scale](001.md)
-
-[Moss & Steel [demo].](demo.md)

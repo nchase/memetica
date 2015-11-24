@@ -73,6 +73,8 @@ Here are some scenarios where I'd consider more systemic thinking about CSS:
   based on those examples]
 * You can discuss your way to the rules for the system with someone who owns or
   pushes the aesthetic for the system
+* You know that CSS is weird, but that there's a reason for everything.[^2]
 * None of the above apply, but your CSS is still driving you crazy.
 
 [^1]: [Axiomatic CSS and Lobotomized Owls, Heydon Pickering](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls)
+[^2]: [https://github.com/nchase/css](https://github.com/nchase/css)

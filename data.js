@@ -8,7 +8,7 @@ module.exports = {
     'robots',
     'wild',
     'brushup',
-    'grid',
+    'grid-violet-starling',
     'steel_moss',
     'bauhaus',
     'frontage',

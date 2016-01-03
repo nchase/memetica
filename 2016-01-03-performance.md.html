@@ -10,7 +10,7 @@
     <title>-</title>
   </head>
 
-  <body class="region--frame region--frame--src_index_md region--frame--singlet">
+  <body class="region--frame region--frame--src_2016-01-03-performance_md region--frame--singlet">
     <svg style="display: none">
       <symbol viewBox="0 0 1024 1024" id="octoface">
         <path d="M940.812 277.688c8.25-20.219 35.375-101.75-8.562-211.906 0 0-67.375-21.312-219.875 82.906C648.5 131.125 579.875 128.5 512 128.5c-67.906 0-136.438 2.625-200.5 20.25C159.031 44.46900000000005 91.719 65.78099999999995 91.719 65.78099999999995 47.812 176 74.938 257.46900000000005 83.188 277.688 31.5 333.562 0 404.875 0 492.344 0 821.562 213.25 896 510.844 896 808.562 896 1024 821.562 1024 492.344 1024 404.875 992.5 333.562 940.812 277.688zM512 833c-211.406 0-382.781-9.875-382.781-214.688 0-48.938 24.062-94.595 65.344-132.312 68.75-62.969 185.281-29.688 317.438-29.688 132.25 0 248.625-33.281 317.438 29.625 41.312 37.78 65.438 83.312 65.438 132.312C894.875 823.125 723.375 833 512 833zM351.156 512.438c-42.469 0-76.906 51.062-76.906 114.188s34.438 114.312 76.906 114.312c42.375 0 76.812-51.188 76.812-114.312S393.531 512.438 351.156 512.438zM672.875 512.438C630.5 512.438 596 563.5 596 626.625s34.5 114.312 76.875 114.312 76.812-51.188 76.812-114.312C749.75 563.5 715.312 512.438 672.875 512.438z" />
@@ -22,75 +22,22 @@
     <div
           >
       <div class="region--frame-inner">
-        <div class="decorator decorator--header">
-  <p>
-    Noah Chase is a software engineer who lives and works
-    outside of DC in Silver Spring, Maryland.
-    <a href="/about.md.html">About Me</a>
-  </p>
-
-  <hr class="decorator-break" />
-
-  <div class="decorator--header-pageTitleContainer">
-    <div class="decorator--header-icon">
-      <div class="decorator--header-icon-structure decorator--header-icon-div">
-      </div>
-      <svg class="decorator--header-icon-structure decorator--header-icon-svg decorator--header-icon-svg--goat">
-        <use "decorator--header-icon-structure-data" xlink:href="#goat"></use>
-      </svg>
-    </div>
-
-    <h1 class="decorator--header-text">
-      Essays &amp; Articles
-    </h1>
-  </div>
-
-  <hr class="decorator-break" />
-</div>
-
-        <p><a href="2016-01-03-performance.md.html">Performance</a></p>
-<p><a href="2015-11-23-axiomatic-css.md.html">Axiomatic CSS</a></p>
-<p><a href="2015-11-11-twin-peaks.md.html">Twin Peaks</a></p>
-<p><a href="2015-11-04-fonts.md.html">Font Subsetting</a></p>
-<p><a href="2015-11-02-grids.md.html">Grids</a></p>
-<p><a href="2015-10-11-addiction.md.html">Addiction</a></p>
-<p><a href="2015-09-27-time.md.html">Time</a></p>
-<p><a href="001.md.html">Inattention At Scale</a></p>
-        <div class="decorator decorator--footer">
-  <hr class="decorator-break" />
-  <form
-    action="https://tinyletter.com/nchase"
-    method="post"
-    target="popupwindow"
-    onsubmit="window.open('https://tinyletter.com/nchase', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"
-  >
-    <input type="hidden" value="1" name="embed" />
-    <label
-      for="emailList"
-      class="decorator--footer-label"
-    >
-      Subscribe for email updates:
-    </label>
-    <input
-      name="email"
-      type="text"
-      placeholder="Email Address"
-      class="decorator--footer-input decorator--footer--inputText"
-      id="emailList"
-    />
-    <button
-      type="submit"
-      class="decorator--footer-input decorator--footer-inputSubmit"
-      value="Subscribe"
-    >
-      Subscribe
-    </button>
-    <small>
-      I do not abuse email.
-    </small>
-  </form>
-</div>
-      </div>
+                <h1 id="website-performance">Website Performance</h1>
+<p>Performance and page speed are critically important and criminally ignored.</p>
+<p>John Allsopp's recent <a href="http://idlewords.com/talks/website_obesity.htm">'Website Obesity' talk</a> reminds us of this painful fact.</p>
+<hr />
+<p>Here are some facts about the webpage you're viewing:</p>
+<ul>
+<li>Content, CSS, and JS — with the exception of Google Analytics — are roughly 30KB combined, before minification. This is pretty fast for a contemporary website.</li>
+<li>The webpage loads and draws pretty much instantaneously.</li>
+<li>I thought long and hard before putting the Google Analytics script on the page. [and if anyone knows something smaller and faster than Google Analytics for simple pageview tracking, I am all ears.]</li>
+<li>There are some heavier fonts, but through <a href="/2015-11-04-fonts.md">Font Subsetting</a>, I have reduced the over-network weight of those to be reasonably small as well.</li>
+<li>I have a number of transformations that I use to take the content [written in markdown] and 'publish' it, but I don't force those on visitors' devices. As a visitor, you just get the content that you are expecting to read and the styling that makes it look decent.</li>
+<li>The CSS was written to be very much &quot;themeable&quot;. Unique &quot;themes&quot; are each a couple of hundred bytes of unminified CSS.</li>
+</ul>
+<hr />
+<p>If you are interested in the code behind this site, <a href="https://github.com/nchase/memetica/">it is on GitHub</a>.</p>
+              </div>
     </div>
     <div class="context has-toggle">
       <a href="./">Home</a>

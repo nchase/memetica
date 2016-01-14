@@ -65,10 +65,9 @@ Ulbricht.
 
 The investigator was given the following quotation on a plaque:
 
-> _“The world is full of obvious things which nobody by chance ever observes.”_
-
-This quote was penned by Arthur Conan Doyle, attributed to his _Sherlock Holmes_.
+> _“The world is full of obvious things which nobody by chance ever observes.”_[^4]
 
 [^1]: Per rule three, magic that isn't-quite-magic may as well be magic.
 [^2]: [Rules of Optimization, C2 Wiki](http://c2.com/cgi/wiki?RulesOfOptimization)
 [^3]: [The Tax Sleuth Who Took Down a Drug Lord, NYTimes](http://www.nytimes.com/2015/12/27/business/dealbook/the-unsung-tax-agent-who-put-a-face-on-the-silk-road.html)
+[^4]: This quote was penned not by _Arthur C. Clarke_, but by _Arthur Conan Doyle_, another well-known British author. The quote is attributed to his _Sherlock Holmes_.

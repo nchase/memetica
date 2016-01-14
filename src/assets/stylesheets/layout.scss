@@ -292,6 +292,11 @@ p, ol, ul {
   width: 100%;
 }
 
+blockquote ol,
+blockquote ul {
+  margin: 1em 0;
+}
+
 li {
   margin-bottom: 0.5em;
 }

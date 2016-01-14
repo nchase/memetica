@@ -21,6 +21,9 @@ hr:before {
   color: #ad141e;
   font-family: 'Arial Unicode MS', 'Zapf Dingbats'; }
 
+blockquote {
+  border-color: #ad141e; }
+
 .region--frame--singlet hr {
   margin: 0 0 1.5em; }
 

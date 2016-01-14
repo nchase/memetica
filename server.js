@@ -36,7 +36,7 @@ app.get(/\/([^\s]+.(?:md|html))?$/, function(request, response) {
   response.render('layout', {
     bodyClass: `region--frame region--frame--${ frame.replace(/[^_a-zA-Z0-9-]+/g, '_')} ${singleColumn ? 'region--frame--singlet' : ''}`,
     data: data,
-    prefix: process.env.prefix || '/src/',
+    prefix: process.env.prefix || 'src/',
     header: '',
     footer: '',
     frame: frame,
@@ -64,7 +64,7 @@ function serveIndex(request, response) {
   response.render('layout', {
     bodyClass: `region--frame region--frame--${ frame.replace(/[^_a-zA-Z0-9-]+/g, '_')} ${singleColumn ? 'region--frame--singlet' : ''}`,
     data: data,
-    prefix: process.env.prefix || '/src/',
+    prefix: process.env.prefix || 'src/',
     header: header,
     footer: footer,
     frameContent: frameContent,

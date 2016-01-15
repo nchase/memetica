@@ -68,7 +68,11 @@ The investigator was given the following quotation on a plaque:
 > _“The world is full of obvious things which nobody by chance ever observes.”_
 
 This quote was penned not by _Arthur C. Clarke_, but by _Arthur Conan Doyle_,
-another well-known British author. The quote is attributed to his _Sherlock Holmes_.
+another acclaimed British author. The quote is attributed to his legendary
+problem-solving character _Sherlock Holmes_.
+
+What approach would Sherlock Holmes take to solving performance problems
+on the web?
 
 [^1]: Per rule three, magic-that-isn't-quite-magic may as well be magic.
 [^2]: [Rules of Optimization, C2 Wiki](http://c2.com/cgi/wiki?RulesOfOptimization)

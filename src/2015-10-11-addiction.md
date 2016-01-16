@@ -162,7 +162,7 @@ addicted Vietnam veterans?
 
 ---
 
-## Housekeeping, Flesh-Eating Prions
+## Housekeeping, Brain-Eating Prions
 
 Prions are replicating proteins that are best known for causing fatal brain
 infections such as _Mad Cow disease_ and the devastating lesser-known

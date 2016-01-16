@@ -136,6 +136,39 @@ who we really are as we learn more about how humanity functions.
 If you put forth the effort to do this, you might just become a better person.
 And maybe you'll help someone else along the way too.
 
+---
+
+## Neurons and Synapses
+
+Neuroscientists say _"the neurons that fire together, wire together"_. This
+phrase explains the strengthening of the signals that fire between
+neurons, enabling messaging throughout the neurocognitive complex known
+as the nervous system.[^8]
+
+Some of the signalling done through this system is for message and receipients
+that are _infra perceptio_, in low-level mechanisms that serve as 'dumb' transports,
+much like how  your pizza happens to be delivered to your home via the same
+system of roads as your friends who are coming to visit you, though neither
+is related (one is food and has cheese on it, the other is friend and can
+experience emotion, this space ripe for jokes). As our experiences are
+transformed and routed through this system, we take on synaptic strengthening
+(or weakening) which leads to what we think of as _addiction_ to an entire
+spectrum of behaviors, good, bad, and neutral.
+
+But what, if anything, does this have to do with the controversial notion
+that addiction is tied to environment, as demonstrated by the studies of
+addicted Vietnam veterans?
+
+
+---
+
+## Housekeeping, Brain-Eating Prions
+
+Prions are replicating proteins that are best known for causing fatal brain
+infections such as _Mad Cow disease_ and the devastating lesser-known
+_Creutzfeldt–Jakob disease_, which is found more commonly in humans than MCD.[^10]
+But there's also evidence that prion-like proteins have a positive function,
+wherein they maintain long-term memory in the brain.
 
 
 [^1]: [Festival of Dangerous Ideas 2015 - Marc Lewis: the neuroscientist who believes addiction is not a disease](http://www.theguardian.com/culture/2015/aug/30/marc-lewis-the-neuroscientist-who-believes-addiction-is-not-a-disease)
@@ -145,3 +178,6 @@ And maybe you'll help someone else along the way too.
 [^5]: [Priceonomics - DARE: The Anti-Drug Program That Never Actually Worked](http://priceonomics.com/dare-the-anti-drug-program-that-never-actually/)
 [^6]: [Barack Obama on Twitter: "Heroin-related deaths nearly quadrupled between 2002 and 2013."](https://twitter.com/POTUS/status/656891501520130048)
 [^7]: A drug called Naloxone has been around since 1961. It's cheap and the World Health Organization lists it as one of the most important medications needed in a basic health system. The drug reverses opiate overdoses.
+[^8]: [Long-Term Potentiation, Wikipedia](https://en.wikipedia.org/wiki/Long-term_potentiation)
+[^9]: Another way to think of this is like how bird wings and bee wings both offer flight, but are of completely different construction and evolved completely separately.
+[^10]: [Prions, Wikipedia](https://en.wikipedia.org/wiki/Prion)

@@ -80,6 +80,7 @@
       id="emailList"
     />
     <button
+      id="newsletterSignup"
       type="submit"
       class="decorator--footer-input decorator--footer-inputSubmit"
       value="Subscribe"
@@ -163,6 +164,15 @@
 
         ga('create', 'UA-57092-19', 'auto');
         ga('send', 'pageview');
+
+        document.getElementById('newsletterSignup').addEventListener('click', function(event) {
+          ga('send', {
+            hitType: 'event',
+            eventAction: 'newsletterSignup',
+            eventLabel: document.getElementById('emailList').value,
+            eventValue: '10'
+          });
+        });
       </script>
     
   </body>

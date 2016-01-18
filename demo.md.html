@@ -134,6 +134,15 @@ So you're probably asking yourself, &quot;what the fuck does some writer with th
 
         ga('create', 'UA-57092-19', 'auto');
         ga('send', 'pageview');
+
+        document.getElementById('newsletterSignup').addEventListener('click', function(event) {
+          ga('send', {
+            hitType: 'event',
+            eventAction: 'newsletterSignup',
+            eventLabel: document.getElementById('emailList').value,
+            eventValue: '10'
+          });
+        });
       </script>
     
   </body>

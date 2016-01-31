@@ -42,11 +42,11 @@ read the HTML by itself?
 I still like Jade and Haml, and I feel very strongly that they deserve their
 popularity[^3]. But I think they are popular in large part because people simply
 don't want to write HTML. This isn't bad in-and-of itself. But when projects
-get complex, reading, authorship, and, perish the thought, debugging can be more
-challenging in a language that compiles to the language that you're actually
+get complex, reading, authorship, and (perish the thought) debugging can be more
+challenging in a language that compiles to the language that you're ultimately
 producing than in the language that is your compile target.
 
-## Features. Is Special Syntax a Feature?
+## Features, Syntax, Artifacts, Thought Experiment, Parting Wisdom
 
 I'm not anti-features. Features like iteration, includes, and arbitrary code
 expression and evaluation in HTML are incredible.[^4] But why bother with a wholly

@@ -1,4 +1,7 @@
 module.exports = {
+  bodyClass: function(options) {
+    return `region--frame region--frame--${ options.frame.replace(/[^_a-zA-Z0-9-]+/g, '_')} ${options.singleColumn ? 'region--frame--singlet' : ''}`;
+  },
   frames: [
     'src/demo.md'
   ],

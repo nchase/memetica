@@ -1,3 +1,5 @@
+[Simplicity: EJS vs Other Templating Languages](2016-01-31-simplicity.md)
+
 [Performance II](2016-01-13-performance-ii.md)
 
 [Performance](2016-01-03-performance.md)

@@ -48,6 +48,7 @@ process.stdout.write(ejs.render(layout, {
     styles: data.styles
   },
   frameContent: content,
+  filename: 'src/src/',
   header: header,
   footer: footer,
   prefix: process.env.prefix || 'src/',

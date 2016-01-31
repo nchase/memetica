@@ -25,7 +25,7 @@
           >
       <div class="region--frame-inner">
                 <h1 id="simplicity-ejs-vs-templating-languages">Simplicity: EJS vs Templating Languages</h1>
-<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD Five years ago I thought <a href="http://haml.info/">Haml</a><a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a> was the coolest thing around. ======= Five years ago I thought Haml<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a> was the coolest thing around. &gt;&gt;&gt;&gt;&gt;&gt;&gt; master When <a href="jade-lang.com/">Jade</a> came out, because I knew Haml, I thought it was great. The root of my happiness about these two stems from the clever succinct syntax - way less text to write and keep track of than HTML.</p>
+<p>Five years ago I thought Haml<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a> was the coolest thing around. When <a href="jade-lang.com/">Jade</a> came out, because I knew Haml, I thought it was great. The root of my happiness about these two stems from the clever succinct syntax - way less text to write and keep track of than HTML.</p>
 <p>I no longer think that templating languages that have succinct syntax are useful. In fact, I don't want any special syntax. I want something-like-HTML that gives me the ability to write code expressions and logic and include other files inside of HTML-like strings.</p>
 <hr />
 <h2 id="tradeoffs-of-succinct-syntax-in-templating">Tradeoffs of Succinct Syntax in Templating</h2>
@@ -34,15 +34,14 @@
 <p>This overhead may be small or non-existent for simple markup structures, but the simple cases are never the problem. And sometimes you <em>do</em> need complex markup to achieve certain layouts or maybe to present information in a way that a machine can read it easily.</p>
 <p>Additionally (though rarely), what about the scenario where your markup needs are poorly-supported by the templating language? Will someone else be able to read the templating language that you wrote as easily as they could potentially read the HTML by itself?</p>
 <hr />
-<p>I still like Jade and Haml, but I think they are popular<a href="#fn3" class="footnoteRef" id="fnref3"><sup>3</sup></a> because people don't want to write HTML. This isn't bad in-and-of itself. But when projects get complex, reading, authorship, and, perish the thought, debugging, can be more challenging in a templating language than in HTML (or something similar to it).</p>
+<p>I still like Jade and Haml, but I think they are popular<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a> because people don't want to write HTML. This isn't bad in-and-of itself. But when projects get complex, reading, authorship, and, perish the thought, debugging, can be more challenging in a templating language than in HTML (or something similar to it).</p>
 <p>I'm not anti-features. I want great features, but I've found that there aren't many features that I need when trying to produce HTML. Features like iteration, includes, and arbitrary code expression and evaluation in HTML is incredible. But why bother with a wholly different syntax that must be understood alongside of the artifact that you're trying to produce?</p>
 <p>Choose your tools wisely.</p>
 <div class="footnotes">
 <hr />
 <ol>
 <li id="fn1"><p><a href="http://haml.info/">Haml</a> is the close cousin and predecessor of Jade. Jade's syntax is borrowed from HAML.<a href="#fnref1">↩</a></p></li>
-<li id="fn2"><p><a href="http://haml.info/">Haml</a> is the close cousin and predecessor of Jade. Jade's syntax is borrowed from HAML.<a href="#fnref2">↩</a></p></li>
-<li id="fn3"><p>Jade is really popular and active <a href="https://github.com/pugjs/jade">on GitHub</a>, with over 10,000 stars. I think this is really awesome, honestly.<a href="#fnref3">↩</a></p></li>
+<li id="fn2"><p>Jade is really popular and active <a href="https://github.com/pugjs/jade">on GitHub</a>, with over 10,000 stars. I think this is really awesome, honestly.<a href="#fnref2">↩</a></p></li>
 </ol>
 </div>
               </div>

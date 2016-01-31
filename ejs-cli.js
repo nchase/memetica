@@ -5,6 +5,7 @@
 var ejs = require('ejs');
 var fs = require('fs');
 var execSync = require('child_process').execSync;
+var data = require('./data.js');
 
 var contentPath = process.argv[2];
 
@@ -44,18 +45,7 @@ content = execSync(
 
 process.stdout.write(ejs.render(layout, {
   data: {
-    styles: [
-      'dinn',
-      'geo',
-      'robots',
-      'wild',
-      'brushup',
-      'grid-violet-starling',
-      'steel_moss',
-      'bauhaus',
-      'frontage',
-      'helveticult'
-    ]
+    styles: data.styles
   },
   frameContent: content,
   header: header,

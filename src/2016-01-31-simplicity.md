@@ -1,10 +1,6 @@
 # Simplicity: EJS vs Templating Languages
 
-<<<<<<< HEAD
-Five years ago I thought [Haml](http://haml.info/)[^1] was the coolest thing around.
-=======
 Five years ago I thought Haml[^1] was the coolest thing around.
->>>>>>> master
 When [Jade](jade-lang.com/) came out, because I knew Haml, I thought it was great.
 The root of my happiness about these two stems from the clever succinct syntax -
 way less text to write and keep track of than HTML.

@@ -13,8 +13,8 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementsByTagName('head')[0].appendChild(styleRelTag);
   }
 
-  var cookieValue = window.location.search.match(/(.*?)=([^\&]*)&?/) &&
-    window.location.search.match(/(.*?)=([^\&]*)&?/)[2];
+  var cookieValue = window.location.search.match(/(.style?)=([^\&]*)&?/) &&
+    window.location.search.match(/(.style?)=([^\&]*)&?/)[2];
 
   if (cookieValue) {
     cookieValue = 'src/assets/stylesheets/' + cookieValue;

@@ -1,6 +1,10 @@
 # Simplicity: EJS vs Templating Languages
 
+<<<<<<< HEAD
 Five years ago I thought [Haml](http://haml.info/)[^1] was the coolest thing around.
+=======
+Five years ago I thought Haml[^1] was the coolest thing around.
+>>>>>>> master
 When [Jade](jade-lang.com/) came out, because I knew Haml, I thought it was great.
 The root of my happiness about these two stems from the clever succinct syntax -
 way less text to write and keep track of than HTML.
@@ -50,7 +54,7 @@ of the artifact that you're trying to produce?
 Choose your tools wisely.
 
 
-[^1]: Haml is the close cousin and predecessor of Jade. Jade's syntax is
+[^1]: [Haml](http://haml.info/) is the close cousin and predecessor of Jade. Jade's syntax is
       borrowed from HAML.
 [^2]: Jade is really popular and active [on GitHub](https://github.com/pugjs/jade),
       with over 10,000 stars. I think this is really awesome, honestly.

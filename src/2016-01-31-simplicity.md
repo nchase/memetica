@@ -1,14 +1,17 @@
 # Simplicity: Syntax in Markup Templating
 
 Five years ago I thought Haml[^1] was the coolest thing around.
-When [Jade](jade-lang.com/) came out, because I knew Haml, I thought it was great.
-The root of my happiness about these two stems from the clever succinct syntax -
-way less text to write and keep track of than HTML.
 
-I no longer think that templating languages that have succinct syntax are useful.
-In fact, I don't want any special syntax. I want something-like-HTML that gives
-me the ability to write code expressions and logic and include other files inside
-of HTML-like strings.
+When [Jade](jade-lang.com/) came out, I thought Jade was great too.
+The core of my happiness around these two languages stems from the clever,
+succinct syntax. There's way less to write than HTML, so the code looks "clean".
+
+---
+
+These days I don't want any special syntax.
+
+These days I just want file includes and normal code for a given language
+alongside and inside of HTML-like strings.[^2]
 
 ---
 
@@ -36,21 +39,35 @@ read the HTML by itself?
 
 ---
 
-I still like Jade and Haml, but I think they are popular[^2] because people don't want
-to write HTML. This isn't bad in-and-of itself. But when projects get complex,
-reading, authorship, and, perish the thought, debugging, can be more
-challenging in a templating language than in HTML (or something similar to it).
+I still like Jade and Haml, and I feel very strongly that they deserve their
+popularity[^3]. But I think they are popular in large part because people simply
+don't want to write HTML. This isn't bad in-and-of itself. But when projects
+get complex, reading, authorship, and, perish the thought, debugging can be more
+challenging in a language that compiles to the language that you're actually
+producing than in the language that is your compile target.
 
-I'm not anti-features. I want great features, but I've found that there aren't
-many features that I need when trying to produce HTML. Features like iteration,
-includes, and arbitrary code expression and evaluation in HTML is incredible.
-But why bother with a wholly different syntax that must be understood alongside
-of the artifact that you're trying to produce?
+## Features. Is Special Syntax a Feature?
 
-Choose your tools wisely.
+I'm not anti-features. Features like iteration, includes, and arbitrary code
+expression and evaluation in HTML are incredible.[^4] But why bother with a wholly
+different syntax that must be understood alongside of the artifact that you're
+trying to produce?
+
+---
+
+In the context of Jade and Haml, maybe you can imagine cases where you have a
+complex, attribute-laden template with necessarily-deep HTML nesting. How many
+levels deep of forced indentation are you willing to travel for your clean
+syntax? And how "clean" is your syntax in this attribute-laden real-world
+scenario?
+
+Choose your tools wisely, choose your level of abstraction from your artifacts
+carefully.
 
 
 [^1]: [Haml](http://haml.info/) is the close cousin and predecessor of Jade. Jade's syntax is
-      borrowed from HAML.
-[^2]: Jade is really popular and active [on GitHub](https://github.com/pugjs/jade),
-      with over 10,000 stars. I think this is really awesome, honestly.
+      borrowed very liberally and explicitly from Haml.
+[^2]: Self-closing tags would be incredible too.
+[^3]: Jade is really popular and active [on GitHub](https://github.com/pugjs/jade)
+      with over 10,000 stars.
+[^4]: How ~~impossible~~ great would it be to have these features in HTML itself?

@@ -7,6 +7,8 @@ var autoprefixer = require('autoprefixer');
 var postcss = require('postcss');
 var bodyParser = require('body-parser');
 var serialize = require('./serialize');
+var data = require('./data');
+
 app.use(bodyParser.text());
 
 app.engine('html', require('ejs').renderFile);
@@ -17,8 +19,6 @@ app.set('views', process.cwd() + '/src/');
 app.locals.require = require;
 
 app.get(/\/([^\s]+.(?:md|html))?$/, function(request, response) {
-  var data = JSON.parse(JSON.stringify(require('./data')));
-
   if (!request.params[0]) {
     return serveIndex(request, response);
   }
@@ -34,7 +34,10 @@ app.get(/\/([^\s]+.(?:md|html))?$/, function(request, response) {
   var singleColumn = frameContent.match(/(\|\|\||<div class="col">)/) === null;
 
   response.render('layout', {
-    bodyClass: `region--frame region--frame--${ frame.replace(/[^_a-zA-Z0-9-]+/g, '_')} ${singleColumn ? 'region--frame--singlet' : ''}`,
+    bodyClass: data.bodyClass({
+      frame: frame,
+      singleColumn: singleColumn
+    }),
     data: data,
     prefix: process.env.prefix || 'src/',
     header: '',
@@ -48,8 +51,6 @@ app.get(/\/([^\s]+.(?:md|html))?$/, function(request, response) {
 });
 
 function serveIndex(request, response) {
-  var data = JSON.parse(JSON.stringify(require('./data')));
-
   data.frames[0] = 'src/index.md'
 
   var frame = data.frames[0]
@@ -62,7 +63,10 @@ function serveIndex(request, response) {
   var singleColumn = frameContent.match(/(\|\|\||<div class="col">)/) === null;
 
   response.render('layout', {
-    bodyClass: `region--frame region--frame--${ frame.replace(/[^_a-zA-Z0-9-]+/g, '_')} ${singleColumn ? 'region--frame--singlet' : ''}`,
+    bodyClass: data.bodyClass({
+      frame: frame,
+      singleColumn: singleColumn
+    }),
     data: data,
     prefix: process.env.prefix || 'src/',
     header: header,

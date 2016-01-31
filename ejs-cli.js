@@ -53,7 +53,10 @@ process.stdout.write(ejs.render(layout, {
   footer: footer,
   prefix: process.env.prefix || 'src/',
   requestStyle: '',
-  bodyClass: `region--frame region--frame--${ frame.replace(/[^_a-zA-Z0-9-]+/g, '_')} ${singleColumn ? 'region--frame--singlet' : ''}`,
+  bodyClass: data.bodyClass({
+    frame: frame,
+    singleColumn: singleColumn
+  }),
   notrack: false,
   published: true
 }));

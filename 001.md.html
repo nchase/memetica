@@ -129,7 +129,7 @@
         ga('create', 'UA-57092-19', 'auto');
         ga('send', 'pageview');
 
-        document.getElementById('newsletterSignup').addEventListener('click', function(event) {
+        document.getElementById('newsletterSignup') && document.getElementById('newsletterSignup').addEventListener('click', function(event) {
           ga('send', {
             hitType: 'event',
             eventAction: 'newsletterSignup',

@@ -1,4 +1,4 @@
-[Simplicity: EJS vs Other Templating Languages](2016-01-31-simplicity.md)
+[Simplicity: Syntax in Markup Templating](2016-01-31-simplicity.md)
 
 [Performance II](2016-01-13-performance-ii.md)
 

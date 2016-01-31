@@ -1,4 +1,4 @@
-# Simplicity: EJS vs Templating Languages
+# Simplicity: Syntax in Markup Templating
 
 Five years ago I thought Haml[^1] was the coolest thing around.
 When [Jade](jade-lang.com/) came out, because I knew Haml, I thought it was great.

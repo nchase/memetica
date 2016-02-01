@@ -2,7 +2,7 @@
 
 Five years ago I thought Haml[^1] was the coolest thing around.
 
-When [Jade](jade-lang.com/) came out, I thought Jade was great too.
+When [Jade](http://jade-lang.com/) came out, I thought Jade was great too.
 The core of my happiness around these two languages stems from the clever,
 succinct syntax.
 

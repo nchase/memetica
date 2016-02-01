@@ -4,11 +4,15 @@ Five years ago I thought Haml[^1] was the coolest thing around.
 
 When [Jade](jade-lang.com/) came out, I thought Jade was great too.
 The core of my happiness around these two languages stems from the clever,
-succinct syntax. There's way less to write than HTML, so the code looks "clean".
+succinct syntax.
+
+These languages abstract HTML into a higher level-syntax. The code looks "clean".
+Cleanliness is great, but what's the cost here? Abstraction doesn't always lend
+cleanliness.
 
 ---
 
-These days I don't want any special syntax.
+I've moved on past Jade and Haml. These days I don't want any special syntax.
 
 These days I just want file includes and normal code for a given language
 alongside and inside of HTML-like strings.[^2]
@@ -19,7 +23,8 @@ alongside and inside of HTML-like strings.[^2]
 
 Succinct syntax seems like a great win where writing HTML is a challenge,
 but it seems like a great loss when I think about all of overhead related to
-using that syntax instead of something that I already know and use more widely.
+using that syntax instead of something that I already know and use more widely
+(HTML syntax).
 
 There's a significant learning overhead incurred when teaching or learning a
 templating language. This same overhead applies to scenarios where you have to

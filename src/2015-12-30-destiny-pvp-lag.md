@@ -41,8 +41,16 @@ What kind of tooling do they have around this?
 
 ## Sequels Vs. Iterations and Versioning
 
-Sometimes I worry that the team at Bungie is crunched and under too much pressure now
+Maybe the team at Bungie is crunched and under too much pressure now
 &mdash; and that perhaps they've been under this pressure for a long time,
 unbeknownst to us &mdash; and that they just don't have the time to many things better.
 Or maybe they've been making things much better in a future major iteration of the code
 (like a game sequel) and those things cannot trickle down to the current live game.
+
+This would produce a tough-to-break and painful-on-both-sides cycle wherein
+the developers are breaking their backs trying to produce an experience
+for a diminishing, embittered audience.
+
+---
+
+That's my biggest fear. Hope we aren't getting there, just projecting.

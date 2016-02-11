@@ -88,10 +88,6 @@
 
 ---
 
-![](http://cloud.ahfr.org/7277ad9b42da5df1a9ae.jpg)
-
----
-
 The actor that played BOB died of HIV-related complications in 1995,
 three years after the release of _Fire Walk With Me_. His role on Twin Peaks
 was not planned. In fact, the character was conceived completely off-the-cuff;
@@ -105,6 +101,9 @@ be considered significant, eerie, or 'oddly coincidental', no - but it is near
 enough to true significance to serve as a metaphor for what the end of the
 series represents to me.
 
+---
+
+![](http://cloud.ahfr.org/7277ad9b42da5df1a9ae.jpg)
 
 [^1]:[Anatomy of a Fascinating Disaster: Fire Walk With Me](http://www.grantland.com/story/_/id/8311326/twenty-things-david-lynch-fire-walk-its-20th-anniversary)
 

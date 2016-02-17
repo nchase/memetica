@@ -35,6 +35,8 @@ if (process.argv[4]) {
   footer = fs.readFileSync(process.argv[4]).toString();
 }
 
+title = fs.readFileSync(contentPath).toString().match(/# (\S+.*)\n/)[1] || '';
+
 content = execSync(
   `
     cat ${contentPath} |

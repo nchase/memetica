@@ -6,6 +6,7 @@ var sass = require('node-sass');
 var autoprefixer = require('autoprefixer');
 var postcss = require('postcss');
 var bodyParser = require('body-parser');
+var fs = require('fs');
 var serialize = require('./serialize');
 var data = require('./data');
 
@@ -31,6 +32,8 @@ app.get(/\/([^\s]+.(?:md|html))?$/, function(request, response) {
 
   var frameContent = require('./readFile')(data.frames[0]).toString();
 
+  var title = fs.readFileSync(data.frames[0]).toString().match(/# (\S+.*)\n/)[1] || '';
+
   var singleColumn = frameContent.match(/(\|\|\||<div class="col">)/) === null;
 
   response.render('layout', {
@@ -42,6 +45,7 @@ app.get(/\/([^\s]+.(?:md|html))?$/, function(request, response) {
     prefix: process.env.prefix || 'src/',
     header: '',
     footer: '',
+    title: title,
     frame: frame,
     frameContent: frameContent,
     published: true,
@@ -67,10 +71,12 @@ function serveIndex(request, response) {
       frame: frame,
       singleColumn: singleColumn
     }),
+    index: true,
     data: data,
     prefix: process.env.prefix || 'src/',
     header: header,
     footer: footer,
+    share: '',
     frameContent: frameContent,
     published: true,
     notrack: true,

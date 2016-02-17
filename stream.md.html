@@ -24,6 +24,38 @@
     <div
           >
       <div class="region--frame-inner">
+        
+          <p class="shareBar">
+  <span class="shareBar-callout">
+    Share on:
+  </span>
+
+  <a
+    class="shareBar-shareable"
+    title="Share/Discuss on Hacker News"
+    target="_blank"
+    href="https://news.ycombinator.com/submitlink?{url}"
+  >
+    Hacker News
+  </a>
+
+  <a
+    class="shareBar-shareable"
+    title="Share/Discuss on Twitter"
+    target="_blank"
+    href="https://twitter.com/intent/tweet?text=&amp;url={url}"
+  >
+    Twitter
+  </a>
+</p>
+<hr class="shareBar-divider" />
+
+<script>
+  Array.prototype.forEach.call(document.querySelectorAll('.shareBar-shareable'), function(element) {
+    element.href = element.href.replace('{url}', window.location.href);
+  });
+</script>
+        
                 <hr />
 <p>there are two kinds of people in the world: those who take their experience of reality and distill it and chip away at it until they have a platitude that can be shared with others to convey some sense of their own experience of reality, and those who do not.</p>
 <hr />

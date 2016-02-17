@@ -424,3 +424,16 @@ figure, .figure {
           user-select: none;
   cursor: col-resize; }
 
+.shareBar {
+  width: 100%;
+  text-align: center; }
+
+.shareBar-callout {
+  display: block; }
+
+.shareBar-shareable {
+  display: inline-block; }
+
+.shareBar-divider {
+  margin: 1.5em 0 !important; }
+

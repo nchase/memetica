@@ -24,6 +24,38 @@
     <div
           >
       <div class="region--frame-inner">
+        
+          <p class="shareBar">
+  <span class="shareBar-callout">
+    Share on:
+  </span>
+
+  <a
+    class="shareBar-shareable"
+    title="Share/Discuss on Hacker News"
+    target="_blank"
+    href="https://news.ycombinator.com/submitlink?{url}"
+  >
+    Hacker News
+  </a>
+
+  <a
+    class="shareBar-shareable"
+    title="Share/Discuss on Twitter"
+    target="_blank"
+    href="https://twitter.com/intent/tweet?text=Website Performance&amp;url={url}"
+  >
+    Twitter
+  </a>
+</p>
+<hr class="shareBar-divider" />
+
+<script>
+  Array.prototype.forEach.call(document.querySelectorAll('.shareBar-shareable'), function(element) {
+    element.href = element.href.replace('{url}', window.location.href);
+  });
+</script>
+        
                 <h1 id="website-performance">Website Performance</h1>
 <p>Performance and page speed are critically important and criminally ignored.</p>
 <p>John Allsopp's recent <a href="http://idlewords.com/talks/website_obesity.htm">'Website Obesity' talk</a> reminds us of this painful fact.</p>

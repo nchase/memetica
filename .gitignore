@@ -6,5 +6,6 @@ npm-debug.log
 !src/layout.html
 !src/header.html
 !src/footer.html
+!src/share.html
 src/assets/stylesheets/*.css
 

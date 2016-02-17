@@ -21,6 +21,9 @@
       <%- published ? '' : 'contenteditable' -%>
     >
       <div class="region--frame-inner">
+        <% if (typeof index === "undefined") { %>
+          <%- include('share.html', {title: title}) -%>
+        <% } %>
         <%- header -%>
         <%- frameContent -%>
         <%- footer -%>

@@ -56,6 +56,7 @@ process.stdout.write(ejs.render(layout, {
   },
   frameContent: content,
   filename: 'src/src/',
+  index: contentPath.match('index.md') ? true : undefined,
   header: header,
   footer: footer,
   title: title,

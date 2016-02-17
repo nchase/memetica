@@ -32,7 +32,12 @@ app.get(/\/([^\s]+.(?:md|html))?$/, function(request, response) {
 
   var frameContent = require('./readFile')(data.frames[0]).toString();
 
-  var title = fs.readFileSync(data.frames[0]).toString().match(/# (\S+.*)\n/)[1] || '';
+  var titleMatch = fs.readFileSync(data.frames[0]).toString().match(/# (\S+.*)\n/);
+  var title = '';
+
+  if (titleMatch) {
+    title = titleMatch[1];
+  }
 
   var singleColumn = frameContent.match(/(\|\|\||<div class="col">)/) === null;
 

@@ -35,7 +35,12 @@ if (process.argv[4]) {
   footer = fs.readFileSync(process.argv[4]).toString();
 }
 
-title = fs.readFileSync(contentPath).toString().match(/# (\S+.*)\n/)[1] || '';
+var titleMatch = fs.readFileSync(contentPath).toString().match(/# (\S+.*)\n/);
+var title = '';
+
+if (titleMatch) {
+  title = titleMatch[1];
+}
 
 content = execSync(
   `
@@ -53,6 +58,7 @@ process.stdout.write(ejs.render(layout, {
   filename: 'src/src/',
   header: header,
   footer: footer,
+  title: title,
   prefix: process.env.prefix || 'src/',
   requestStyle: '',
   bodyClass: data.bodyClass({

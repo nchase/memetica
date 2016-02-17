@@ -425,6 +425,7 @@ figure, .figure {
   cursor: col-resize; }
 
 .shareBar {
+  margin: 0;
   width: 100%;
   text-align: center; }
 

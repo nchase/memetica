@@ -25,6 +25,37 @@
           >
       <div class="region--frame-inner">
         
+          <p class="shareBar">
+  <span class="shareBar-callout">
+    Share on:
+  </span>
+
+  <a
+    class="shareBar-shareable"
+    title="Share/Discuss on Hacker News"
+    target="_blank"
+    href="https://news.ycombinator.com/submitlink?{url}"
+  >
+    Hacker News
+  </a>
+
+  <a
+    class="shareBar-shareable"
+    title="Share/Discuss on Twitter"
+    target="_blank"
+    href="https://twitter.com/intent/tweet?text=Inattention At Scale&amp;url={url}"
+  >
+    Twitter
+  </a>
+</p>
+<hr class="shareBar-divider" />
+
+<script>
+  Array.prototype.forEach.call(document.querySelectorAll('.shareBar-shareable'), function(element) {
+    element.href = element.href.replace('{url}', window.location.href);
+  });
+</script>
+        
                 <div class="col">
 <h1 id="inattention-at-scale">Inattention At Scale</h1>
 <h2 id="a-cold-dusk-rolls-down-over-the-city-as-the-echos-of-a-thousand-missed-goodbyes-arc-around-the-brain-between-cochlear-nerve-and-grey-matter-spooking-the-circuitry-synapses-belching-confused-half-responses-ghost-within-the-machine-within-the-ghost.">A cold dusk rolls down over the city as the echos of a thousand missed goodbyes arc around the brain, between cochlear nerve and grey matter, spooking the circuitry, synapses belching confused half-responses, ghost within the machine within the ghost.</h2>

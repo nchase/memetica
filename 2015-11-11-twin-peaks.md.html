@@ -25,6 +25,37 @@
           >
       <div class="region--frame-inner">
         
+          <p class="shareBar">
+  <span class="shareBar-callout">
+    Share on:
+  </span>
+
+  <a
+    class="shareBar-shareable"
+    title="Share/Discuss on Hacker News"
+    target="_blank"
+    href="https://news.ycombinator.com/submitlink?{url}"
+  >
+    Hacker News
+  </a>
+
+  <a
+    class="shareBar-shareable"
+    title="Share/Discuss on Twitter"
+    target="_blank"
+    href="https://twitter.com/intent/tweet?text=Twin Peaks&amp;url={url}"
+  >
+    Twitter
+  </a>
+</p>
+<hr class="shareBar-divider" />
+
+<script>
+  Array.prototype.forEach.call(document.querySelectorAll('.shareBar-shareable'), function(element) {
+    element.href = element.href.replace('{url}', window.location.href);
+  });
+</script>
+        
                 <div class="col">
 <h1 id="twin-peaks">Twin Peaks</h1>
 <h2 id="a-great-deal-of-pain-a-fair-amount-of-blood.">A Great Deal of Pain, A Fair Amount of Blood.</h2>

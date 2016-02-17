@@ -25,6 +25,37 @@
           >
       <div class="region--frame-inner">
         
+          <p class="shareBar">
+  <span class="shareBar-callout">
+    Share on:
+  </span>
+
+  <a
+    class="shareBar-shareable"
+    title="Share/Discuss on Hacker News"
+    target="_blank"
+    href="https://news.ycombinator.com/submitlink?{url}"
+  >
+    Hacker News
+  </a>
+
+  <a
+    class="shareBar-shareable"
+    title="Share/Discuss on Twitter"
+    target="_blank"
+    href="https://twitter.com/intent/tweet?text=Steel Cut Oats[^1]&amp;url={url}"
+  >
+    Twitter
+  </a>
+</p>
+<hr class="shareBar-divider" />
+
+<script>
+  Array.prototype.forEach.call(document.querySelectorAll('.shareBar-shareable'), function(element) {
+    element.href = element.href.replace('{url}', window.location.href);
+  });
+</script>
+        
                 <h1 id="steel-cut-oats1">Steel Cut Oats<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a></h1>
 <ul>
 <li>6oz rice (1 &quot;cup&quot;) -&gt; 15 oz water.</li>

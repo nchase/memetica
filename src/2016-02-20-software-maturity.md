@@ -11,15 +11,17 @@ in terms of **Exploration** and **Maturity**._
 - Ideally combined with work to axiomatically and continuously prove
   the result of a fruitful exploration, especially as iteration proceeds.
 - Often very similar to "Feature Development" in common parlance/framing.
-- Sometimes channeled by the question, _"What can I shake out of the tree
+- Sometimes emancipated by the question, _"What fruit can I shake out of the tree
   that hasn't been described yet?"_
+- Characterized by introduction of new nodes or increased number of edges
+  across system's nodes.
 
 ---
 
 ## Software System Maturity is:
 
-- A controlled, temporally-bound cessation of <abbr title="Software Exploration">feature development</abbr>,
-  as compared to _Software Death_, the uncontrolled cessation
+- A controlled, temporally-bound cessation of <abbr title="or, System Exploration">feature development</abbr>.
+  Compare to _Software Death_, the uncontrolled cessation
   of feature development.
 - Marked by axiomatic proof of the system's feasibility in at least
   two ways, but ideally not so many ways that the system becomes inflexible

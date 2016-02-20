@@ -10,7 +10,7 @@
     <% } %>
     <link rel="icon" href="favicon.png" />
     <title>
-      <% if (typeof title !== "undefined") { %>
+      <% if ((typeof title !== "undefined") && title.length !== 0) { %>
         <%= title %> - Memetica
       <% } else { %>
         Memetica

@@ -9,7 +9,13 @@
       <link rel="stylesheet" id="style" href=<%- requestStyle ? requestStyle + ".css" : '' -%> />
     <% } %>
     <link rel="icon" href="favicon.png" />
-    <title>-</title>
+    <title>
+      <% if ((typeof title !== "undefined") && title.length !== 0) { %>
+        <%= title %> - Memetica
+      <% } else { %>
+        Memetica
+      <% } %>
+    </title>
   </head>
 
   <body class="<%- bodyClass %>">

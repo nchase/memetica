@@ -1,3 +1,5 @@
+[Software Maturity Dynamics](2016-02-20-software-maturity.md)
+
 [Simplicity: Syntax in Markup Templating](2016-01-31-simplicity.md)
 
 [Performance II](2016-01-13-performance-ii.md)

@@ -9,12 +9,12 @@
     <link rel="icon" href="favicon.png" />
     <title>
       
-        Memetica
+        Maturity Dynamics in Modern Software Engineering - Memetica
       
     </title>
   </head>
 
-  <body class="region--frame region--frame--src_index_md region--frame--singlet">
+  <body class="region--frame region--frame--src_2016-02-20-software-maturity_md region--frame--singlet">
     <svg style="display: none">
       <symbol viewBox="0 0 1024 1024" id="octoface">
   <path d="M940.812 277.688c8.25-20.219 35.375-101.75-8.562-211.906 0 0-67.375-21.312-219.875 82.906C648.5 131.125 579.875 128.5 512 128.5c-67.906 0-136.438 2.625-200.5 20.25C159.031 44.46900000000005 91.719 65.78099999999995 91.719 65.78099999999995 47.812 176 74.938 257.46900000000005 83.188 277.688 31.5 333.562 0 404.875 0 492.344 0 821.562 213.25 896 510.844 896 808.562 896 1024 821.562 1024 492.344 1024 404.875 992.5 333.562 940.812 277.688zM512 833c-211.406 0-382.781-9.875-382.781-214.688 0-48.938 24.062-94.595 65.344-132.312 68.75-62.969 185.281-29.688 317.438-29.688 132.25 0 248.625-33.281 317.438 29.625 41.312 37.78 65.438 83.312 65.438 132.312C894.875 823.125 723.375 833 512 833zM351.156 512.438c-42.469 0-76.906 51.062-76.906 114.188s34.438 114.312 76.906 114.312c42.375 0 76.812-51.188 76.812-114.312S393.531 512.438 351.156 512.438zM672.875 512.438C630.5 512.438 596 563.5 596 626.625s34.5 114.312 76.875 114.312 76.812-51.188 76.812-114.312C749.75 563.5 715.312 512.438 672.875 512.438z" />
@@ -28,77 +28,73 @@
     <div
           >
       
-      <div class="region--frame-inner">
-        <div class="decorator decorator--header">
-  <p>
-    Noah Chase is a software engineer who lives and works
-    outside of DC in Silver Spring, Maryland.
-    <a href="/about.md.html">About Me</a>
-  </p>
+        <p class="shareBar">
+  <span class="shareBar-callout">
+    Share on:
+  </span>
 
-  <hr class="decorator-break" />
-
-  <div class="decorator--header-pageTitleContainer">
-    <div class="decorator--header-icon">
-      <div class="decorator--header-icon-structure decorator--header-icon-div">
-      </div>
-      <svg class="decorator--header-icon-structure decorator--header-icon-svg decorator--header-icon-svg--goat">
-        <use "decorator--header-icon-structure-data" xlink:href="#goat"></use>
-      </svg>
-    </div>
-
-    <h1 class="decorator--header-text">
-      Essays &amp; Articles
-    </h1>
-  </div>
-
-  <hr class="decorator-break" />
-</div>
-
-        <p><a href="2016-02-20-software-maturity.md.html">Software Maturity Dynamics</a></p>
-<p><a href="2016-01-31-simplicity.md.html">Simplicity: Syntax in Markup Templating</a></p>
-<p><a href="2016-01-13-performance-ii.md.html">Performance II</a></p>
-<p><a href="2016-01-03-performance.md.html">Performance</a></p>
-<p><a href="2015-11-23-axiomatic-css.md.html">Axiomatic CSS</a></p>
-<p><a href="2015-11-11-twin-peaks.md.html">Twin Peaks</a></p>
-<p><a href="2015-11-04-fonts.md.html">Font Subsetting</a></p>
-<p><a href="2015-11-02-grids.md.html">Grids</a></p>
-<p><a href="2015-09-27-time.md.html">Time</a></p>
-        <div class="decorator decorator--footer">
-  <hr class="decorator-break" />
-  <form
-    action="https://tinyletter.com/nchase"
-    method="post"
-    target="popupwindow"
-    onsubmit="window.open('https://tinyletter.com/nchase', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"
+  <a
+    class="shareBar-shareable"
+    title="Share/Discuss on Hacker News"
+    target="_blank"
+    href="https://news.ycombinator.com/submitlink?{url}"
   >
-    <input type="hidden" value="1" name="embed" />
-    <label
-      for="emailList"
-      class="decorator--footer-label"
-      title="I do not abuse email."
-    >
-      Subscribe for content updates:
-    </label>
-    <br />
-    <input
-      name="email"
-      type="text"
-      placeholder="Email Address"
-      class="decorator--footer-input decorator--footer--inputText"
-      id="emailList"
-    />
-    <button
-      id="newsletterSignup"
-      type="submit"
-      class="decorator--footer-input decorator--footer-inputSubmit"
-      value="Subscribe"
-    >
-      Subscribe
-    </button>
-  </form>
+    Hacker News
+  </a>
+
+  <a
+    class="shareBar-shareable"
+    title="Share/Discuss on Twitter"
+    target="_blank"
+    href="https://twitter.com/intent/tweet?text=Maturity Dynamics in Modern Software Engineering&amp;url={url}"
+  >
+    Twitter
+  </a>
+</p>
+<hr class="shareBar-divider" />
+
+<script>
+  Array.prototype.forEach.call(document.querySelectorAll('.shareBar-shareable'), function(element) {
+    element.href = element.href.replace('{url}', window.location.href);
+  });
+</script>
+      
+      <div class="region--frame-inner">
+                <h1 id="maturity-dynamics-in-modern-software-engineering">Maturity Dynamics in Modern Software Engineering</h1>
+<p><em>Expressing software systems as periodic functions oscillating between limits defined in terms of <strong>Exploration</strong> and <strong>Maturity</strong>.</em></p>
+<hr />
+<h2 id="software-system-exploration-is">Software System Exploration is:</h2>
+<ul>
+<li>Ideally combined with work to axiomatically and continuously prove the result of a fruitful exploration, especially as iteration proceeds.</li>
+<li>Often very similar to &quot;Feature Development&quot; in common parlance/framing.</li>
+<li>Sometimes channeled by the question, <em>&quot;What can I shake out of the tree that hasn't been described yet?&quot;</em></li>
+</ul>
+<hr />
+<h2 id="software-system-maturity-is">Software System Maturity is:</h2>
+<ul>
+<li>A controlled, temporally-bound cessation of <abbr title="Software Exploration">feature development</abbr>, as compared to <em>Software Death</em>, the uncontrolled cessation of feature development.</li>
+<li>Marked by axiomatic proof of the system's feasibility in at least two ways, but ideally not so many ways that the system becomes inflexible to change<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a>.</li>
+<li>Also worth nothing that too few methods of proof will result in inflexibility to change.<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a>.</li>
+</ul>
+<hr />
+<h2 id="why-two-ways">Why Two Ways?</h2>
+<p>Most software systems are products. One way to prove these systems is to ensure that people are paying money for them. People do not normally pay money for axiomatically unprovable software systems.</p>
+<p>But if your only mechanism of provability is that people are giving you money, you could easily lose sight of whether or not you have a provable system, which would render the system immediately unprovable and unprofitable.</p>
+<hr />
+<h2 id="axiomatic-provability-and-overcoming-incompleteness">Axiomatic Provability and Overcoming Incompleteness</h2>
+<p>There are limits to the provability of all systems — so it goes for things in the universe.<a href="#fn3" class="footnoteRef" id="fnref3"><sup>3</sup></a> But you should still arrive at a certain level of comfort in the provability of your systems, because the unprovable things are actually just really ridiculously uncommon.</p>
+<p>Practically speaking, no system contains features that are truly unprovable. Clasically unprovable systems are so far outside of (or deeply inside of, straddling the atom level) the boundaries of our day-to-day reality that they are generally not worth speaking about, except in the presence of integration with another system that, itself, is on the edges of provability.<a href="#fn4" class="footnoteRef" id="fnref4"><sup>4</sup></a></p>
+<p>It's way more likely that you come up against provability-versus-time-investment. <em>&quot;Do we invest in proving this piece of the system or not? And when should we?&quot;</em></p>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Inflexibility can creep in if the developer is overzealous about proof about what the system is. Teams of contributors, within and across disciplines, should share agreement about what the system actually is.<a href="#fnref1">↩</a></p></li>
+<li id="fn2"><p>This inflexibility, co-orbital with <em>Software Death</em>, is <em>Software Paralysis</em>.<a href="#fnref2">↩</a></p></li>
+<li id="fn3"><p><a href="https://en.wikipedia.org/wiki/G%C3%B6del%27s_incompleteness_theorems">Gödel's incompleteness theorems, Wikipedia</a><a href="#fnref3">↩</a></p></li>
+<li id="fn4"><p>Joke example: the browser's <code>contentEditable</code>/<code>execCommand</code> editing API complex.<a href="#fnref4">↩</a></p></li>
+</ol>
 </div>
-      </div>
+              </div>
     </div>
     <div class="context has-toggle">
       <a href="./">Home</a>

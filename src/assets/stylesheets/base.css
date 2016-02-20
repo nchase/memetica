@@ -295,6 +295,9 @@ hr {
     height: 1em;
     color: inherit; }
 
+abbr[title] {
+  border-bottom: 1px dotted currentColor; }
+
 .col + hr {
   margin: 2em 0 3em; }
 

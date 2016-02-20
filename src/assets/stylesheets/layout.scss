@@ -149,8 +149,6 @@ iframe,
 .decorator--footer-label {
   display: inline-block;
   margin-bottom: 1em;
-  cursor: context-menu;
-  border-bottom: 1px dotted currentColor;
 }
 
 .decorator--footer-input {
@@ -342,6 +340,11 @@ hr {
     height: 1em;
     color: inherit;
   }
+}
+
+abbr[title] {
+  border-bottom: 1px dotted currentColor;
+  cursor: context-menu;
 }
 
 .col + hr {

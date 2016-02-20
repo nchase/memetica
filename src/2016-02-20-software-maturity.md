@@ -1,7 +1,8 @@
 # Maturity Dynamics in Modern Software Engineering
 
-_Expressing software systems as periodic functions oscillating between
-limits defined in terms of **Exploration** and **Maturity**._
+_Fun with expressing software systems, generally,
+as periodic functions oscillating between limits defined
+in terms of **Exploration** and **Maturity**._
 
 ---
 
@@ -22,9 +23,9 @@ limits defined in terms of **Exploration** and **Maturity**._
   of feature development.
 - Marked by axiomatic proof of the system's feasibility in at least
   two ways, but ideally not so many ways that the system becomes inflexible
-  to change[^1].
+  to change.[^1]
 - Also worth nothing that too few methods of proof will result in inflexibility
-  to change.[^2].
+  to change.[^2]
 
 ---
 
@@ -66,4 +67,5 @@ _"Do we invest in proving this piece of the system or not? And when should we?"_
 
 [^3]: [Gödel's incompleteness theorems, Wikipedia](https://en.wikipedia.org/wiki/G%C3%B6del%27s_incompleteness_theorems)
 
-[^4]: Joke example: the browser's `contentEditable`/`execCommand` editing API complex.
+[^4]: Joke example: the browser's [`contentEditable`/`execCommand`](http://w3c.github.io/editing/)
+      editing API complex, which, lately, is improving.

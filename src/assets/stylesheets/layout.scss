@@ -147,8 +147,10 @@ iframe,
 }
 
 .decorator--footer-label {
-  display: block;
+  display: inline-block;
   margin-bottom: 1em;
+  cursor: context-menu;
+  border-bottom: 1px dotted currentColor;
 }
 
 .decorator--footer-input {

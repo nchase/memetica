@@ -121,8 +121,10 @@ iframe, .region--frame {
   margin-bottom: 1em; }
 
 .decorator--footer-label {
-  display: block;
-  margin-bottom: 1em; }
+  display: inline-block;
+  margin-bottom: 1em;
+  cursor: context-menu;
+  border-bottom: 1px dotted currentColor; }
 
 .decorator--footer-input {
   padding: 0.5em 1em;

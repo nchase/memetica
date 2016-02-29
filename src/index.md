@@ -1,3 +1,5 @@
+[Email Management Toward Sanity and Productivity](2016-01-16-email.md)
+
 [Software Maturity Dynamics](2016-02-20-software-maturity.md)
 
 [Simplicity: Syntax in Markup Templating](2016-01-31-simplicity.md)

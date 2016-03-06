@@ -10,7 +10,7 @@ module.exports = {
   },
 
   getTitleFs: function(input) {
-    return this.getTitle(fs.readFileSync(input));
+    return this.getTitle(fs.readFileSync(input).toString());
   },
 
   hasColumn: function(input) {

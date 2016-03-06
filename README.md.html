@@ -9,7 +9,7 @@
     <link rel="icon" href="favicon.png" />
     <title>
       
-        Memetica: A Document Publisher - Memetica
+        Memetica
       
     </title>
   </head>
@@ -49,7 +49,7 @@
 <hr />
 <h2 id="markdown-parsing">Markdown Parsing</h2>
 <p>The Markdown-handling responsibilities are mostly performed by <a href="https://github.com/jgm/pandoc">Pandoc</a>, the most excellent Haskell library ever. The very fast and complete JavaScript library <a href="https://github.com/chjj/marked">marked</a> handles Markdown in one place too.</p>
-<p>I added the notion of a &quot;column&quot; token into Markdown for Memetica. The reliance on stdin/stdout enables a user to plug in anywhere and transform content (e.g. to detect something that a markdown parser doesn't understand, like columns, and turn them into something that the parser understands).</p>
+<p>I added the notion of a &quot;column&quot; token (<code>|||</code>) into Markdown for Memetica. The reliance on stdin/stdout enables a user to plug in anywhere and transform content (e.g. to detect something that a markdown parser doesn't understand, like columns, and turn them into something that the parser understands).</p>
 <p>Additionally, the architecture of the system allows for the possibility of entirely different Markdown parsers to be used in different places for interesting results or performance improvements.</p>
 <hr />
 <h2 id="additional-possibilities">Additional Possibilities</h2>
@@ -78,7 +78,7 @@
     class="shareBar-shareable"
     title="Share/Discuss on Twitter"
     target="_blank"
-    href="https://twitter.com/intent/tweet?text=Memetica: A Document Publisher&amp;url={url}"
+    href="https://twitter.com/intent/tweet?text=&amp;url={url}"
   >
     Twitter
   </a>

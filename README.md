@@ -28,12 +28,17 @@ The particular details for the styling and markdown parsing, mentioned below,
 emerged out of me using the system to publish
 [memetica.ahfr.org](https://memetica.ahfr.org).
 
+The Sidebar is activated by interacting with the colored slab on the top left
+of the screen.
+
 ---
 
 ## Styling
 
 _As little as possible._ There are a handful of core notions here: headings,
 columns, rulers, and most of the typographic constructs you see in print.
+
+The default layout is columnar and responsive.
 
 Styles are painted dynamically. In the default layout, the style can be changed
 via the sidebar.
@@ -54,7 +59,10 @@ The Markdown-handling responsibilities are mostly performed by
 The very fast and complete JavaScript library
 [marked](https://github.com/chjj/marked) handles Markdown in one place too.
 
-The Markdown-handling could be uniformly Pandoc, pull requests very welcome.
+I added the notion of a "column" token into Markdown for Memetica.
+The reliance on stdin/stdout enables a user to plug in anywhere and transform
+content (e.g. to detect something that a markdown parser doesn't understand,
+like columns, and turn them into something that the parser understands).
 
 Additionally, the architecture of the system allows for the possibility of entirely
 different Markdown parsers to be used in different places for interesting results

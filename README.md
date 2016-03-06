@@ -59,7 +59,10 @@ The Markdown-handling responsibilities are mostly performed by
 The very fast and complete JavaScript library
 [marked](https://github.com/chjj/marked) handles Markdown in one place too.
 
-The Markdown-handling could be uniformly Pandoc, pull requests very welcome.
+I added the notion of a "column" token into Markdown for Memetica.
+The reliance on stdin/stdout enables a user to plug in anywhere and transform
+content (e.g. to detect something that a markdown parser doesn't understand,
+like columns, and turn them into something that the parser understands).
 
 Additionally, the architecture of the system allows for the possibility of entirely
 different Markdown parsers to be used in different places for interesting results

@@ -6,9 +6,9 @@ var sass = require('node-sass');
 var autoprefixer = require('autoprefixer');
 var postcss = require('postcss');
 var bodyParser = require('body-parser');
-var fs = require('fs');
 var serialize = require('./serialize');
 var data = require('./data');
+var matchers = require('./matchers');
 
 app.use(bodyParser.text());
 
@@ -32,19 +32,17 @@ app.get(/\/([^\s]+.(?:md|html))?$/, function(request, response) {
 
   var frameContent = require('./readFile')(data.frames[0]).toString();
 
-  var titleMatch = fs.readFileSync(data.frames[0]).toString().match(/# (\S+.*)\n/);
+  var titleMatch = matchers.getTitleFs(data.frames[0]);
   var title = '';
 
   if (titleMatch) {
     title = titleMatch[1];
   }
 
-  var singleColumn = frameContent.match(/(\|\|\||<div class="col">)/) === null;
-
   response.render('layout', {
     bodyClass: data.bodyClass({
       frame: frame,
-      singleColumn: singleColumn
+      singleColumn: matchers.singleColumn(frameContent)
     }),
     data: data,
     prefix: process.env.prefix || 'src/',
@@ -69,12 +67,10 @@ function serveIndex(request, response) {
   var header = require('./readFile')('src/header', {raw: true}).toString();
   var footer = require('./readFile')('src/footer', {raw: true}).toString();
 
-  var singleColumn = frameContent.match(/(\|\|\||<div class="col">)/) === null;
-
   response.render('layout', {
     bodyClass: data.bodyClass({
       frame: frame,
-      singleColumn: singleColumn
+      singleColumn: matchers.singleColumn(frameContent)
     }),
     index: true,
     data: data,

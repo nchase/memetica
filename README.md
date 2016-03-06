@@ -59,7 +59,7 @@ The Markdown-handling responsibilities are mostly performed by
 The very fast and complete JavaScript library
 [marked](https://github.com/chjj/marked) handles Markdown in one place too.
 
-I added the notion of a "column" token into Markdown for Memetica.
+I added the notion of a "column" token (`|||`) into Markdown for Memetica.
 The reliance on stdin/stdout enables a user to plug in anywhere and transform
 content (e.g. to detect something that a markdown parser doesn't understand,
 like columns, and turn them into something that the parser understands).

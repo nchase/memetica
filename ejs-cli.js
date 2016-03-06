@@ -6,6 +6,7 @@ var ejs = require('ejs');
 var fs = require('fs');
 var execSync = require('child_process').execSync;
 var data = require('./data.js');
+var matchers = require('./matchers');
 
 var contentPath = process.argv[2];
 
@@ -17,8 +18,6 @@ if (!contentPath) {
 var frame = contentPath;
 
 var content = fs.readFileSync(contentPath).toString();
-
-var singleColumn = content.match(/(\|\|\||<div class="col">)/) === null;
 
 var layoutPath = './src/layout.html';
 
@@ -35,7 +34,7 @@ if (process.argv[4]) {
   footer = fs.readFileSync(process.argv[4]).toString();
 }
 
-var titleMatch = fs.readFileSync(contentPath).toString().match(/# (\S+.*)\n/);
+var titleMatch = matchers.getTitleFs(contentPath);
 var title = '';
 
 if (titleMatch) {
@@ -64,7 +63,7 @@ process.stdout.write(ejs.render(layout, {
   requestStyle: '',
   bodyClass: data.bodyClass({
     frame: frame,
-    singleColumn: singleColumn
+    singleColumn: matchers.singleColumn(content)
   }),
   notrack: false,
   published: true

@@ -38,6 +38,8 @@ of the screen.
 _As little as possible._ There are a handful of core notions here: headings,
 columns, rulers, and most of the typographic constructs you see in print.
 
+The default layout is columnar and responsive.
+
 Styles are painted dynamically. In the default layout, the style can be changed
 via the sidebar.
 

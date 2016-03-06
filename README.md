@@ -10,6 +10,8 @@ standard POSIX-style [Streams](https://en.wikipedia.org/wiki/Standard_streams).
 
 **Technologies used:** Node.js, standard UNIX scripting, CSS
 
+For licenses, see [LICENSE.md](LICENSE.md)
+
 ---
 
 ## Why Memetica?
@@ -63,12 +65,4 @@ but I'm not going to stand here and tell you that you can't do it.
 
 ---
 
-## Testing
-
-See [test/README.md](test/README.md)
-
----
-
-## Licenses
-
-[MIT](LICENSE-MIT), [WTFPL](LICENSE-WTFPL)
+For testing, see [test/README.md](test/README.md).

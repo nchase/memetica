@@ -10,6 +10,7 @@ standard POSIX-style [Streams](https://en.wikipedia.org/wiki/Standard_streams).
 
 **Technologies used:** Node.js, standard UNIX scripting, CSS
 
+---
 
 ## Why Memetica?
 
@@ -25,6 +26,8 @@ The particular details for the styling and markdown parsing, mentioned below,
 emerged out of me using the system to publish
 [memetica.ahfr.org](https://memetica.ahfr.org).
 
+---
+
 ## Styling
 
 _As little as possible._ There are a handful of core notions here: headings,
@@ -35,6 +38,8 @@ the sidebar.
 
 By design, each style/theme is very small, measuring in hundreds of bytes.
 **The average size of a style is ~500 bytes.** This keeps things fast.
+
+---
 
 ## Markdown Parsing
 
@@ -49,16 +54,20 @@ Additionally, the architecture of the system allows for the possibility of entir
 different Markdown parsers to be used in different places for interesting results
 or performance improvements.
 
+---
 
 ## Additional Possibilities
 
 You could publish a book and style it with CSS. This isn't unique to Memetica,
 but I'm not going to stand here and tell you that you can't do it.
 
+---
 
 ## Testing
 
 See [test/README.md](test/README.md)
+
+---
 
 ## Licenses
 

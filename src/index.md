@@ -1,3 +1,5 @@
+[Why Memetica, OR, `ln -s ../README.md`](README.md)
+
 [Email Management Toward Sanity and Productivity](2016-01-16-email.md)
 
 [Software Maturity Dynamics](2016-02-20-software-maturity.md)

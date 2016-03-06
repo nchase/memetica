@@ -35,8 +35,8 @@ emerged out of me using the system to publish
 _As little as possible._ There are a handful of core notions here: headings,
 columns, rulers, and most of the typographic constructs you see in print.
 
-Styles are painted dynamically. By default, the style can be changed via
-the sidebar.
+Styles are painted dynamically. In the default layout, the style can be changed
+via the sidebar.
 
 By design, each style/theme is very small, measuring in hundreds of bytes.
 **The average size of a style is ~500 bytes.** This keeps things fast.

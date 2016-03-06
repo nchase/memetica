@@ -1,0 +1,3 @@
+# Licenses
+
+[MIT](LICENSE-MIT), [WTFPL](LICENSE-WTFPL)

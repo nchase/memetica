@@ -38,16 +38,18 @@
 <p>I originally built Memetica as a reaction to exposure to a complicated system intended to let people build flexible columnar UIs centered around text.</p>
 <p>I knew I could do better, so I started building a small, balanced, rule-driven system, expressed in CSS, and filled it with different kinds of content. The content drove the rules and the rules drove the content a bit further, and so on.</p>
 <p>The particular details for the styling and markdown parsing, mentioned below, emerged out of me using the system to publish <a href="https://memetica.ahfr.org">memetica.ahfr.org</a>.</p>
+<p>The Sidebar is activated by interacting with the colored slab on the top left of the screen.</p>
 <hr />
 <h2 id="styling">Styling</h2>
 <p><em>As little as possible.</em> There are a handful of core notions here: headings, columns, rulers, and most of the typographic constructs you see in print.</p>
+<p>The default layout is columnar and responsive.</p>
 <p>Styles are painted dynamically. In the default layout, the style can be changed via the sidebar.</p>
 <p>Color schemes should be built to be legible, as written in the <a href="https://www.w3.org/TR/WCAG20/#visual-audio-contrast">WCAG Specification</a>, for AA Large text or better (so at least 3.00 contrast ratio).</p>
 <p>By design, each style/theme is very small, measuring in hundreds of bytes. <strong>The average size of a style is ~500 bytes.</strong> This keeps things fast.</p>
 <hr />
 <h2 id="markdown-parsing">Markdown Parsing</h2>
 <p>The Markdown-handling responsibilities are mostly performed by <a href="https://github.com/jgm/pandoc">Pandoc</a>, the most excellent Haskell library ever. The very fast and complete JavaScript library <a href="https://github.com/chjj/marked">marked</a> handles Markdown in one place too.</p>
-<p>The Markdown-handling could be uniformly Pandoc, pull requests very welcome.</p>
+<p>I added the notion of a &quot;column&quot; token into Markdown for Memetica. The reliance on stdin/stdout enables a user to plug in anywhere and transform content (e.g. to detect something that a markdown parser doesn't understand, like columns, and turn them into something that the parser understands).</p>
 <p>Additionally, the architecture of the system allows for the possibility of entirely different Markdown parsers to be used in different places for interesting results or performance improvements.</p>
 <hr />
 <h2 id="additional-possibilities">Additional Possibilities</h2>

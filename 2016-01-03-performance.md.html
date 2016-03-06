@@ -27,8 +27,27 @@
     </svg>
     <div
           >
+      <div class="region--frame-inner">
+                <h1 id="website-performance">Website Performance</h1>
+<p>Performance and page speed are critically important and criminally ignored.</p>
+<p>John Allsopp's recent <a href="http://idlewords.com/talks/website_obesity.htm">'Website Obesity' talk</a> reminds us of this painful fact.</p>
+<hr />
+<p>Here are some facts about the webpage you're viewing:</p>
+<ul>
+<li>Content, CSS, and JS — with the exception of Google Analytics — are roughly 30KB combined, before minification. This is pretty fast for a contemporary website.</li>
+<li>The webpage loads and draws pretty much instantaneously.</li>
+<li>I thought long and hard before putting the Google Analytics script on the page. [and if anyone knows something smaller and faster than Google Analytics for simple pageview tracking, I am all ears.]</li>
+<li>There are some heavier fonts, but through <a href="/2015-11-04-fonts.md">Font Subsetting</a>, I have reduced the over-network weight of those to be reasonably small as well.</li>
+<li>I have a number of transformations that I use to take the content [written in markdown] and 'publish' it, but I don't force those on visitors' devices. As a visitor, you just get the content that you are expecting to read and the styling that makes it look decent.</li>
+<li>The CSS was written to be very much &quot;themeable&quot;. Unique &quot;themes&quot; are each a couple of hundred bytes of unminified CSS.</li>
+</ul>
+<hr />
+<p>If you are interested in the code behind this site, <a href="https://github.com/nchase/memetica/">it is on GitHub</a>.</p>
+              </div>
       
-        <p class="shareBar">
+        <div class="shareBar">
+  <hr class="shareBar-divider" />
+
   <span class="shareBar-callout">
     Share on:
   </span>
@@ -50,8 +69,8 @@
   >
     Twitter
   </a>
-</p>
-<hr class="shareBar-divider" />
+
+</div>
 
 <script>
   Array.prototype.forEach.call(document.querySelectorAll('.shareBar-shareable'), function(element) {
@@ -59,23 +78,6 @@
   });
 </script>
       
-      <div class="region--frame-inner">
-                <h1 id="website-performance">Website Performance</h1>
-<p>Performance and page speed are critically important and criminally ignored.</p>
-<p>John Allsopp's recent <a href="http://idlewords.com/talks/website_obesity.htm">'Website Obesity' talk</a> reminds us of this painful fact.</p>
-<hr />
-<p>Here are some facts about the webpage you're viewing:</p>
-<ul>
-<li>Content, CSS, and JS — with the exception of Google Analytics — are roughly 30KB combined, before minification. This is pretty fast for a contemporary website.</li>
-<li>The webpage loads and draws pretty much instantaneously.</li>
-<li>I thought long and hard before putting the Google Analytics script on the page. [and if anyone knows something smaller and faster than Google Analytics for simple pageview tracking, I am all ears.]</li>
-<li>There are some heavier fonts, but through <a href="/2015-11-04-fonts.md">Font Subsetting</a>, I have reduced the over-network weight of those to be reasonably small as well.</li>
-<li>I have a number of transformations that I use to take the content [written in markdown] and 'publish' it, but I don't force those on visitors' devices. As a visitor, you just get the content that you are expecting to read and the styling that makes it look decent.</li>
-<li>The CSS was written to be very much &quot;themeable&quot;. Unique &quot;themes&quot; are each a couple of hundred bytes of unminified CSS.</li>
-</ul>
-<hr />
-<p>If you are interested in the code behind this site, <a href="https://github.com/nchase/memetica/">it is on GitHub</a>.</p>
-              </div>
     </div>
     <div class="context has-toggle">
       <a href="./">Home</a>

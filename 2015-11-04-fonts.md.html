@@ -27,38 +27,6 @@
     </svg>
     <div
           >
-      
-        <p class="shareBar">
-  <span class="shareBar-callout">
-    Share on:
-  </span>
-
-  <a
-    class="shareBar-shareable"
-    title="Share/Discuss on Hacker News"
-    target="_blank"
-    href="https://news.ycombinator.com/submitlink?{url}"
-  >
-    Hacker News
-  </a>
-
-  <a
-    class="shareBar-shareable"
-    title="Share/Discuss on Twitter"
-    target="_blank"
-    href="https://twitter.com/intent/tweet?text=Font Optimization Through Subsetting&amp;url={url}"
-  >
-    Twitter
-  </a>
-</p>
-<hr class="shareBar-divider" />
-
-<script>
-  Array.prototype.forEach.call(document.querySelectorAll('.shareBar-shareable'), function(element) {
-    element.href = element.href.replace('{url}', window.location.href);
-  });
-</script>
-      
       <div class="region--frame-inner">
                 <h1 id="font-optimization-through-subsetting">Font Optimization Through Subsetting</h1>
 <p>Web fonts have come a long way in the last few years. There are as many great options as there are creative people in the world. Many decent options are free or available for a reasonable fee.</p>
@@ -99,6 +67,40 @@
 </ol>
 </div>
               </div>
+      
+        <div class="shareBar">
+  <hr class="shareBar-divider" />
+
+  <span class="shareBar-callout">
+    Share on:
+  </span>
+
+  <a
+    class="shareBar-shareable"
+    title="Share/Discuss on Hacker News"
+    target="_blank"
+    href="https://news.ycombinator.com/submitlink?{url}"
+  >
+    Hacker News
+  </a>
+
+  <a
+    class="shareBar-shareable"
+    title="Share/Discuss on Twitter"
+    target="_blank"
+    href="https://twitter.com/intent/tweet?text=Font Optimization Through Subsetting&amp;url={url}"
+  >
+    Twitter
+  </a>
+
+</div>
+
+<script>
+  Array.prototype.forEach.call(document.querySelectorAll('.shareBar-shareable'), function(element) {
+    element.href = element.href.replace('{url}', window.location.href);
+  });
+</script>
+      
     </div>
     <div class="context has-toggle">
       <a href="./">Home</a>

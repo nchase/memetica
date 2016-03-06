@@ -276,6 +276,12 @@ blockquote {
 blockquote p {
   margin-bottom: 0; }
 
+code {
+  background: rgba(128, 128, 128, 0.1);
+  padding: 0.25em;
+  margin: 0.25em;
+  border-radius: 0.25em; }
+
 small {
   display: block;
   font-size: 0.7em; }

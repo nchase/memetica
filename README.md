@@ -28,6 +28,9 @@ The particular details for the styling and markdown parsing, mentioned below,
 emerged out of me using the system to publish
 [memetica.ahfr.org](https://memetica.ahfr.org).
 
+The Sidebar is activated by interacting with the colored slab on the top left
+of the screen.
+
 ---
 
 ## Styling

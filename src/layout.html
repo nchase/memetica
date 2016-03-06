@@ -26,14 +26,14 @@
     <div
       <%- published ? '' : 'contenteditable' -%>
     >
-      <% if (typeof index === "undefined") { %>
-        <%- include('share.html', {title: title}) -%>
-      <% } %>
       <div class="region--frame-inner">
         <%- header -%>
         <%- frameContent -%>
         <%- footer -%>
       </div>
+      <% if (typeof index === "undefined") { %>
+        <%- include('share.html', {title: title}) -%>
+      <% } %>
     </div>
     <div class="context has-toggle">
       <a href="./">Home</a>

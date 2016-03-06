@@ -533,7 +533,7 @@ figure,
 }
 
 .shareBar {
-  margin: 0;
+  margin: 2em 0;
   width: 100%;
   text-align: center;
 }
@@ -545,4 +545,9 @@ figure,
 }
 .shareBar-divider {
   margin: 1.5em 0 !important;
+  border-top: 1px outset currentColor;
+
+  &:before {
+    content: '';
+  }
 }

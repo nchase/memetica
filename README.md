@@ -43,6 +43,10 @@ The default layout is columnar and responsive.
 Styles are painted dynamically. In the default layout, the style can be changed
 via the sidebar.
 
+Color schemes should be built to be legible, as written in the
+[WCAG Specification](https://www.w3.org/TR/WCAG20/#visual-audio-contrast),
+for AA Large text or better (so at least 3.00 contrast ratio).
+
 By design, each style/theme is very small, measuring in hundreds of bytes.
 **The average size of a style is ~500 bytes.** This keeps things fast.
 

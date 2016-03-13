@@ -1,3 +1,5 @@
+[Testing Memetica](test-README.md)
+
 [Why Memetica, OR, `cat ../README.md`](README.md)
 
 [Email Management Toward Sanity and Productivity](2016-01-16-email.md)

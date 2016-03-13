@@ -77,4 +77,4 @@ but I'm not going to stand here and tell you that you can't do it.
 
 ---
 
-For testing, see [test/README.md](test/README.md).
+For testing, `npm run test`, but also see [test/README.md](test).

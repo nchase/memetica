@@ -9,12 +9,12 @@
     <link rel="icon" href="favicon.png" />
     <title>
       
-        Memetica: A Document Publisher - Memetica
+        Hello World - Memetica
       
     </title>
   </head>
 
-  <body class="region--frame region--frame--src_README_md region--frame--singlet">
+  <body class="region--frame region--frame--test_publishable_md region--frame--singlet">
     <svg style="display: none">
       <symbol viewBox="0 0 1024 1024" id="octoface">
   <path d="M940.812 277.688c8.25-20.219 35.375-101.75-8.562-211.906 0 0-67.375-21.312-219.875 82.906C648.5 131.125 579.875 128.5 512 128.5c-67.906 0-136.438 2.625-200.5 20.25C159.031 44.46900000000005 91.719 65.78099999999995 91.719 65.78099999999995 47.812 176 74.938 257.46900000000005 83.188 277.688 31.5 333.562 0 404.875 0 492.344 0 821.562 213.25 896 510.844 896 808.562 896 1024 821.562 1024 492.344 1024 404.875 992.5 333.562 940.812 277.688zM512 833c-211.406 0-382.781-9.875-382.781-214.688 0-48.938 24.062-94.595 65.344-132.312 68.75-62.969 185.281-29.688 317.438-29.688 132.25 0 248.625-33.281 317.438 29.625 41.312 37.78 65.438 83.312 65.438 132.312C894.875 823.125 723.375 833 512 833zM351.156 512.438c-42.469 0-76.906 51.062-76.906 114.188s34.438 114.312 76.906 114.312c42.375 0 76.812-51.188 76.812-114.312S393.531 512.438 351.156 512.438zM672.875 512.438C630.5 512.438 596 563.5 596 626.625s34.5 114.312 76.875 114.312 76.812-51.188 76.812-114.312C749.75 563.5 715.312 512.438 672.875 512.438z" />
@@ -28,35 +28,8 @@
     <div
           >
       <div class="region--frame-inner">
-                <h1 id="memetica-a-document-publisher">Memetica: A Document Publisher</h1>
-<p><a href="https://travis-ci.org/nchase/memetica"><img src="https://travis-ci.org/nchase/memetica.svg?branch=master" alt="Build Status" /></a></p>
-<p>Memetica is a static site generator much like Jekyll. It is only focused on taking a combination of markdown content and CSS. It gives users a series of opportunities to transform that content in any way they wish, then it presents that content wherever the user tells it to.</p>
-<p>For the sake of simplicity, nearly everything here is connected through standard POSIX-style <a href="https://en.wikipedia.org/wiki/Standard_streams">Streams</a>.</p>
-<p><strong>Technologies used:</strong> Node.js, standard UNIX scripting, CSS</p>
-<p>For licenses, see <a href="LICENSE.md" class="uri">LICENSE.md</a></p>
-<hr />
-<h2 id="why-memetica">Why Memetica?</h2>
-<p>I originally built Memetica as a reaction to exposure to a complicated system intended to let people build flexible columnar UIs centered around text.</p>
-<p>I knew I could do better, so I started building a small, balanced, rule-driven system, expressed in CSS, and filled it with different kinds of content. The content drove the rules and the rules drove the content a bit further, and so on.</p>
-<p>The particular details for the styling and markdown parsing, mentioned below, emerged out of me using the system to publish <a href="https://memetica.ahfr.org">memetica.ahfr.org</a>.</p>
-<p>The Sidebar is activated by interacting with the colored slab on the top left of the screen.</p>
-<hr />
-<h2 id="styling">Styling</h2>
-<p><em>As little as possible.</em> There are a handful of core notions here: headings, columns, rulers, and most of the typographic constructs you see in print.</p>
-<p>The default layout is columnar and responsive.</p>
-<p>Styles are painted dynamically. In the default layout, the style can be changed via the sidebar.</p>
-<p>Color schemes should be built to be legible, as written in the <a href="https://www.w3.org/TR/WCAG20/#visual-audio-contrast">WCAG Specification</a>, for AA Large text or better (so at least 3.00 contrast ratio).</p>
-<p>By design, each style/theme is very small, measuring in hundreds of bytes. <strong>The average size of a style is ~500 bytes.</strong> This keeps things fast.</p>
-<hr />
-<h2 id="markdown-parsing">Markdown Parsing</h2>
-<p>The Markdown-handling responsibilities are mostly performed by <a href="https://github.com/jgm/pandoc">Pandoc</a>, the most excellent Haskell library ever.</p>
-<p>I added the notion of a &quot;column&quot; token (<code>|||</code>) into Markdown for Memetica. The reliance on stdin/stdout enables a user to plug in anywhere and transform content (e.g. to detect something that a markdown parser doesn't understand, like columns, and turn them into something that the parser understands).</p>
-<p>Additionally, the architecture of the system allows for the possibility of entirely different Markdown parsers to be used in different places for interesting results or performance improvements.</p>
-<hr />
-<h2 id="additional-possibilities">Additional Possibilities</h2>
-<p>You could publish a book and style it with CSS. This isn't unique to Memetica, but I'm not going to stand here and tell you that you can't do it.</p>
-<hr />
-<p>For testing, <code>npm run test</code>, but also see <a href="test">test/README.md</a>.</p>
+                <h1 id="hello-world">Hello World</h1>
+<p><a href="internal.md">Link To Internal Document</a></p>
               </div>
       
         <div class="shareBar">
@@ -79,7 +52,7 @@
     class="shareBar-shareable"
     title="Share/Discuss on Twitter"
     target="_blank"
-    href="https://twitter.com/intent/tweet?text=Memetica: A Document Publisher&amp;url={url}"
+    href="https://twitter.com/intent/tweet?text=Hello World&amp;url={url}"
   >
     Twitter
   </a>

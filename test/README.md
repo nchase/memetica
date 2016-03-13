@@ -3,6 +3,8 @@
 In Memetica, run `npm run test` to execute the tests once or
 `npm run test:watch` to run a simple test watcher.
 
+---
+
 ## Philosophy
 
 Since Memetica is just a bunch of scripts strung together by stdin/stdout,
@@ -16,6 +18,8 @@ We can output with any of `node-tap`'s many reporters,
 e.g. `npm run test -- --reporter=nyan`.
 
 > ![pictured: the venerable nyan reporter](https://cloud.githubusercontent.com/assets/197309/13726939/8b7d1444-e8ab-11e5-9a45-f5fac79ca0f3.png)
+
+---
 
 ## The First Test
 

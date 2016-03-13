@@ -15,7 +15,7 @@ anyone can consume them according to [TAP](https://testanything.org/).
 We can output with any of `node-tap`'s many reporters,
 e.g. `npm run test -- --reporter=nyan`.
 
-> ![nyan reporter](https://cloud.githubusercontent.com/assets/197309/13726939/8b7d1444-e8ab-11e5-9a45-f5fac79ca0f3.png)
+> ![pictured: the venerable nyan reporter](https://cloud.githubusercontent.com/assets/197309/13726939/8b7d1444-e8ab-11e5-9a45-f5fac79ca0f3.png)
 
 ## The First Test
 

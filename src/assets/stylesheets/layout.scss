@@ -319,11 +319,19 @@ blockquote p {
   margin-bottom: 0;
 }
 
+pre {
+  max-width: 100%;
+}
+
 code {
+  display: inline-block;
+  vertical-align: middle;
   background: hsla(0, 0, 50%, 0.1);
   padding: 0.25em;
   margin: 0.25em;
+  max-width: 100%;
   border-radius: 0.25em;
+  overflow: scroll;
 }
 
 small {

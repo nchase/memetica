@@ -30,6 +30,7 @@
       <div class="region--frame-inner">
                 <h1 id="testing-memetica">Testing Memetica</h1>
 <p>In Memetica, run <code>npm run test</code> to execute the tests once or <code>npm run test:watch</code> to run a simple test watcher.</p>
+<hr />
 <h2 id="philosophy">Philosophy</h2>
 <p>Since Memetica is just a bunch of scripts strung together by stdin/stdout, the project's tests are written to exercise these individual scripts and ensure that the scripts produce reasonably-correct output given some input.</p>
 <p>Tests are written with <a href="https://github.com/tapjs/node-tap">node-tap</a> so that anyone can consume them according to <a href="https://testanything.org/">TAP</a>.</p>
@@ -40,6 +41,7 @@
 <p class="caption">pictured: the venerable nyan reporter</p>
 </div>
 </blockquote>
+<hr />
 <h2 id="the-first-test">The First Test</h2>
 <p>The first reasonable thing I thought to test was document columnization.</p>
 <p>I'll talk about it a bit. Here's the test in its entirety:</p>
@@ -59,14 +61,17 @@ tap.test(&#39;produces reasonably well-formed column elements from `|||` in inpu
   });
 });</code></pre>
 <p>So all that I'm doing here is taking the script that handles a thing that Memetica actually does.<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a> We run that script with simple input<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a> that should transform into different output<a href="#fn3" class="footnoteRef" id="fnref3"><sup>3</sup></a> and assert that the results of the script are the same as our expected output.</p>
+<hr />
+<h2 id="benefits">Benefits</h2>
 <p>Nothing about <em>how</em> the work is done is assumed. This frees us to change the implementation later, but the important business logic that is unique to Memetica is crystallized here in the test, potentially forever (or at least however long it is useful).</p>
 <p>If we ever accidentally break this important functionality, the test will fail. We will know immediately, which will prevent us from going too far down a path that is harmful to the system.</p>
+<p>These benefits aren't actually unique to Memetica, but it's easy to forget that <em>this is why we write unit tests</em>.</p>
 <div class="footnotes">
 <hr />
 <ol>
 <li id="fn1"><p>Memetica does not actually do much, and we like it that way.<a href="#fnref1">↩</a></p></li>
 <li id="fn2"><p>Defined in <a href="test/column_document.md"><code>test/column_document.md</code></a>.<a href="#fnref2">↩</a></p></li>
-<li id="fn3"><p>Defined in <a href="test/column_document_columnized.md"><code>test/column_document_columnized.md</code></a>.<a href="#fnref3">↩</a></p></li>
+<li id="fn3"><p>Defined in <a href="test/column_content_columnized.md"><code>test/column_content_columnized.md</code></a>.<a href="#fnref3">↩</a></p></li>
 </ol>
 </div>
               </div>

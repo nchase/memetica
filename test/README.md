@@ -42,13 +42,19 @@ tap.test('produces reasonably well-formed column elements from `|||` in input', 
 ```
 
 So all that I'm doing here is taking the script that handles a thing that
-Memetica actually does - Memetica does not actually do much. We run that script
-with some simple input (defined in `test/column_document.md`) that should
-produce somewhat different output (defined in `test/column_document_columnized.md`)
-and assert that the two are equal.
+Memetica actually does.[^1] We run that script with simple input[^2] that should
+transform into different output[^3] and assert that the results of the script
+are the same as our expected output.
 
 Nothing about _how_ the work is done is assumed. This frees us to change the
 implementation later, but the important business logic that is unique to Memetica
-is crystallized here in the test. If we ever accidentally break this
-important functionality, the test will fail and we will know immediately, which
-will prevent us from going too far down a path that is harmful to the system.
+is crystallized here in the test, potentially forever (or at least however long
+it is useful).
+
+If we ever accidentally break this important functionality, the test will fail.
+We will know immediately, which will prevent us from going too far down a path
+that is harmful to the system.
+
+[^1]: Memetica does not actually do much, and we like it that way.
+[^2]: Defined in [`test/column_document.md`](test/column_document.md).
+[^3]: Defined in [`test/column_document_columnized.md`](test/column_document_columnized.md).

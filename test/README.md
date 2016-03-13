@@ -1,4 +1,4 @@
-# Testing
+# Testing Memetica
 
 In Memetica, run `npm run test` to execute the tests once or
 `npm run test:watch` to run a simple test watcher.

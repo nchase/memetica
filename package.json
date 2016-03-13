@@ -15,7 +15,7 @@
     "publish:master": "git merge --no-ff --no-edit master && npm run build && git add . && git commit -m \"build latest master.\" && git push origin gh-pages",
     "start": "node index.js",
     "start:debug": "node-debug index.js",
-    "test": "echo \"no tests.\""
+    "test": "tap test/*.js"
   },
   "dependencies": {
     "autoprefixer": "^6.0.0",
@@ -30,6 +30,7 @@
   },
   "devDependencies": {
     "node-inspector": "^0.8.1",
-    "postcss-cli": "^2.1.0"
+    "postcss-cli": "^2.1.0",
+    "tap": "^5.7.0"
   }
 }

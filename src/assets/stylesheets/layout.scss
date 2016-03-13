@@ -451,6 +451,11 @@ img {
   background-size: cover;
 }
 
+img[src^="https://travis-ci.org"] {
+  margin: 0;
+  width: auto;
+}
+
 figure,
 .figure {
   margin: auto;

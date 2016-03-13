@@ -1,5 +1,7 @@
 # Memetica: A Document Publisher
 
+[![Build Status](https://travis-ci.org/nchase/memetica.svg?branch=master)](https://travis-ci.org/nchase/memetica)
+
 Memetica is a static site generator much like Jekyll. It is only focused on
 taking a combination of markdown content and CSS. It gives users
 a series of opportunities to transform that content in any way they wish,
@@ -56,8 +58,6 @@ By design, each style/theme is very small, measuring in hundreds of bytes.
 
 The Markdown-handling responsibilities are mostly performed by
 [Pandoc](https://github.com/jgm/pandoc), the most excellent Haskell library ever.
-The very fast and complete JavaScript library
-[marked](https://github.com/chjj/marked) handles Markdown in one place too.
 
 I added the notion of a "column" token (`|||`) into Markdown for Memetica.
 The reliance on stdin/stdout enables a user to plug in anywhere and transform

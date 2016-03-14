@@ -50,13 +50,13 @@ var exec = require(&#39;child_process&#39;).exec;
 var fs = require(&#39;fs&#39;);
 
 tap.test(&#39;produces reasonably well-formed column elements from `|||` in input&#39;, function(t) {
-  var columnize = exec(&#39;cat test/column_document.md | node columnize.js&#39;, function(error, stdout, stderr) {
-    t.equal(
-      stdout,
-      fs.readFileSync(&#39;test/column_content_columnized.md&#39;, {
-        encoding: &#39;utf8&#39;
-      })
-    );
+  var command = &#39;cat test/column_document.md | node columnize.js&#39;;
+  var expectedOutput = fs.readFileSync(&#39;test/column_content_columnized.md&#39;, {
+    encoding: &#39;utf8&#39;
+  });
+
+  exec(command, function(error, stdout, stderr) {
+    t.equal(stdout, expectedOutput);
     t.done();
   });
 });</code></pre>

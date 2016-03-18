@@ -12,30 +12,34 @@ h1 {
   width: 100%;
   text-align: center; }
 
-h1 + p:first-letter {
+h1 ~ p:first-of-type:first-letter {
   float: left;
-  font-size: 6.8em;
-  line-height: 1.1em;
-  margin: -.17em .08em -.2em 0; }
+  font-size: 6em;
+  font-style: normal;
+  line-height: 1;
+  margin: -.2em 0; }
 
 a {
   color: #1A1A1A; }
   a:hover {
-    color: #FF3530;
-    background: 0 0; }
+    color: #FF3530; }
 
 .region--frame-inner a {
   text-decoration: none;
   background: -webkit-linear-gradient(#fff, #fff), -webkit-linear-gradient(#fff, #fff), -webkit-linear-gradient(#FF3530, #FF3530);
   background: linear-gradient(#fff, #fff), linear-gradient(#fff, #fff), linear-gradient(#FF3530, #FF3530);
-  -webkit-transition-duration: 200ms;
-          transition-duration: 200ms;
   background-size: .05em 1px, .05em 1px, 1px 1px;
-  background-repeat: no-repeat,no-repeat,repeat-x;
-  text-shadow: .03em 0 #fff, -.03em 0 #fff, 0 .03em #fff, 0 -.03em #fff, .06em 0 #fff, -.06em 0 #fff, .09em 0 #fff, -.09em 0 #fff, .12em 0 #fff, -.12em 0 #fff, .15em 0 #fff, -.15em 0 #fff;
-  background-position: 0 95%, 100% 95%, 0 95%; }
+  background-repeat: no-repeat,
+    no-repeat,
+    repeat-x;
+  background-position: 0 95%, 100% 95%, 0 95%;
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms; }
+  .region--frame-inner a:hover {
+    background: 0 0; }
 
 hr {
+  margin: 1.5em 0;
   color: #FF3530;
   border-color: currentColor; }
 

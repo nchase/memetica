@@ -6,6 +6,7 @@ module.exports = {
     'src/demo.md'
   ],
   styles: [
+    'fork',
     'dinn',
     'geo',
     'robots',

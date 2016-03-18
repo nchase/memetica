@@ -35,6 +35,19 @@ a {
 
 .region--frame-inner a {
   text-decoration: none;
+  text-shadow:
+    .03em 0 #fff,
+    -.03em 0 #fff,
+    0 .03em #fff,
+    0 -.03em #fff,
+    .06em 0 #fff,
+    -.06em 0 #fff,
+    .09em 0 #fff,
+    -.09em 0 #fff,
+    .12em 0 #fff,
+    -.12em 0 #fff,
+    .15em 0 #fff,
+    -.15em 0 #fff;
   background:
     linear-gradient(#fff,#fff),
     linear-gradient(#fff,#fff),

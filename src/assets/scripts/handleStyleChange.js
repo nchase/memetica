@@ -34,3 +34,19 @@ document.addEventListener('DOMContentLoaded', function() {
   document.querySelector('.ctl--styleChanger').value = cookieValue;
   document.querySelector('.ctl--styleChanger').dispatchEvent(evt);
 });
+
+document.querySelector('.ctl--styleToggle').addEventListener('click', function(event) {
+  if (event.target.getAttribute('data-toggled')) {
+    Array.prototype.forEach.call(document.querySelectorAll('[rel=stylesheet-off]'), function(element, index) {
+      element.setAttribute('rel', 'stylesheet');
+    });
+
+    return event.target.removeAttribute('data-toggled');
+  }
+
+  Array.prototype.forEach.call(document.querySelectorAll('[rel=stylesheet]'), function(element, index) {
+    element.setAttribute('rel', 'stylesheet-off');
+  });
+
+  event.target.setAttribute('data-toggled', true);
+});

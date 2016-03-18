@@ -44,7 +44,7 @@
           </svg>
         </span>
       </a>
-      <select class="ctl--styleChanger">
+      <select class="ctl ctl--styleChanger">
         <option value="">none</option>
 
         <% data.styles.forEach(function(style, index) { %>
@@ -56,12 +56,12 @@
 
       </select>
 
-      <button class="ctl--styleToggle">
+      <button class="ctl ctl--styleToggle">
         Toggle Styles
       </button>
 
       <% if (!published) { %>
-        <button class="ctl--serialize">
+        <button class="ctl ctl--serialize">
           Save
         </button>
       <% } %>

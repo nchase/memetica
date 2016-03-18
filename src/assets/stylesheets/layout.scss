@@ -226,22 +226,17 @@ iframe,
 
 }
 
-.ctl--styleChanger {
+.ctl {
+  margin: 1em 0;
   width: 100%;
   height: 4em;
   font-family: monospace;
   color: inherit;
   background-color: inherit;
-  border-color: currentColor;
+  border: 1px solid currentColor;
+  border-radius: 5px;
   opacity: 1;
-}
-
-.ctl--serialize {
-  font-family: monospace;
-  color: inherit;
-  background-color: inherit;
-  border-color: currentColor;
-  border-style: solid;
+  cursor: pointer;
 }
 
 h1, h2, p, blockquote, ol, ul {

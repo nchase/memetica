@@ -1,0 +1,91 @@
+.region--frame {
+  color: #222;
+  font-family: Georgia, serif;
+}
+
+
+
+h1 {
+  font-style: italic;
+  border-bottom-color: #FF3530;
+}
+
+.region--frame--singlet h1:not(.decorator--header-text) {
+  margin-bottom: 1.5em;
+  padding: 1em 0.5em;
+  width: 100%;
+  text-align: center;
+}
+
+h1 ~ p:first-of-type:first-letter {
+  float: left;
+  font-size: 6em;
+  font-style: normal;
+  line-height: 1;
+  margin: -.2em 0;
+}
+
+a {
+  color: #1A1A1A;
+
+  &:hover {
+    color: #FF3530;
+  }
+}
+
+.region--frame-inner a {
+  text-decoration: none;
+  text-shadow:
+    .03em 0 #fff,
+    -.03em 0 #fff,
+    0 .03em #fff,
+    0 -.03em #fff,
+    .06em 0 #fff,
+    -.06em 0 #fff,
+    .09em 0 #fff,
+    -.09em 0 #fff,
+    .12em 0 #fff,
+    -.12em 0 #fff,
+    .15em 0 #fff,
+    -.15em 0 #fff;
+  background:
+    linear-gradient(#fff,#fff),
+    linear-gradient(#fff,#fff),
+    linear-gradient(#FF3530,#FF3530);
+  background-size:
+    .05em 1px,
+    .05em 1px,
+    1px 1px;
+  background-repeat:
+    no-repeat,
+    no-repeat,
+    repeat-x;
+  background-position:
+    0 95%,
+    100% 95%,
+    0 95%;
+  transition-duration: 200ms;
+
+  &:hover {
+    background: 0 0;
+  }
+}
+
+hr {
+  margin: 1.5em 0;
+  color: #FF3530;
+  border-color: currentColor;
+}
+
+.region--frame--singlet hr {
+  margin: 3em 0 4em;
+  border-width: 1px;
+  border-style: solid;
+}
+
+hr:before {
+  content: '';
+  border-radius: 50%;
+  background-color: #FF3530;
+}
+

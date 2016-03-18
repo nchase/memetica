@@ -1,7 +1,5 @@
 # Memetica: A Document Publisher
 
-[![Build Status](https://travis-ci.org/nchase/memetica.svg?branch=master)](https://travis-ci.org/nchase/memetica)
-
 Memetica is a static site generator much like Jekyll. It is only focused on
 taking a combination of markdown content and CSS. It gives users
 a series of opportunities to transform that content in any way they wish,
@@ -12,7 +10,10 @@ standard POSIX-style [Streams](https://en.wikipedia.org/wiki/Standard_streams).
 
 **Technologies used:** Node.js, standard UNIX scripting, CSS
 
-For licenses, see [LICENSE.md](LICENSE.md)
+For licenses, see [LICENSE.md](LICENSE.md).
+
+[![Build Status](https://travis-ci.org/nchase/memetica.svg?branch=master)](https://travis-ci.org/nchase/memetica)
+
 
 ---
 

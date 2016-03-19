@@ -3,7 +3,27 @@
   font-family: Georgia, serif;
 }
 
+.decorator-bio {
+  display: none;
+}
 
+.decorator--header .decorator-break {
+  display: none;
+}
+
+.decorator--header-pageTitleContainer {
+  margin: 25vh 0;
+}
+
+.decorator--header-icon-structure {
+  fill: #FF3530;
+}
+
+.decorator--header-text {
+  margin-top: 15vh;
+  border: solid #FF3530;
+  border-width: 1px 0;
+}
 
 h1 {
   font-style: italic;

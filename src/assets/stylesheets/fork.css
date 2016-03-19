@@ -9,7 +9,10 @@
   display: none; }
 
 .decorator--header-pageTitleContainer {
-  margin: 25vh 0; }
+  margin: 15vh 0; }
+  @media (min-width: 64em) {
+    .decorator--header-pageTitleContainer {
+      margin: 25vh 0; } }
 
 .decorator--header-icon-structure {
   fill: #FF3530; }
@@ -18,6 +21,12 @@
   margin-top: 15vh;
   border: solid #FF3530;
   border-width: 1px 0; }
+  @media (min-width: 648px) {
+    .decorator--header-text {
+      margin-top: 0; } }
+  @media (min-width: 960px) {
+    .decorator--header-text {
+      margin-top: 15vh; } }
 
 h1 {
   font-style: italic;

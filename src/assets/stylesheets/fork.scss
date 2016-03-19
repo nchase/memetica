@@ -12,7 +12,11 @@
 }
 
 .decorator--header-pageTitleContainer {
-  margin: 25vh 0;
+  margin: 15vh 0;
+
+  @media (min-width: 64em) {
+    margin: 25vh 0;
+  }
 }
 
 .decorator--header-icon-structure {
@@ -23,6 +27,14 @@
   margin-top: 15vh;
   border: solid #FF3530;
   border-width: 1px 0;
+
+  @media (min-width: 648px) {
+    margin-top: 0;
+  }
+
+  @media (min-width: 960px) {
+    margin-top: 15vh;
+  }
 }
 
 h1 {

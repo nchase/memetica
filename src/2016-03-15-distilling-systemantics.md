@@ -14,6 +14,10 @@ First I'll devote some space to describing some of the features of the text,
 then I thought I'd take some cuts from the book that stood out to me and distill
 them here for the reader.
 
+But before you read any of this, you should read the
+[Wikipedia Page on Systemantics](https://en.wikipedia.org/wiki/Systemantics)
+because it does a way better job of distilling this text than I ever could.
+
 ---
 
 ## Great Features of _Systemantics_

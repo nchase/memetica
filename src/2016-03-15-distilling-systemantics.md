@@ -8,7 +8,7 @@
 
 Systemantics (a.k.a. _The Systems Bible_) was a fun read. Way more accessible
 than I expected, highly recommended. A bit distressing in its pessimism[^1], but
-engaging and perenially relevant.
+engaging and (so far) perenially relevant.
 
 First I'll devote some space to describing some of the features of the text,
 then I thought I'd take some cuts from the book that stood out to me and distill

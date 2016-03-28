@@ -1,3 +1,5 @@
+[Distilling Systemantics](2016-03-15-distilling-systemantics.md)
+
 [Testing Memetica](test-README.md)
 
 [Why Memetica, OR, `cat ../README.md`](README.md)

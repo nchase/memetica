@@ -44,9 +44,14 @@ h1 {
 
 .region--frame--singlet h1:not(.decorator--header-text) {
   margin-bottom: 1.5em;
-  padding: 1em 0.5em;
+  padding: 1em 0;
   width: 100%;
   text-align: center;
+
+
+  @media (min-width: 648px) {
+    padding: 1em 0.5em;
+  }
 }
 
 h1 ~ p:first-of-type:first-letter {

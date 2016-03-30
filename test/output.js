@@ -26,6 +26,20 @@ tap.test('produces basic published pages', function(t) {
   });
 });
 
+tap.test('adds code-highlighting script when it detects code', function(t) {
+  t.plan(2);
+
+  var noCodeCommand = 'babel-node ejs-cli.js test/publishable.md';
+  exec(noCodeCommand, function(error, stdout, stderr) {
+    t.notMatch(stdout, 'highlight.min.js');
+  });
+
+  var codeCommand = 'babel-node ejs-cli.js test/publishable-code.md';
+  exec(codeCommand, function(error, stdout, stderr) {
+    t.match(stdout, 'highlight.min.js');
+  });
+});
+
 // we can just grep the output for the line(s) that we want here:
 tap.test('for published pages, re-writes markdown links to point to html files');
 

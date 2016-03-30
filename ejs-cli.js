@@ -65,6 +65,7 @@ process.stdout.write(ejs.render(layout, {
     frame: frame,
     singleColumn: matchers.singleColumn(content)
   }),
+  hasCode: matchers.hasCode(content),
   notrack: false,
   published: true
 }));

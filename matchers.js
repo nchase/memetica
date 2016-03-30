@@ -13,6 +13,14 @@ module.exports = {
     return this.getTitle(fs.readFileSync(input).toString());
   },
 
+  hasCode: function(input) {
+    if (!hasMatchFn(input)) {
+      return false;
+    }
+
+    return input.match(/<pre class="/);
+  },
+
   hasColumn: function(input) {
     if (!hasMatchFn(input)) {
       return false;

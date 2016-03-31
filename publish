@@ -2,13 +2,57 @@
 
 echo -e "\n"
 
-for document in $(find src ! -name 'index.md' -iname \*.md); do
-  echo "generating markup for $document"
+CMD="babel-node ejs-cli.js"
+# find instances of `.md` and replace with `.md.html`:
+MARKDOWN_EXTENSION_REPLACER="sed s/\.md/\.md\.html/"
+# find instances of `src` and replace with nothing:
+SRC_PATH_REMOVER="sed s/src\///"
 
-  `babel-node ejs-cli.js $document > $(echo $document | sed 's/.md/.md.html/' | sed 's/src\///')`
+generateMarkup () {
+  # if generateMarkup has no arguments, bail:
+  if [ -z $1 ]
+  then
+    echo "no file given."
+    return 1
+  fi
+
+  # print what we're going to do:
+  echo "generating markup for $1"
+
+  # if we're dealing with the index, assume we have two additional arguments.
+  # push them all through the ejs combiner, along with combing for `.md` in the
+  # index (replacing with `.md.html`) and create `index.html`:
+  if [ $1 = "src/index.md" ]
+  then
+    `$CMD $1 $2 $3 | $MARKDOWN_EXTENSION_REPLACER > index.html`
+    return 0
+  fi
+
+  # if we're still here, and we have multiple arguments,
+  # proceed with multi-arg approach and write to a filename similar
+  # to the input file (but in the root directory and `.md.html`
+  # instead of `.md`:
+  if [ $# -gt 1 ]
+  then
+    `$CMD $1 $2 $3 | $MARKDOWN_EXTENSION_REPLACER > $(echo $1 | $MARKDOWN_EXTENSION_REPLACER | $SRC_PATH_REMOVER)`
+    return 0
+  fi
+
+  # if we just have one argument, run the single-arg procedure:
+  `$CMD $1 > $(echo $1 | $MARKDOWN_EXTENSION_REPLACER | $SRC_PATH_REMOVER)`
+  return 0
+}
+
+if [ -n "$1" ]
+then
+  generateMarkup $1
+  exit 0
+fi
+
+for document in $(find src ! -name 'index.md' -iname \*.md); do
+  generateMarkup $document
 done
 
-echo "generating markup for src/index.md"
-`babel-node ejs-cli.js src/index.md src/header.html src/footer.html | sed 's/\.md/\.md\.html/'  > index.html`
+generateMarkup "src/index.md" "src/header.html" "src/footer.html"
 
 echo -e "\ndone.\n\n"

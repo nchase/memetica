@@ -50,10 +50,8 @@ then
   exit
 fi
 
-for document in $(find src ! -name 'index.md' -iname \*.md); do
+for document in $(find src -iname \*.md); do
   generateMarkup $document
 done
-
-generateMarkup "src/index.md"
 
 echo -e "\ndone.\n\n"

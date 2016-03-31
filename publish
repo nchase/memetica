@@ -2,10 +2,20 @@
 
 echo -e "\n"
 
-for document in $(find src ! -name 'index.md' -iname \*.md); do
-  echo "generating markup for $document"
+generateMarkup () {
+  echo "generating markup for $1"
+  `babel-node ejs-cli.js $1 > $(echo $1 | sed 's/.md/.md.html/' | sed 's/src\///')`
+  return 0
+}
 
-  `babel-node ejs-cli.js $document > $(echo $document | sed 's/.md/.md.html/' | sed 's/src\///')`
+if [ -n "$1" ]
+then
+  generateMarkup $1
+  exit 0
+fi
+
+for document in $(find src ! -name 'index.md' -iname \*.md); do
+  generateMarkup $document
 done
 
 echo "generating markup for src/index.md"

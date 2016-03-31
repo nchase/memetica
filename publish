@@ -19,13 +19,13 @@ generateMarkup () {
   # print what we're going to do:
   echo "generating markup for $1"
 
-  # if we're dealing with the index, assume we have two additional arguments.
+  # if we're dealing with the index, add header and footer as addn'l arguments.
   # push them all through the ejs combiner, along with combing for `.md` in the
   # index (replacing with `.md.html`) and create `index.html`:
   if [ $1 = "src/index.md" ]
   then
-    `$CMD $1 $2 $3 | $MARKDOWN_EXTENSION_REPLACER > index.html`
-    return 0
+    RETVAL=`$CMD $1 "src/header.html" "src/footer.html" | $MARKDOWN_EXTENSION_REPLACER > index.html`
+    return $RETVAL
   fi
 
   # if we're still here, and we have multiple arguments,
@@ -34,25 +34,26 @@ generateMarkup () {
   # instead of `.md`:
   if [ $# -gt 1 ]
   then
-    `$CMD $1 $2 $3 | $MARKDOWN_EXTENSION_REPLACER > $(echo $1 | $MARKDOWN_EXTENSION_REPLACER | $SRC_PATH_REMOVER)`
-    return 0
+    RETVAL=`$CMD $1 $2 $3 | $MARKDOWN_EXTENSION_REPLACER > $(echo $1 | $MARKDOWN_EXTENSION_REPLACER | $SRC_PATH_REMOVER)`
+    return $RETVAL
   fi
 
   # if we just have one argument, run the single-arg procedure:
-  `$CMD $1 > $(echo $1 | $MARKDOWN_EXTENSION_REPLACER | $SRC_PATH_REMOVER)`
-  return 0
+  RETVAL=`$CMD $1 > $(echo $1 | $MARKDOWN_EXTENSION_REPLACER | $SRC_PATH_REMOVER)`
+  return $RETVAL
 }
 
 if [ -n "$1" ]
 then
   generateMarkup $1
-  exit 0
+  echo -e "\ndone.\n\n"
+  exit
 fi
 
 for document in $(find src ! -name 'index.md' -iname \*.md); do
   generateMarkup $document
 done
 
-generateMarkup "src/index.md" "src/header.html" "src/footer.html"
+generateMarkup "src/index.md"
 
 echo -e "\ndone.\n\n"

@@ -29,7 +29,6 @@
   },
   "devDependencies": {
     "chokidar": "^1.4.3",
-    "node-inspector": "^0.8.1",
     "postcss-cli": "^2.1.0",
     "tap": "^5.7.0"
   }

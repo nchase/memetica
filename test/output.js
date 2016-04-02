@@ -15,7 +15,7 @@ tap.test('produces reasonably well-formed column elements from `|||` in input', 
 });
 
 tap.test('produces basic published pages', function(t) {
-  var command = 'babel-node ejs-cli.js test/publishable.md';
+  var command = 'node ejs-cli.js test/publishable.md';
   var expectedOutput = fs.readFileSync('test/publishable_published.md.html', {
     encoding: 'utf8'
   });
@@ -29,12 +29,12 @@ tap.test('produces basic published pages', function(t) {
 tap.test('adds code-highlighting script when it detects code', function(t) {
   t.plan(2);
 
-  var noCodeCommand = 'babel-node ejs-cli.js test/publishable.md';
+  var noCodeCommand = 'node ejs-cli.js test/publishable.md';
   exec(noCodeCommand, function(error, stdout, stderr) {
     t.notMatch(stdout, 'highlight.min.js');
   });
 
-  var codeCommand = 'babel-node ejs-cli.js test/publishable-code.md';
+  var codeCommand = 'node ejs-cli.js test/publishable-code.md';
   exec(codeCommand, function(error, stdout, stderr) {
     t.match(stdout, 'highlight.min.js');
   });

@@ -5,7 +5,7 @@ echo -e "\n"
 for style in $(find src/assets/stylesheets -iname \*.scss); do
   echo "generating styles for $style"
 
-  `./node_modules/.bin/node-sass --stdout $style |  ./node_modules/.bin/postcss  --use autoprefixer --output $(echo $style | sed 's/\.scss/\.css/')`
+  `./node_modules/.bin/node-sass $style |  ./node_modules/.bin/postcss  --use autoprefixer --output $(echo $style | sed 's/\.scss/\.css/')`
 done
 
 echo -e "\ndone.\n\n"

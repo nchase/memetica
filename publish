@@ -2,7 +2,7 @@
 
 echo -e "\n"
 
-CMD="babel-node ejs-cli.js"
+CMD="node ejs-cli.js"
 # find instances of `.md` and replace with `.md.html`:
 MARKDOWN_EXTENSION_REPLACER="sed s/\.md/\.md\.html/"
 # find instances of `src` and replace with nothing:

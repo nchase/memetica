@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @font-face {
-  src: url('../fonts/brushup.otf');
+  src: url("../fonts/brushup.otf");
   font-family: 'Brush Up'; }
 
 .region--frame {

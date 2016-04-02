@@ -1,5 +1,5 @@
 @font-face {
-  src: url('../fonts/marion.otf');
+  src: url("../fonts/marion.otf");
   font-family: 'Marion'; }
 
 .col + hr {

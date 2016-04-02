@@ -1,5 +1,5 @@
 @font-face {
-  src: url('../fonts/bauhaus.ttf');
+  src: url("../fonts/bauhaus.ttf");
   font-family: 'Bauhaus'; }
 
 .region--frame {

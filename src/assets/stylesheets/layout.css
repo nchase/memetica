@@ -13,7 +13,8 @@ iframe {
 body {
   margin: 0; }
 
-iframe, .region--frame {
+iframe,
+.region--frame {
   width: 100%;
   border: none; }
 
@@ -60,7 +61,6 @@ iframe, .region--frame {
     width: 4rem; }
   .context.is-active {
     -webkit-transform: translateX(100%);
-        -ms-transform: translateX(100%);
             transform: translateX(100%);
     cursor: auto; }
     .context.is-active:hover:before {
@@ -187,18 +187,8 @@ iframe, .region--frame {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-transition-property: color,
-    background-color,
-    text-shadow,
-    font-size,
-    width,
-    min-width;
-  transition-property: color,
-    background-color,
-    text-shadow,
-    font-size,
-    width,
-    min-width;
+  -webkit-transition-property: color, background-color, text-shadow, font-size, width, min-width;
+  transition-property: color, background-color, text-shadow, font-size, width, min-width;
   -webkit-transition-duration: 500ms;
           transition-duration: 500ms; }
 
@@ -226,7 +216,8 @@ h1, h2, p, blockquote, ol, ul {
   margin: 0;
   line-height: 1.5; }
 
-h1, h2 {
+h1,
+h2 {
   font-weight: normal; }
 
 h1 {
@@ -253,7 +244,8 @@ p, ol, ul {
   margin-bottom: 1.5em;
   width: 100%; }
 
-blockquote ol, blockquote ul {
+blockquote ol,
+blockquote ul {
   margin: 1em 0; }
 
 li {
@@ -309,7 +301,8 @@ abbr[title] {
 .col + hr {
   margin: 2em 0 3em; }
 
-.col + hr + figure + hr, .col + hr + .figure + hr {
+.col + hr + figure + hr,
+.col + hr + .figure + hr {
   margin-top: 1em;
   margin-bottom: 3em; }
 
@@ -337,6 +330,7 @@ abbr[title] {
     padding: 0 1em;
     width: 50%;
     vertical-align: top; } }
+
 @media (min-width: 90em) {
   .col {
     margin-left: 0;
@@ -355,18 +349,20 @@ abbr[title] {
 @media (min-width: 64em) {
   .col + .col {
     margin-top: 6.67%; } }
+
 @media (min-width: 90em) {
   .col + .col {
     width: 25%; } }
 
-.col:nth-child(n+4) {
+.col:nth-child(n + 4) {
   margin: 6.67% 0 0;
   width: 100%; }
   @media (min-width: 90em) {
-    .col:nth-child(n+4) {
+    .col:nth-child(n + 4) {
       width: 25%; } }
 
-.img, img {
+.img,
+img {
   display: block;
   margin: 1em auto;
   width: 100%;
@@ -378,10 +374,12 @@ img[src^="https://travis-ci.org"] {
   margin: 0;
   width: auto; }
 
-figure, .figure {
+figure,
+.figure {
   margin: auto; }
 
-.col + hr + figure, .col + hr + .figure {
+.col + hr + figure,
+.col + hr + .figure {
   margin: 1em auto; }
 
 @media (min-width: 90em) {

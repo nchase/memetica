@@ -9,32 +9,24 @@
 @-webkit-keyframes pop-upwards {
   0% {
     opacity: 0; }
-
   20% {
     opacity: .7; }
-
   40% {
     opacity: 1; }
-
   70% {
     opacity: 1; }
-
   100% {
     opacity: 1; } }
 
 @keyframes pop-upwards {
   0% {
     opacity: 0; }
-
   20% {
     opacity: .7; }
-
   40% {
     opacity: 1; }
-
   70% {
     opacity: 1; }
-
   100% {
     opacity: 1; } }
 
@@ -50,7 +42,8 @@
 .medium-editor-hidden {
   display: none; }
 
-.medium-editor-toolbar, .medium-editor-anchor-preview {
+.medium-editor-toolbar,
+.medium-editor-anchor-preview {
   visibility: hidden;
   position: absolute;
   top: 0;
@@ -62,14 +55,17 @@
   -webkit-transition: none;
   transition: none; }
 
-.medium-editor-toolbar ul, .medium-editor-anchor-preview ul {
+.medium-editor-toolbar ul,
+.medium-editor-anchor-preview ul {
   margin: 0;
   padding: 0; }
 
-.medium-editor-toolbar li, .medium-editor-anchor-preview li {
+.medium-editor-toolbar li,
+.medium-editor-anchor-preview li {
   display: inline-block; }
 
-.medium-editor-toolbar li button, .medium-editor-anchor-preview li button {
+.medium-editor-toolbar li button,
+.medium-editor-anchor-preview li button {
   display: block;
   margin: 0;
   padding: 1em 1.5em;
@@ -83,18 +79,20 @@
   transition: -webkit-transform 100ms;
   transition: transform 100ms;
   transition: transform 100ms, -webkit-transform 100ms; }
-  .medium-editor-toolbar li button:hover, .medium-editor-anchor-preview li button:hover {
+  .medium-editor-toolbar li button:hover,
+  .medium-editor-anchor-preview li button:hover {
     -webkit-transform: translateY(0.25em);
-        -ms-transform: translateY(0.25em);
             transform: translateY(0.25em); }
 
 .medium-editor-button-active {
   border-bottom: 0.25em solid currentColor !important; }
 
-.medium-editor-toolbar li button:focus, .medium-editor-anchor-preview li button:focus {
+.medium-editor-toolbar li button:focus,
+.medium-editor-anchor-preview li button:focus {
   outline: none; }
 
-.medium-editor-toolbar li .medium-editor-action-underline, .medium-editor-anchor-preview li .medium-editor-action-underline {
+.medium-editor-toolbar li .medium-editor-action-underline,
+.medium-editor-anchor-preview li .medium-editor-action-underline {
   text-decoration: underline; }
 
 .medium-editor-anchor-preview {
@@ -108,7 +106,8 @@
   padding: 1em 1.5em;
   border: 0.1em solid currentColor; }
 
-.medium-editor-toolbar-active, .medium-editor-anchor-preview-active {
+.medium-editor-toolbar-active,
+.medium-editor-anchor-preview-active {
   visibility: visible; }
 
 .sticky-toolbar {
@@ -140,7 +139,6 @@
   0% {
     -webkit-transform: scale(0);
             transform: scale(0); }
-
   100% {
     -webkit-transform: scale(1);
             transform: scale(1);
@@ -150,7 +148,6 @@
   0% {
     -webkit-transform: scale(0);
             transform: scale(0); }
-
   100% {
     -webkit-transform: scale(1);
             transform: scale(1);

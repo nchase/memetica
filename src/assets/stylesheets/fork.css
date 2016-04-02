@@ -59,9 +59,7 @@ a {
   background: -webkit-linear-gradient(#fff, #fff), -webkit-linear-gradient(#fff, #fff), -webkit-linear-gradient(#FF3530, #FF3530);
   background: linear-gradient(#fff, #fff), linear-gradient(#fff, #fff), linear-gradient(#FF3530, #FF3530);
   background-size: .05em 1px, .05em 1px, 1px 1px;
-  background-repeat: no-repeat,
-    no-repeat,
-    repeat-x;
+  background-repeat: no-repeat, no-repeat, repeat-x;
   background-position: 0 95%, 100% 95%, 0 95%;
   -webkit-transition-duration: 200ms;
           transition-duration: 200ms; }

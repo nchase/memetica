@@ -1,0 +1,72 @@
+.region--frame {
+  font-family: Courier, monospace;
+  background-color: #E5D952; }
+  .region--frame:before {
+    z-index: -1;
+    content: '';
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("/images/threat/photo-1447069387593-a5de0862481e.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0.2; }
+
+h1, h2 {
+  font-family: Impact, sans-serif;
+  text-transform: uppercase; }
+
+@media (min-width: 800px) {
+  .region--frame--singlet h1 {
+    position: fixed;
+    top: -0.5em;
+    left: 4rem;
+    -webkit-transform-origin: left;
+            transform-origin: left;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    width: 90vh;
+    border-bottom: none; } }
+
+@media (min-width: 1024px) {
+  .region--frame--singlet h1 {
+    left: 10rem; } }
+
+@media (min-width: 800px) {
+  .region--frame:not(.is-active--modal) h1 {
+    z-index: 1; } }
+
+hr {
+  margin: 1.5em 0;
+  border: 1px solid currentColor; }
+
+hr:before {
+  content: ''; }
+
+.region--frame--src_index_md h1 {
+  visibility: hidden; }
+  .region--frame--src_index_md h1:before {
+    content: 'Memetica';
+    visibility: visible; }
+
+@media (min-width: 800px) {
+  .region--frame--singlet:not(.region--frame--src_index_md) .region--frame-inner {
+    padding-top: 2.5em; } }
+
+.region--frame--singlet hr {
+  margin: 0 0 1.5em; }
+
+.col + hr {
+  margin: 2em 0 3em; }
+
+.decorator-bio {
+  display: none; }
+
+.decorator-break {
+  display: none; }
+
+.decorator--header-icon {
+  display: none; }
+

@@ -1,0 +1,24 @@
+* {
+  background-color: inherit;
+}
+
+.region--frame-inner {
+  padding: 100vh 0 !important;
+  display: block;
+}
+
+.folder {
+  margin: 1em 0;
+  padding: 1em 0;
+  text-align: center;
+  border: solid currentColor;
+  border-width: 1px 0;
+}
+
+.folder:nth-child(even) {
+  transform-origin: left;
+}
+
+.folder:nth-child(odd) {
+  transform-origin: right;
+}

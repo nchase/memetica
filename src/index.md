@@ -1,5 +1,3 @@
-[Fold](2016-04-10-fold.md)
-
 [Distilling Systemantics](2016-03-15-distilling-systemantics.md)
 
 [Testing Memetica](test-README.md)

@@ -277,6 +277,11 @@ code {
   border-radius: 0.25em;
   overflow: auto; }
 
+a code {
+  margin: 0;
+  padding: 0;
+  background-color: transparent; }
+
 small {
   display: block;
   font-size: 0.7em; }

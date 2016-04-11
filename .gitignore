@@ -8,4 +8,5 @@ npm-debug.log
 !src/footer.html
 !src/share.html
 src/assets/stylesheets/*.css
+src/assets/scripts/bundle.js
 

@@ -7,9 +7,10 @@
   },
   "scripts": {
     "clean": "./clean",
+    "browserify": "./node_modules/.bin/browserify --entry src/assets/scripts/app.js",
     "build:documents": "./publish",
     "build:styles": "./styles",
-    "build": "npm run build:documents && npm run build:styles",
+    "build": "npm run build:documents && npm run build:styles && npm run --silent browserify | ./node_modules/.bin/uglifyjs -c > src/assets/scripts/bundle.js",
     "deploy": "git push origin gh-pages:gh-pages",
     "publish": "npm run build",
     "publish:master": "git merge --no-ff --no-edit master && npm run build && git add . && git commit -m \"build latest master.\" && git push origin gh-pages",
@@ -28,8 +29,10 @@
     "postcss": "^5.0.0"
   },
   "devDependencies": {
+    "browserify": "^13.0.0",
     "chokidar": "^1.4.3",
     "postcss-cli": "^2.1.0",
-    "tap": "^5.7.0"
+    "tap": "^5.7.0",
+    "uglify-js": "^2.6.2"
   }
 }

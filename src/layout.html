@@ -67,8 +67,12 @@
       <% } %>
     </div>
 
-    <script src="<%- prefix %>assets/scripts/contextMenu.js"></script>
-    <script src="<%- prefix %>assets/scripts/handleStyleChange.js"></script>
+    <% if (published) { %>
+      <script src="<%- prefix %>assets/scripts/bundle.js"></script>
+    <% } else { %>
+      <script src="<%- prefix %>assets/scripts/contextMenu.js"></script>
+      <script src="<%- prefix %>assets/scripts/handleStyleChange.js"></script>
+    <% } %>
     <% if (hasCode) { %>
       <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/styles/default.min.css">
       <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/highlight.min.js"></script>

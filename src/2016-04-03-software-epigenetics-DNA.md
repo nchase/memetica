@@ -106,7 +106,6 @@ Generative testing libraries are available to the JS community as packages like
       environmental fitness reified.
 [^5]: See libraries like [`QuickCheck`](https://wiki.haskell.org/Introduction_to_QuickCheck2)
       in Haskell and [`test.check`](https://github.com/clojure/test.check) in Clojure
-[^6]: No One does this, but if you do, I totally feel your pain. Getting closer
-      to the _"everything has been proven, so I am totally sure that this works"_
-      state seems like endless and meaningless work, so naturally,
+[^6]: Getting closer to the _"everything has been proven, so I am totally sure
+      that this works"_ state feels like endless and meaningless work, so naturally,
       single-input-single-output tests fall out of that tension.

@@ -57,7 +57,7 @@ of the system to keep it alive.[^3]
 
 ---
 
-## Improving Software Systems With Lamarckism
+## Improving Software Systems With Soft Inheritance
 
 _Maybe don't jump right into changing the DNA._
 

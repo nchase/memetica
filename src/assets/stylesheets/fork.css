@@ -41,13 +41,6 @@ h1 {
     .region--frame--singlet h1:not(.decorator--header-text) {
       padding: 1em 0.5em; } }
 
-h1 ~ p:first-of-type:first-letter {
-  float: left;
-  font-size: 6em;
-  font-style: normal;
-  line-height: 1;
-  margin: -.2em 0; }
-
 a {
   color: #1A1A1A; }
   a:hover {

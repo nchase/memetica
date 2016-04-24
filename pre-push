@@ -9,3 +9,5 @@ for document in $(find src -iname \*.md); do
     exit 1
   fi
 done
+
+npm run test

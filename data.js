@@ -7,6 +7,7 @@ module.exports = {
   ],
   styles: [
     'threat',
+    'playfair',
     'fork',
     'dinn',
     'geo',

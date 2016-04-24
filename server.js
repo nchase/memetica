@@ -6,6 +6,7 @@ var sass = require('node-sass');
 var autoprefixer = require('autoprefixer');
 var postcss = require('postcss');
 var bodyParser = require('body-parser');
+var fs = require('fs');
 var serialize = require('./serialize');
 var data = require('./data');
 var matchers = require('./matchers');
@@ -18,6 +19,19 @@ app.set('view engine', 'html');
 app.set('views', process.cwd() + '/src/');
 
 app.locals.require = require;
+
+
+app.use('/src/assets/scripts/bundle.js', function (req, res, next) {
+  var browserify = require('browserify')('./src/assets/scripts/app.js', {
+    debug: true
+  });
+
+  res.set('Content-Type', 'text/javascript');
+
+  browserify.bundle(function(error, buffer) {
+    res.send(buffer);
+  });
+});
 
 app.get(/\/([^\s]+.(?:md|html))?$/, function(request, response) {
   if (!request.params[0]) {

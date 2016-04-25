@@ -41,11 +41,11 @@ or use the sidebar), there's a fair chance the headings are using the WOFF2 form
 **For 'Playfair Regular', WOFF2 offers a 10X optimization over TTF
 and a 3.5x optimization over WOFF.**
 
-Format    Size
--------   ------
-WOFF2     17.8KB
-WOFF        60KB
-TTF        182KB
+ Format   | Size
+:---------|:-------
+ WOFF2    |  17.8KB
+ WOFF     |    60KB
+ TTF      |   182KB
 
 
 WOFF2 isn't supported everywhere, but web fonts allow us to specify multiple

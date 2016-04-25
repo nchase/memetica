@@ -50,7 +50,7 @@ WOFF2 isn't supported everywhere, but web fonts allow us to specify multiple
 values for fonts (see CSS in intro). The first value is treated by the browser
 as the most desirable option, the final value is the ultimate fallback.
 
-Don't send WOFF2 files over the wire with e.g. gzip &mdash; they are already
+Avoid sending WOFF2 files over the wire with e.g. gzip &mdash; they are already
 pre-compressed.
 
 # Other Optimizations, Further Reading

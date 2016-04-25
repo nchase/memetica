@@ -1,5 +1,5 @@
 @font-face {
-  src: url("../fonts/playfair.woff2") format("woff2"), url("../fonts/playfair.ttf") format("truetype");
+  src: url("../fonts/playfair.woff2") format("woff2"), url("../fonts/playfair.woff") format("woff"), url("../fonts/playfair.ttf") format("truetype");
   font-family: 'Playfair'; }
 
 .region--frame {
@@ -54,7 +54,5 @@ hr {
   border-style: solid; }
 
 hr:before {
-  content: '';
-  border-radius: 50%;
-  background-color: currentColor; }
+  content: ''; }
 

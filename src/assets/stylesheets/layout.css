@@ -240,7 +240,7 @@ h2 {
     h2 {
       font-size: 1.5em; } }
 
-p, ol, ul {
+p, ol, ul, table {
   margin-bottom: 1.5em;
   width: 100%; }
 
@@ -285,6 +285,19 @@ a code {
 small {
   display: block;
   font-size: 0.7em; }
+
+table {
+  border-collapse: collapse;
+  font-family: monospace;
+  background: rgba(128, 128, 128, 0.1);
+  width: 100%; }
+
+th {
+  background: rgba(128, 128, 128, 0.1);
+  padding: 1em; }
+
+td {
+  padding: 0.5em 1em; }
 
 hr {
   width: 100%;

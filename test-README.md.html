@@ -45,21 +45,21 @@
 <h2 id="the-first-test">The First Test</h2>
 <p>The first reasonable thing I thought to test was document columnization.</p>
 <p>I'll talk about it a bit. Here's the test in its entirety:</p>
-<pre class="js"><code>var tap = require(&#39;tap&#39;);
-var exec = require(&#39;child_process&#39;).exec;
-var fs = require(&#39;fs&#39;);
+<div class="sourceCode"><pre class="sourceCode js"><code class="sourceCode javascript"><span class="kw">var</span> tap <span class="op">=</span> <span class="at">require</span>(<span class="st">&#39;tap&#39;</span>)<span class="op">;</span>
+<span class="kw">var</span> exec <span class="op">=</span> <span class="at">require</span>(<span class="st">&#39;child_process&#39;</span>).<span class="at">exec</span><span class="op">;</span>
+<span class="kw">var</span> fs <span class="op">=</span> <span class="at">require</span>(<span class="st">&#39;fs&#39;</span>)<span class="op">;</span>
 
-tap.test(&#39;produces reasonably well-formed column elements from `|||` in input&#39;, function(t) {
-  var command = &#39;cat test/column_document.md | node columnize.js&#39;;
-  var expectedOutput = fs.readFileSync(&#39;test/column_content_columnized.md&#39;, {
-    encoding: &#39;utf8&#39;
-  });
+<span class="va">tap</span>.<span class="at">test</span>(<span class="st">&#39;produces reasonably well-formed column elements from `|||` in input&#39;</span><span class="op">,</span> <span class="kw">function</span>(t) <span class="op">{</span>
+  <span class="kw">var</span> command <span class="op">=</span> <span class="st">&#39;cat test/column_document.md | node columnize.js&#39;</span><span class="op">;</span>
+  <span class="kw">var</span> expectedOutput <span class="op">=</span> <span class="va">fs</span>.<span class="at">readFileSync</span>(<span class="st">&#39;test/column_content_columnized.md&#39;</span><span class="op">,</span> <span class="op">{</span>
+    <span class="dt">encoding</span><span class="op">:</span> <span class="st">&#39;utf8&#39;</span>
+  <span class="op">}</span>)<span class="op">;</span>
 
-  exec(command, function(error, stdout, stderr) {
-    t.equal(stdout, expectedOutput);
-    t.done();
-  });
-});</code></pre>
+  <span class="at">exec</span>(command<span class="op">,</span> <span class="kw">function</span>(error<span class="op">,</span> stdout<span class="op">,</span> stderr) <span class="op">{</span>
+    <span class="va">t</span>.<span class="at">equal</span>(stdout<span class="op">,</span> expectedOutput)<span class="op">;</span>
+    <span class="va">t</span>.<span class="at">done</span>()<span class="op">;</span>
+  <span class="op">}</span>)<span class="op">;</span>
+<span class="op">}</span>)<span class="op">;</span></code></pre></div>
 <p>So all that I'm doing here is taking the script that handles a thing that Memetica actually does.<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a> We run that script with simple input<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a> that should transform into different output<a href="#fn3" class="footnoteRef" id="fnref3"><sup>3</sup></a> and assert that the results of the script are the same as our expected output.</p>
 <hr />
 <h2 id="benefits">Benefits</h2>

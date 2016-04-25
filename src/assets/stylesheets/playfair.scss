@@ -1,6 +1,7 @@
 @font-face {
   src:
     url('../fonts/playfair.woff2') format('woff2'),
+    url('../fonts/playfair.woff') format('woff'),
     url('../fonts/playfair.ttf') format('truetype');
   font-family: 'Playfair';
 }
@@ -74,7 +75,5 @@ hr {
 
 hr:before {
   content: '';
-  border-radius: 50%;
-  background-color: currentColor;
 }
 

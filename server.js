@@ -29,6 +29,7 @@ app.use('/src/assets/scripts/bundle.js', function (req, res, next) {
   res.set('Content-Type', 'text/javascript');
 
   browserify.bundle(function(error, buffer) {
+    console.log(`client bundle regenerated: ${buffer.length} bytes.`);
     res.send(buffer);
   });
 });

@@ -6,7 +6,6 @@ module.exports = {
     'src/demo.md'
   ],
   styles: [
-    'threat',
     'playfair',
     'fork',
     'dinn',

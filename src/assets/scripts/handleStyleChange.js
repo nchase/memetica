@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   if (!cookieValue) {
-    cookieValue = 'src/assets/stylesheets/fork';
+    cookieValue = 'src/assets/stylesheets/playfair';
   }
 
   var evt = new Event('change');

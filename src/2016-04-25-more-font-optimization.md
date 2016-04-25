@@ -32,8 +32,8 @@ WOFF2 is a web standard optimized font-packaging format that offers fairly large
 compression gains over other formats.
 
 If you're reading this page with my Playfair stylesheet (and if you aren't,
-but want to, navigate [here](?style=playfair) or use the sidebar), there's a fair
-chance the headings are using the WOFF2 format.
+but want to, navigate [here](?style=playfair#playfair-picker){#playfair-picker}
+or use the sidebar), there's a fair chance the headings are using the WOFF2 format.
 
 
 # The Numbers

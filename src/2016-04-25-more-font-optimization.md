@@ -2,8 +2,10 @@
 
 **TL;DR &mdash; if you need a web font, use WOFF2 fonts if available,
 then fall back to WOFF, then, finally, use whatever other formats
-are available. You can specify multiple values for the `src` property,
-so this syntax should work:**
+are available.**
+
+You can specify multiple values for the `src` property,
+so this syntax should work:
 
 > ```css
 > @font-face {

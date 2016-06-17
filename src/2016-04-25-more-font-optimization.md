@@ -7,15 +7,15 @@ are available.**
 You can specify multiple values for the `src` property,
 so this syntax should work:
 
-> ```css
-> @font-face {
->   src:
->     url('../fonts/playfair.woff2') format('woff2'),
->     url('../fonts/playfair.woff') format('woff'),
->     url('../fonts/playfair.ttf') format('truetype');
->   font-family: 'Playfair';
-> }
-> ```
+```css
+@font-face {
+  src:
+    url('../fonts/playfair.woff2') format('woff2'),
+    url('../fonts/playfair.woff') format('woff'),
+    url('../fonts/playfair.ttf') format('truetype');
+  font-family: 'Playfair';
+}
+```
 
 ---
 
@@ -64,6 +64,8 @@ pre-compressed.
 2. Google [has a tremendous article about font optimization](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/webfont-optimization).
 3. [W3C Analysis of WOFF 2.0](https://www.w3.org/TR/WOFF20ER/) -
    up to 94.51% gains observed.
+4. Be sure to declare a `local('NameOfLocalFont')` if there might be
+   a locally-available font &mdash; avoid the network request altogether!
 
 
 

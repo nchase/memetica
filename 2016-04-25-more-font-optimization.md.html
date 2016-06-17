@@ -31,7 +31,6 @@
                 <h1 id="font-optimization-woff-2.0-and-more">Font Optimization: WOFF 2.0 and More</h1>
 <p><strong>TL;DR — if you need a web font, use WOFF2 fonts if available, then fall back to WOFF, then, finally, use whatever other formats are available.</strong></p>
 <p>You can specify multiple values for the <code>src</code> property, so this syntax should work:</p>
-<blockquote>
 <div class="sourceCode"><pre class="sourceCode css"><code class="sourceCode css"><span class="dv">@font-face</span> <span class="kw">{</span>
   <span class="kw">src:</span>
     <span class="dt">url(</span><span class="st">&#39;../fonts/playfair.woff2&#39;</span><span class="dt">)</span> <span class="dt">format(</span><span class="st">&#39;woff2&#39;</span><span class="dt">)</span>,
@@ -39,7 +38,6 @@
     <span class="dt">url(</span><span class="st">&#39;../fonts/playfair.ttf&#39;</span><span class="dt">)</span> <span class="dt">format(</span><span class="st">&#39;truetype&#39;</span><span class="dt">)</span><span class="kw">;</span>
   <span class="kw">font-family:</span> <span class="st">&#39;Playfair&#39;</span><span class="kw">;</span>
 <span class="kw">}</span></code></pre></div>
-</blockquote>
 <hr />
 <p>Fonts are a heck of a lot of fun. Lately (thinking 2015, it is currently mid-2016) there have been a handful of reasonable arguments in favor of using system fonts instead of web fonts.</p>
 <p>I love system fonts and classic/core web fonts and I agree with the reasons behind using them instead of custom web fonts. They'll always be faster than custom web fonts for all of the obvious reasons.</p>
@@ -77,6 +75,7 @@
 <li>If you can't use WOFF2 or WOFF with your font, try <a href="2015-11-04-fonts.md">Font Subsetting</a>.<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a></li>
 <li>Google <a href="https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/webfont-optimization">has a tremendous article about font optimization</a>.</li>
 <li><a href="https://www.w3.org/TR/WOFF20ER/">W3C Analysis of WOFF 2.0</a> - up to 94.51% gains observed.</li>
+<li>Be sure to declare a <code>local('NameOfLocalFont')</code> if there might be a locally-available font — avoid the network request altogether!</li>
 </ol>
 <div class="footnotes">
 <hr />

@@ -1,4 +1,4 @@
-# With Love For Pipes
+# With Love For Pipes, Streams, and Redirection
 
 Pipes, Streams, `STDIN`, and `STDOUT` are all part of the standard UNIX-like
 toolset and they're 100% worth your time to learn.

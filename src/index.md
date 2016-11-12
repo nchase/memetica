@@ -1,4 +1,4 @@
-[With Love For Pipes](2016-10-24-love-for-pipes-streams.md)
+[With Love For Pipes, Streams](2016-10-24-love-for-pipes-streams.md)
 
 [Font Optimization II](2016-04-25-more-font-optimization.md)
 

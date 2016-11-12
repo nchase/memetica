@@ -58,6 +58,12 @@ for understanding once you get to a minimal baseline.[^4]
 They're based on a simple philosophy and can be used in endlessly-flexible
 combinations to create wonderful things.
 
+---
+
+## Further Reading:
+
+- [Wikipedia, "Standard Streams"](https://en.wikipedia.org/wiki/Standard_streams)
+- [Learning The Shell, "I/O Redirection"](http://linuxcommand.org/lc3_lts0070.php)
 
 [^1]: bcat is traditionally a ruby gem (e.g. `gem install bcat`), but
       an alternative implementation is now available through npm

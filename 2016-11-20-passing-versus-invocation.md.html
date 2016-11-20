@@ -9,12 +9,12 @@
     <link rel="icon" href="favicon.png" />
     <title>
       
-        Memetica
+        Function Passing Versus Function Invocation - Memetica
       
     </title>
   </head>
 
-  <body class="region--frame region--frame--src_index_md region--frame--singlet">
+  <body class="region--frame region--frame--src_2016-11-20-passing-versus-invocation_md region--frame--singlet">
     <svg style="display: none">
       <symbol viewBox="0 0 1024 1024" id="octoface">
   <path d="M940.812 277.688c8.25-20.219 35.375-101.75-8.562-211.906 0 0-67.375-21.312-219.875 82.906C648.5 131.125 579.875 128.5 512 128.5c-67.906 0-136.438 2.625-200.5 20.25C159.031 44.46900000000005 91.719 65.78099999999995 91.719 65.78099999999995 47.812 176 74.938 257.46900000000005 83.188 277.688 31.5 333.562 0 404.875 0 492.344 0 821.562 213.25 896 510.844 896 808.562 896 1024 821.562 1024 492.344 1024 404.875 992.5 333.562 940.812 277.688zM512 833c-211.406 0-382.781-9.875-382.781-214.688 0-48.938 24.062-94.595 65.344-132.312 68.75-62.969 185.281-29.688 317.438-29.688 132.25 0 248.625-33.281 317.438 29.625 41.312 37.78 65.438 83.312 65.438 132.312C894.875 823.125 723.375 833 512 833zM351.156 512.438c-42.469 0-76.906 51.062-76.906 114.188s34.438 114.312 76.906 114.312c42.375 0 76.812-51.188 76.812-114.312S393.531 512.438 351.156 512.438zM672.875 512.438C630.5 512.438 596 563.5 596 626.625s34.5 114.312 76.875 114.312 76.812-51.188 76.812-114.312C749.75 563.5 715.312 512.438 672.875 512.438z" />
@@ -28,84 +28,115 @@
     <div
           >
       <div class="region--frame-inner">
-        <div class="decorator decorator--header">
-  <p class="decorator-bio">
-    Noah Chase is a software engineer who lives and works
-    outside of DC in Silver Spring, Maryland.
-    <a href="/about.md.html">About Me</a>
-  </p>
+                <h1 id="function-passing-versus-function-invocation">Function Passing Versus Function Invocation</h1>
+<p>One thing that I see developers do when they're on their way to a deeper understanding of the language is confuse function <em>passing</em> with function <em>invocation</em>.</p>
+<p>In walking myself back from that point of view that the difference is obvious, I want to explore and explain the difference for the reader who might be sitting somewhere along the continuum of understanding.</p>
+<hr />
+<h2 id="lets-start-by-defining-a-function">Let's start by defining a function</h2>
+<p>First let's construct an arbitrary function. The function will not be a method on an object, though it could be.<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a></p>
+<p>You'll often hear the terms 'function' and 'method' used interchangably. In earlier eras, you might have heard 'routine' and 'procedure' too.<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a></p>
+<p>This function will not take any arguments, though it certainly could:</p>
+<div class="sourceCode"><pre class="sourceCode js"><code class="sourceCode javascript"><span class="kw">var</span> twoPlusTwo <span class="op">=</span> <span class="kw">function</span>() <span class="op">{</span>
+  <span class="va">console</span>.<span class="at">log</span>(<span class="dv">2</span> <span class="op">+</span> <span class="dv">2</span>)<span class="op">;</span>
+<span class="op">}</span></code></pre></div>
+<hr />
+<h2 id="invokingcalling-our-function-is-a-lot-like-casting-spells">Invoking/Calling our function is a lot like casting spells</h2>
+<p>'Invoke' is synonymous with 'call.' For me, the term 'invoke' calls to mind casting magic spells, which is a metaphor that I love. I also enjoy thinking of it like executing a special move in a fighting game.</p>
+<p><img src="https://cloud.ahfr.org/images/ryu.gif" alt="Special Move" /><a href="#fn3" class="footnoteRef" id="fnref3"><sup>3</sup></a></p>
+<p>If I wanted to call/invoke the function we wrote in the last section, I'd do this:</p>
+<div class="sourceCode"><pre class="sourceCode js"><code class="sourceCode javascript"><span class="co">// function calling:</span>
 
-  <hr class="decorator-break" />
+<span class="at">twoPlusTwo</span>()<span class="op">;</span></code></pre></div>
+<p>This would give us the result right then-and-there.</p>
+<p>Write your own <code>twoPlusTwo</code> and try calling it!</p>
+<hr />
+<h2 id="software-is-elaborate-spell-casting">Software Is Elaborate Spell-Casting</h2>
+<p>If we wanted to pass our function around, we'd send the function definition along to some other thing that could call it. This is useful because it gives other pieces of code the power to call our code at <em>their</em> leisure (instead of immediately at the time/place where we are writing the code).</p>
+<p>To continue with the metaphor of casting spells, this is like taking a page out of the spellbook and giving it to someone else so that they can cast that spell later.</p>
+<p>Perhaps you can imagine this going further and further, allowing the construction of an elaborate chain of spells.</p>
+<p>Many software applications, both simple and complex, are elaborate chains of spells.</p>
+<hr />
+<h2 id="what-does-it-look-like-when-a-function-calls-other-functions">What does it look like when a function calls other functions?</h2>
+<p>Let's imagine that we had a function that, in fact, called other functions.</p>
+<p>That function might be written something like this:</p>
+<div class="sourceCode"><pre class="sourceCode js"><code class="sourceCode javascript"><span class="kw">var</span> functionCaller <span class="op">=</span> <span class="kw">function</span>(otherFuncToCall) <span class="op">{</span>
+  <span class="at">otherFuncToCall</span>()<span class="op">;</span>
+<span class="op">}</span></code></pre></div>
+<p>This function takes an argument, <code>otherFuncToCall</code>. That argument isn't a &quot;real&quot; function, it's just a reference to whatever function we pass in to it.</p>
+<p>So if we write code like this:</p>
+<div class="sourceCode"><pre class="sourceCode js"><code class="sourceCode javascript"><span class="co">// function passing:</span>
 
-  <div class="decorator--header-pageTitleContainer">
-    <div class="decorator--header-icon">
-      <div class="decorator--header-icon-structure decorator--header-icon-div">
-      </div>
-      <svg class="decorator--header-icon-structure decorator--header-icon-svg decorator--header-icon-svg--goat">
-        <use "decorator--header-icon-structure-data" xlink:href="#goat"></use>
-      </svg>
-    </div>
+<span class="at">functionCaller</span>(twoPlusTwo)<span class="op">;</span></code></pre></div>
+<p>We'll get the same result that we received earlier by calling <code>twoPlusTwo</code> directly.</p>
+<hr />
+<h2 id="incorrect-function-passing">Incorrect Function-Passing</h2>
+<p>Notice that we <em>pass</em> the definition of <code>twoPlusTwo</code> into the other piece of code that calls it. We do not call/invoke it. If we called it instead of passing it, our code would look something like this:</p>
+<div class="sourceCode"><pre class="sourceCode js"><code class="sourceCode javascript"><span class="co">// incorrect function passing</span>
 
-    <h1 class="decorator--header-text">
-      Essays &amp; Articles
-    </h1>
-  </div>
+<span class="at">functionCaller</span>(<span class="at">twoPlusTwo</span>())<span class="op">;</span></code></pre></div>
+<p>That would be wrong, and would produce incorrect results.</p>
+<p>In that scenario, we would not actually have passed any argument in to <code>functionCaller</code>.</p>
+<hr />
+<h2 id="wrapping-up">Wrapping Up</h2>
+<p>Here's the complete code for this exercise for you to play with.</p>
+<p>I encourage you to write it out instead of copying and pasting it:</p>
+<div class="sourceCode"><pre class="sourceCode js"><code class="sourceCode javascript"><span class="co">// a function that prints some stuff to `console.log`:</span>
+<span class="kw">var</span> twoPlusTwo <span class="op">=</span> <span class="kw">function</span>() <span class="op">{</span>
+  <span class="va">console</span>.<span class="at">log</span>(<span class="dv">2</span> <span class="op">+</span> <span class="dv">2</span>)<span class="op">;</span>
+<span class="op">}</span>
 
-  <hr class="decorator-break" />
+<span class="co">// a function that calls whatever function we pass into it:</span>
+<span class="kw">var</span> functionCaller <span class="op">=</span> <span class="kw">function</span>(otherFuncToCall) <span class="op">{</span>
+  <span class="at">otherFuncToCall</span>()<span class="op">;</span>
+<span class="op">}</span>
+
+<span class="co">// example of correct function passing:</span>
+<span class="at">functionCaller</span>(twoPlusTwo)<span class="op">;</span>
+
+<span class="co">// example of incorrect function passing:</span>
+<span class="at">functionCaller</span>(<span class="at">twoPlusTwo</span>())<span class="op">;</span></code></pre></div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>The behavior described on this page will be the same regardless of whether we're talking about named functions, anonymous functions, object methods, whatever.<a href="#fnref1">↩</a></p></li>
+<li id="fn2"><p>Those terms ('routine', 'procedure') usually refer to the same thing as 'function' or 'method', but they aren't in fashion right now. Yes indeed, there are subtle differences language-by-language.<a href="#fnref2">↩</a></p></li>
+<li id="fn3"><p>Image cribbed from <a href="http://streetfighter.wikia.com/wiki/Shinku_Hadoken/Sprites" class="uri">http://streetfighter.wikia.com/wiki/Shinku_Hadoken/Sprites</a><a href="#fnref3">↩</a></p></li>
+</ol>
 </div>
+              </div>
+      
+        <div class="shareBar">
+  <hr class="shareBar-divider" />
 
-        <p><a href="2016-11-20-passing-versus-invocation.md.html">Function Passing Vs. Function Invocation</a></p>
-<p><a href="2016-10-24-love-for-pipes-streams.md.html">With Love For Pipes, Streams</a></p>
-<p><a href="2016-04-25-more-font-optimization.md.html">Font Optimization II</a></p>
-<p><a href="2016-04-11-challenges-in-ui-testing.md.html">Challenges In Web UI Testing</a></p>
-<p><a href="2016-04-03-software-epigenetics-DNA.md.html">Epigenetics and DNA in Software</a></p>
-<p><a href="2016-03-15-distilling-systemantics.md.html">Distilling Systemantics</a></p>
-<p><a href="test-README.md.html">Testing Memetica</a></p>
-<p><a href="README.md.html">Why Memetica, OR, <code>cat ../README.md</code></a></p>
-<p><a href="2016-01-16-email.md.html">Email Management Toward Sanity and Productivity</a></p>
-<p><a href="2016-02-20-software-maturity.md.html">Software Maturity Dynamics</a></p>
-<p><a href="2016-01-31-simplicity.md.html">Simplicity: Syntax in Markup Templating</a></p>
-<p><a href="2016-01-13-performance-ii.md.html">Performance II</a></p>
-<p><a href="2016-01-03-performance.md.html">Performance</a></p>
-<p><a href="2015-11-23-axiomatic-css.md.html">Axiomatic CSS</a></p>
-<p><a href="2015-11-11-twin-peaks.md.html">Twin Peaks</a></p>
-<p><a href="2015-11-04-fonts.md.html">Font Optimization: Subsetting</a></p>
-<p><a href="2015-11-02-grids.md.html">Grids</a></p>
-<p><a href="2015-09-27-time.md.html">Time</a></p>
-        <div class="decorator decorator--footer">
-  <hr class="decorator-break" />
-  <form
-    action="https://tinyletter.com/nchase"
-    method="post"
-    target="popupwindow"
-    onsubmit="window.open('https://tinyletter.com/nchase', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"
+  <span class="shareBar-callout">
+    Share on:
+  </span>
+
+  <a
+    class="shareBar-shareable"
+    title="Share/Discuss on Hacker News"
+    target="_blank"
+    href="https://news.ycombinator.com/submitlink?{url}"
   >
-    <input type="hidden" value="1" name="embed" />
-    <label
-      for="emailList"
-      class="decorator--footer-label"
-    >
-    <abbr title="I do not abuse email.">Subscribe for content updates:</abbr>
-    </label>
-    <br />
-    <input
-      name="email"
-      type="text"
-      placeholder="Email Address"
-      class="decorator--footer-input decorator--footer--inputText"
-      id="emailList"
-    />
-    <button
-      id="newsletterSignup"
-      type="submit"
-      class="decorator--footer-input decorator--footer-inputSubmit"
-      value="Subscribe"
-    >
-      Subscribe
-    </button>
-  </form>
+    Hacker News
+  </a>
+
+  <a
+    class="shareBar-shareable"
+    title="Share/Discuss on Twitter"
+    target="_blank"
+    href="https://twitter.com/intent/tweet?text=Function Passing Versus Function Invocation&amp;url={url}"
+  >
+    Twitter
+  </a>
+
 </div>
-      </div>
+
+<script>
+  Array.prototype.forEach.call(document.querySelectorAll('.shareBar-shareable'), function(element) {
+    element.href = element.href.replace('{url}', window.location.href);
+  });
+</script>
       
     </div>
     <div class="context has-toggle">
@@ -182,6 +213,10 @@
     
       <script src="src/assets/scripts/bundle.js"></script>
     
+    
+      <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/styles/default.min.css">
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script>
     
     
       <script>

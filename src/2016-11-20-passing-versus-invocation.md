@@ -135,6 +135,16 @@ functionCaller(twoPlusTwo);
 functionCaller(twoPlusTwo());
 ```
 
+---
+
+## Further Reading
+
+1. A few years ago, Yehuda Katz (contributor to various high-profile OSS projects)
+   wrote [this great piece](http://yehudakatz.com/2011/08/11/understanding-javascript-function-invocation-and-this/)
+   on function invocation. He goes into more detail than I've described here,
+   including sections on the important built-ins `bind`, `call`, and `apply`.
+
+
 [^1]: The behavior described on this page will be the same regardless of
       whether we're talking about named functions, anonymous functions,
       object methods, whatever.

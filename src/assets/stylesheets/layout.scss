@@ -314,6 +314,12 @@ blockquote p {
   margin-bottom: 0;
 }
 
+.sourceCode {
+  display: flex;
+  overflow: auto;
+  width: 100%;
+}
+
 pre {
   max-width: 100%;
 }

@@ -1,3 +1,5 @@
+["Out of the Tar Pit" and Complexity](2017-09-15-complexity.md)
+
 [With Love For Pipes, Streams](2016-10-24-love-for-pipes-streams.md)
 
 [Font Optimization II](2016-04-25-more-font-optimization.md)

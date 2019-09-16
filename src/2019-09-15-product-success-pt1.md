@@ -7,10 +7,12 @@ products that become successful and stay that way.
 ## 1. You must _use_ the product
 
 If you make a product for consumers, and you yourself aren't a user of your
-product, good luck making it great. It's entirely possible to have something decent,
-but the effort required multiplies in every other area, if you do not follow this simple rule.
+product, good luck making it great. It's entirely possible to have something
+"decent," but the effort required to reach "decent" multiplies in every other
+area, if you do not follow this simple rule.
 
-If you don't do this, you will likely never have a product that is truly great.
+And if you don't do this, you will likely never have a product that is able to
+transcend "decent" into being truly great.
 
 
 ## 2. You must _measure_ stuff in the product

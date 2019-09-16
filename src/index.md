@@ -1,3 +1,5 @@
+[My Favorite Apps](_apps.md)
+
 [Rules and Behaviors for Successful Products](2019-09-15-product-success-pt1.md)
 
 ["Out of the Tar Pit" and Complexity](2017-09-15-complexity.md)

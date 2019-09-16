@@ -26,9 +26,9 @@ fit.
 ## React Native Debugger
 
 Keeps me from muddling my debugging experience with tabs in Chrome (this makes
-more to me than having a single tab in Chrome that hooked up to a client-side
-debugger in Simulator.app alongside many tabs that are for other things around
-work)
+more sense to me than having a single tab in Chrome that hooked up to a
+client-side debugger in Simulator.app alongside many tabs that are for other
+things around work)
 
 ## Mail.app
 

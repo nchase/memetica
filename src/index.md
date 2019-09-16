@@ -1,3 +1,5 @@
+[Rules and Behaviors for Successful Products](2019-09-15-product-success-pt1.md)
+
 ["Out of the Tar Pit" and Complexity](2017-09-15-complexity.md)
 
 [With Love For Pipes, Streams](2016-10-24-love-for-pipes-streams.md)

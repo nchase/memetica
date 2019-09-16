@@ -15,14 +15,19 @@ If you don't do this, you will likely never have a product that is truly great.
 
 ## 2. You must _measure_ stuff in the product
 
-You have to measure things. There should be regular reports that everyone can
-see and access. Engineers and individuals in other disciplines and functions
-(e.g. product, marketing, ideally design) should be able to measure things
-ad-hoc.
+You have to measure things. Engineers should do ad-hoc measurement to get a
+"fingertip feel" for whether or not a part of the system is working as
+expected. There should be regular reports, automated or not, that everyone can
+see and access.
 
-Note that measurement doesn't mean reading reports. Measure the primitives
-&mdash; you want to be measuring via rows in a database or Excel (i.e., the
-stuff that rolls up into the reports/graphs).
+Engineers and individuals in other disciplines and functions (e.g. product,
+marketing, ideally design) should have the skills to measure real values from
+the actual product state at will. Proxy measurements such as event triggers do
+not count, though those are very useful to have.
+
+Measurement doesn't mean reading reports. Measure the primitives
+&mdash; you want to be measuring via rows in a database or stuff dumped from a
+database into Excel (i.e., whatever stuff rolls up into the reports/graphs).
 
 ## 3. You must receive _feedback_ from the _product_ when things go wrong
 

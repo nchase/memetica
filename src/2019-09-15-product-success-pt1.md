@@ -48,4 +48,9 @@ reported and someone should be on duty to investigate and fix it.
 
 This might sound overbearing, but consider this: if your product is at any kind
 of scale, the fact that a single user _reported_ the issue probably means that
-others are having the issue, but they just aren't reporting it.
+others are having the issue, but they just aren't reporting it.[^1]
+
+[^1]: Aside: in some organizations, the relationship between support and
+  engineering is entirely mediated by product. (i.e. product decides whether or
+  not something that support hears about is communicated to engineers). I don't
+  think this is right.

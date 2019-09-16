@@ -30,46 +30,46 @@
     >
       <div class="region--frame-inner">
                 <h1 id="epigenetics-and-dna-in-software">Epigenetics and DNA in Software</h1>
-<p>When we think of software we tend to talk about business logic, automated testing, continuous delivery, user interfaces, &quot;the user experience,&quot; and product decisions.</p>
+<p>When we think of software we tend to talk about business logic, automated testing, continuous delivery, user interfaces, “the user experience,” and product decisions.</p>
 <p>Often absent from the conversation is the <em>life</em> either inherent in the systems that we create, or, more commonly, breathed into those systems by the people who create and/or use them.</p>
 <p>Leveraging this idea of <em>life-in-systems</em> I wanted to draw out a few links between phenomena observed in <em>software engineering</em> to phenomena observed in the <em>life sciences</em>.</p>
 <hr />
 <h2 id="code-as-dna">Code as DNA</h2>
-<p>Code is DNA. It can produce traits in the organism<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a> that, if expressed, will enable the organism to react to stimuli in the outer environment, which can lead to the surrounding environment's continued sanctioning of the organism's life.<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a></p>
-<h2 id="if-code-is-dna-what-are-tests-etc.">&quot;If Code Is DNA, What Are Tests?&quot;, etc.</h2>
+<p>Code is DNA. It can produce traits in the organism<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> that, if expressed, will enable the organism to react to stimuli in the outer environment, which can lead to the surrounding environment’s continued sanctioning of the organism’s life.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
+<h2 id="if-code-is-dna-what-are-tests-etc.">“If Code Is DNA, What Are Tests?”, etc.</h2>
 <p>Tests are <em>RNA polymerase</em>. The tests ensure the correctness of the DNA and allow the DNA to be <em>transcribed</em>. If the DNA is faulty, the RNA polymerase backs up and tries the previous transcription again.</p>
-<p>Obviously, <em>software artifacts</em> are the organism's expression of its genes (<em>phenotype</em>). Maybe our build pipeline, build tools, and build machines are <em>DNA helicases</em>.</p>
+<p>Obviously, <em>software artifacts</em> are the organism’s expression of its genes (<em>phenotype</em>). Maybe our build pipeline, build tools, and build machines are <em>DNA helicases</em>.</p>
 <hr />
 <h2 id="lamarckism-and-epigenetics-in-software">Lamarckism and Epigenetics in Software</h2>
-<p><em>Jean-Baptiste Lamarck</em>, an evolutionary theorist roughly eighty years before Darwin, proposed a <em>soft inheritance</em> — the notion that organisms are deterministically linked, not at point of creation, to their offspring, but at point of their offspring's creation, and any adaptations or adaptive aspirations that they might develop toward their environment may be passed on to their progeny. This is the idea that giraffes might have long necks because they aspired to eat the fruit of higher trees, or in an extreme case, the belief that you can grow entire organs if you want them badly enough.</p>
-<p>Naturally, this is all roundly discredited by today's scientists, but it has found a measure of skeptical and well-measured redemption in the modern science of epigenetics. <em>Epigenetics</em> is the study of things that exist above and outside-of the genetic level that may affect phenotype and may even produce generation-inheritable changes in organisms.</p>
-<p>In software, with a good feedback system, Lamarck's <em>soft inheritance</em> can be instituted sensibly. We have the advantage of knowing our systems (and if we're lucky) having good feedback wherein we can make the changes necessary on behalf of the system to keep it alive.<a href="#fn3" class="footnoteRef" id="fnref3"><sup>3</sup></a></p>
+<p><em>Jean-Baptiste Lamarck</em>, an evolutionary theorist roughly eighty years before Darwin, proposed a <em>soft inheritance</em> — the notion that organisms are deterministically linked, not at point of creation, to their offspring, but at point of their offspring’s creation, and any adaptations or adaptive aspirations that they might develop toward their environment may be passed on to their progeny. This is the idea that giraffes might have long necks because they aspired to eat the fruit of higher trees, or in an extreme case, the belief that you can grow entire organs if you want them badly enough.</p>
+<p>Naturally, this is all roundly discredited by today’s scientists, but it has found a measure of skeptical and well-measured redemption in the modern science of epigenetics. <em>Epigenetics</em> is the study of things that exist above and outside-of the genetic level that may affect phenotype and may even produce generation-inheritable changes in organisms.</p>
+<p>In software, with a good feedback system, Lamarck’s <em>soft inheritance</em> can be instituted sensibly. We have the advantage of knowing our systems (and if we’re lucky) having good feedback wherein we can make the changes necessary on behalf of the system to keep it alive.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
 <hr />
-<h2 id="improving-systems-with-soft-inheritance">Improving Systems With &quot;Soft Inheritance&quot;</h2>
-<p><em>Maybe don't jump right into changing the DNA.</em></p>
-<p>Here are some things that you can use to drive improvements to your system's environmental fitness:</p>
-<ol style="list-style-type: decimal">
+<h2 id="improving-systems-with-soft-inheritance">Improving Systems With “Soft Inheritance”</h2>
+<p><em>Maybe don’t jump right into changing the DNA.</em></p>
+<p>Here are some things that you can use to drive improvements to your system’s environmental fitness:</p>
+<ol type="1">
 <li><em>Unit Tests</em> are awesome because they give us reliability and open the door, gradually, to truly provable systems.</li>
-<li><em>Generative Tests</em> are awesome because they're like unit tests on steroids.</li>
+<li><em>Generative Tests</em> are awesome because they’re like unit tests on steroids.</li>
 <li>Improving <em>Human Communication</em> and getting everyone on the same page can do as much as any flavor of testing, automated or otherwise, though neither can replace the other.</li>
-<li>Finding ways of validating things-that-are-challenging-to-validate is always good.<a href="#fn4" class="footnoteRef" id="fnref4"><sup>4</sup></a></li>
+<li>Finding ways of validating things-that-are-challenging-to-validate is always good.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></li>
 </ol>
 <h2 id="generative-tests">Generative Tests</h2>
-<p>In most cases, we don't fully leverage the levels of confidence that the provability of a unit test opens the doors to. We don't prove nearly as much as we could.</p>
-<p><em>Generative Tests</em> are a mechanism from the functional programming paradigm<a href="#fn5" class="footnoteRef" id="fnref5"><sup>5</sup></a> that allow us to prove that all inputs to a given function produce output for a given function that are correct, without having to write an ungodly number of tests to ensure that all possible input combinations produce correct output combinations for those inputs.<a href="#fn6" class="footnoteRef" id="fnref6"><sup>6</sup></a></p>
+<p>In most cases, we don’t fully leverage the levels of confidence that the provability of a unit test opens the doors to. We don’t prove nearly as much as we could.</p>
+<p><em>Generative Tests</em> are a mechanism from the functional programming paradigm<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> that allow us to prove that all inputs to a given function produce output for a given function that are correct, without having to write an ungodly number of tests to ensure that all possible input combinations produce correct output combinations for those inputs.<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a></p>
 <p>Math plus unit tests grants far greater testing power, potentially to the edges of user possibilities.</p>
 <p>Generative testing libraries are available to the JS community as packages like <a href="https://www.npmjs.com/package/testcheck"><code>testcheck</code></a> and <a href="https://www.npmjs.com/package/quickcheck"><code>quickcheck</code></a> on NPM.</p>
-<div class="footnotes">
+<section class="footnotes" role="doc-endnotes">
 <hr />
 <ol>
-<li id="fn1"><p>In the context of this thought exercise, the &quot;organism&quot; is actually a software system.<a href="#fnref1">↩</a></p></li>
-<li id="fn2"><p>In the realm of software, this survival is reflected in software usage, which is often, but not exclusively tied to the piece of software's business viability.<a href="#fnref2">↩</a></p></li>
-<li id="fn3"><p>Whereas with the biosphere, fitness-for-environment isn't determined by an organism or their offspring, Darwin be damned.<a href="#fnref3">↩</a></p></li>
-<li id="fn4"><p>OK, good is an understatement. It's intelligence, reflection, environmental fitness reified.<a href="#fnref4">↩</a></p></li>
-<li id="fn5"><p>See libraries like <a href="https://wiki.haskell.org/Introduction_to_QuickCheck2"><code>QuickCheck</code></a> in Haskell and <a href="https://github.com/clojure/test.check"><code>test.check</code></a> in Clojure<a href="#fnref5">↩</a></p></li>
-<li id="fn6"><p>Getting closer to the <em>&quot;everything has been proven, so I am totally sure that this works&quot;</em> state feels like endless and meaningless work, so naturally, single-input-single-output tests fall out of that tension.<a href="#fnref6">↩</a></p></li>
+<li id="fn1" role="doc-endnote"><p>In the context of this thought exercise, the “organism” is actually a software system.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2" role="doc-endnote"><p>In the realm of software, this survival is reflected in software usage, which is often, but not exclusively tied to the piece of software’s business viability.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3" role="doc-endnote"><p>Whereas with the biosphere, fitness-for-environment isn’t determined by an organism or their offspring, Darwin be damned.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4" role="doc-endnote"><p>OK, good is an understatement. It’s intelligence, reflection, environmental fitness reified.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5" role="doc-endnote"><p>See libraries like <a href="https://wiki.haskell.org/Introduction_to_QuickCheck2"><code>QuickCheck</code></a> in Haskell and <a href="https://github.com/clojure/test.check"><code>test.check</code></a> in Clojure<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6" role="doc-endnote"><p>Getting closer to the <em>“everything has been proven, so I am totally sure that this works”</em> state feels like endless and meaningless work, so naturally, single-input-single-output tests fall out of that tension.<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
-</div>
+</section>
               </div>
       
         <div class="shareBar">

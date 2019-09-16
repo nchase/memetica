@@ -9,12 +9,12 @@
     <link rel="icon" href="favicon.png" />
     <title>
       
-        Performance Problems With Huge Surface Areas - Memetica
+        Rules and Behaviors for Successful Products, Part I - Memetica
       
     </title>
   </head>
 
-  <body class="region--frame region--frame--src_2016-01-13-performance-ii_md region--frame--singlet">
+  <body class="region--frame region--frame--src_2019-09-15-product-success-pt1_md region--frame--singlet">
     <svg style="display: none">
       <symbol viewBox="0 0 1024 1024" id="octoface">
   <path d="M940.812 277.688c8.25-20.219 35.375-101.75-8.562-211.906 0 0-67.375-21.312-219.875 82.906C648.5 131.125 579.875 128.5 512 128.5c-67.906 0-136.438 2.625-200.5 20.25C159.031 44.46900000000005 91.719 65.78099999999995 91.719 65.78099999999995 47.812 176 74.938 257.46900000000005 83.188 277.688 31.5 333.562 0 404.875 0 492.344 0 821.562 213.25 896 510.844 896 808.562 896 1024 821.562 1024 492.344 1024 404.875 992.5 333.562 940.812 277.688zM512 833c-211.406 0-382.781-9.875-382.781-214.688 0-48.938 24.062-94.595 65.344-132.312 68.75-62.969 185.281-29.688 317.438-29.688 132.25 0 248.625-33.281 317.438 29.625 41.312 37.78 65.438 83.312 65.438 132.312C894.875 823.125 723.375 833 512 833zM351.156 512.438c-42.469 0-76.906 51.062-76.906 114.188s34.438 114.312 76.906 114.312c42.375 0 76.812-51.188 76.812-114.312S393.531 512.438 351.156 512.438zM672.875 512.438C630.5 512.438 596 563.5 596 626.625s34.5 114.312 76.875 114.312 76.812-51.188 76.812-114.312C749.75 563.5 715.312 512.438 672.875 512.438z" />
@@ -29,45 +29,21 @@
             style="overflow: hidden;"
     >
       <div class="region--frame-inner">
-                <h1 id="performance-problems-with-huge-surface-areas">Performance Problems With Huge Surface Areas</h1>
-<blockquote>
-<ol type="1">
-<li><p><em>When a distinguished but elderly scientist states that something is possible, he is almost certainly right. When he states that something is impossible, he is very probably wrong.</em></p></li>
-<li><p><em>The only way of discovering the limits of the possible is to venture a little way past them into the impossible.</em></p></li>
-</ol>
-</blockquote>
-<p>Arthur C. Clarke’s third law, <em>Any sufficiently advanced technology is indistinguishable from magic</em> gets considerably more usage than the first two, which have never really entered the popular-collective unconscious.</p>
-<p>The need for great performance really boils down to this one fact: You’ll never get create anything that feels like magic if your app is clunky and feels shitty. And if you can’t create magic, you won’t sell as well.</p>
-<p>But if you create magic and your competition does not, you’ll beat them at the market nine times out of ten. People love magic, even when it isn’t-quite-magic.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
-<p>The fact that Clarke’s first two laws aren’t nearly as popular as the third isn’t much of a surprise. They aren’t glamormous. They aren’t prescriptive. They don’t really describe what “impossible” is.</p>
-<p>The lack of popularity is not surprising, but it <em>is</em> a shame, because the first two laws drive us very clearly toward the third. When you push the boundaries of possibility, even in comparison to other experiences, you get delight. And if you string together enough delight, you approximate magic.</p>
-<hr />
-<h2 id="magic-in-plain-sight">Magic In Plain Sight</h2>
-<p>I think it’s important to look for solutions to performance problems in plain sight. I think it’s even <em>more</em> important to look for solutions to performance problems in plain sight when the surface area of the problem is large and/or unknown.</p>
-<p>Beautiful and elaborate optimizations can be useful, but if they are taxing to produce, then they may be difficult to maintain, and if they are difficult to maintain — especially if they challenge the mental model of how the system works — then their usefulness should be carefully weighed against the costs that must be incurred to use them.</p>
-<p>If the associated costs are high and the optimization makes the mental model more challenging, the optimization should not be used…unless the mental model was ineffective. Either way, something should be thrown away.</p>
-<blockquote>
-<ul>
-<li><em>First rule of optimization - Don’t</em></li>
-<li><em>Second rule of optimization - Don’t Yet (for experts only)</em><a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></li>
-</ul>
-</blockquote>
-<p>When the US Gov’t found Ross Ulbricht, widely believed to be <em>The Dread Pirate Roberts</em>, the lead didn’t come from an anonymous tipster or a sophisticated and illegal intelligence monitoring technique. Rather, it came from rather low-tech information gathering and observation from an IRS employee who was brought in to support FBI and DEA agents who were having trouble finding meaningful leads.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
-<p>His keen attention to details that any other human being could have observed in the landscape the authorities had assembled thus far led them directly to Ulbricht.</p>
-<p>The investigator was given the following quotation on a plaque:</p>
-<blockquote>
-<p><em>“The world is full of obvious things which nobody by chance ever observes.”</em></p>
-</blockquote>
-<p>This quote was penned not by <em>Arthur C. Clarke</em>, but by <em>Arthur Conan Doyle</em>, another acclaimed British author. The quote is attributed to his legendary problem-solving character <em>Sherlock Holmes</em>.</p>
-<p>What approach would Sherlock Holmes take to solving performance problems on the web?</p>
-<section class="footnotes" role="doc-endnotes">
-<hr />
-<ol>
-<li id="fn1" role="doc-endnote"><p>Per rule three, magic-that-isn’t-quite-magic may as well be magic.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2" role="doc-endnote"><p><a href="http://c2.com/cgi/wiki?RulesOfOptimization">Rules of Optimization, C2 Wiki</a><a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3" role="doc-endnote"><p><a href="http://www.nytimes.com/2015/12/27/business/dealbook/the-unsung-tax-agent-who-put-a-face-on-the-silk-road.html">The Tax Sleuth Who Took Down a Drug Lord, NYTimes</a><a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section>
+                <h1 id="rules-and-behaviors-for-successful-products-part-i">Rules and Behaviors for Successful Products, Part I</h1>
+<p>There are a lot of ways to build products. Here are some behaviors and environmental factors that I have come to believe are necessary for having products that become successful and stay that way.</p>
+<h2 id="you-must-use-the-product">1. You must <em>use</em> the product</h2>
+<p>If you make a product for consumers, and you yourself aren’t a user of your product, good luck making it great. It’s entirely possible to have something decent, but the effort required multiplies in every other area, if you do not follow this simple rule.</p>
+<p>If you don’t do this, you will likely never have a product that is truly great.</p>
+<h2 id="you-must-measure-stuff-in-the-product">2. You must <em>measure</em> stuff in the product</h2>
+<p>You have to measure things. There should be regular reports that everyone can see and access. Engineers and individuals in other disciplines and functions (e.g. product, marketing, ideally design) should be able to measure things ad-hoc.</p>
+<p>Note that measurement doesn’t mean reading reports. Measure the primitives — you want to be measuring via rows in a database or Excel (i.e., the stuff that rolls up into the reports/graphs).</p>
+<h2 id="you-must-receive-feedback-from-the-product-when-things-go-wrong">3. You must receive <em>feedback</em> from the <em>product</em> when things go wrong</h2>
+<p>One side of the feedback token is setting up some decent logging in your app. Engineers should be able to interrogate these logs easily (in other words, basic text search should work) to see what’s happening for users.</p>
+<p>Log levels should be used so that errors and warnings can be differentiated from general information.</p>
+<h2 id="you-must-receive-feedback-from-your-support-team-when-things-go-wrong">4. You must receive <em>feedback</em> from your <em>support team</em> when things go wrong</h2>
+<p>The other side of the feedback token is the support team’s feedback.</p>
+<p>When support gets an issue that they can’t solve with their tools, it should be reported and someone should be on duty to investigate and fix it.</p>
+<p>This might sound overbearing, but consider this: if your product is at any kind of scale, the fact that a single user <em>reported</em> the issue probably means that others are having the issue, but they just aren’t reporting it.</p>
               </div>
       
         <div class="shareBar">
@@ -90,7 +66,7 @@
     class="shareBar-shareable"
     title="Share/Discuss on Twitter"
     target="_blank"
-    href="https://twitter.com/intent/tweet?text=Performance Problems With Huge Surface Areas&amp;url={url}"
+    href="https://twitter.com/intent/tweet?text=Rules and Behaviors for Successful Products, Part I&amp;url={url}"
   >
     Twitter
   </a>

@@ -30,23 +30,23 @@
     >
       <div class="region--frame-inner">
                 <h1 id="with-love-for-pipes-streams-and-redirection">With Love For Pipes, Streams, and Redirection</h1>
-<p>Pipes, Streams, <code>STDIN</code>, and <code>STDOUT</code> are all core parts of the standard toolset on UNIX-like systems. They are the bedrock upon which we build other tools, and they're surprisingly simple and comprehensible at their core.</p>
+<p>Pipes, Streams, <code>STDIN</code>, and <code>STDOUT</code> are all core parts of the standard toolset on UNIX-like systems. They are the bedrock upon which we build other tools, and they’re surprisingly simple and comprehensible at their core.</p>
 <hr />
 <h2 id="exercise-prerequisites">Exercise Prerequisites</h2>
 <ul>
 <li>a *nix-like shell</li>
-<li>some package management tool through which you can install <code>pandoc</code> (e.g. <code>brew install pandoc</code>)</li>
-<li>some package management tool through which you can install <code>bcat</code><a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a>.</li>
+<li>some package management tool through which you can install <code>pandoc</code> (e.g. <code>brew install pandoc</code>)</li>
+<li>some package management tool through which you can install <code>bcat</code><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.</li>
 </ul>
 <hr />
 <h2 id="the-exercise">The Exercise</h2>
-<p>For a simple example, grab the prerequisites and then let's take the current directory's <code>README.md</code>, print it to a stream as HTML with <code>pandoc</code>, and pipe that stream to a browser using the <code>bcat</code><a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a> tool:</p>
+<p>For a simple example, grab the prerequisites and then let’s take the current directory’s <code>README.md</code>, print it to a stream as HTML with <code>pandoc</code>, and pipe that stream to a browser using the <code>bcat</code><a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> tool:</p>
 <pre><code>cat README.md | pandoc | bcat</code></pre>
 <p>There are other ways to do this, but I picked this one because it uses pipes effectively. The pipe characters (<code>|</code>) are sending the output from the previous command to the next command as input.</p>
-<p>Let's break this down a bit more:</p>
-<ol style="list-style-type: decimal">
-<li><code>cat</code> prints whatever file you give it as an argument to the standard output stream, otherwise known as <code>STDOUT</code> or &quot;standard out&quot;.</li>
-<li><code>pandoc</code>, the general-purpose text/markup format converter, can read from <code>STDIN</code> if you pipe it some input.<a href="#fn3" class="footnoteRef" id="fnref3"><sup>3</sup></a></li>
+<p>Let’s break this down a bit more:</p>
+<ol type="1">
+<li><code>cat</code> prints whatever file you give it as an argument to the standard output stream, otherwise known as <code>STDOUT</code> or “standard out”.</li>
+<li><code>pandoc</code>, the general-purpose text/markup format converter, can read from <code>STDIN</code> if you pipe it some input.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></li>
 <li><code>bcat</code>, similarly, can read a file if you give it a file as an argument, but what we did here, as you may expect by now, is we just piped the previous output via <code>STDIN</code>.</li>
 </ol>
 <hr />
@@ -54,24 +54,24 @@
 <p>Next time you have a complex job, consider looking beyond the toolchain that you use to complete your tasks. Is it truly the best tool for the job?</p>
 <p>Where does it hamper you? Where does it feel like overkill, or over-configuration?</p>
 <p>You might be able to get by with something simpler, and potentially (but, lol, certainly not necessarily) better.</p>
-<p>Standard tools available in UNIX-like systems offer a high ceiling for mastery, versatility and satisfaction, combined with, generally speaking, low requirements for understanding once you get to a minimal baseline.<a href="#fn4" class="footnoteRef" id="fnref4"><sup>4</sup></a></p>
-<p>They're based on a simple philosophy and can be used in endlessly-flexible combinations to create wonderful things.</p>
+<p>Standard tools available in UNIX-like systems offer a high ceiling for mastery, versatility and satisfaction, combined with, generally speaking, low requirements for understanding once you get to a minimal baseline.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></p>
+<p>They’re based on a simple philosophy and can be used in endlessly-flexible combinations to create wonderful things.</p>
 <hr />
 <h2 id="further-reading">Further Reading:</h2>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Standard_streams">Wikipedia, &quot;Standard Streams&quot;</a></li>
-<li><a href="http://linuxcommand.org/lc3_lts0070.php">Learning The Shell, &quot;I/O Redirection&quot;</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Standard_streams">Wikipedia, “Standard Streams”</a></li>
+<li><a href="http://linuxcommand.org/lc3_lts0070.php">Learning The Shell, “I/O Redirection”</a></li>
 </ul>
-<div class="footnotes">
+<section class="footnotes" role="doc-endnotes">
 <hr />
 <ol>
-<li id="fn1"><p>bcat is traditionally a ruby gem (e.g. <code>gem install bcat</code>), but an alternative implementation is now available through npm (<code>npm install -g bcat</code>).</p>
-<p>Yes, pedant! Global installs with <code>npm install -g</code> are indeed frowned upon, but this is a reasonable thing to do if you can't get the ruby gem, which is entirely possible, because I didn't describe setting up a ruby version manager or how to install ruby gems if you don't bother with a version manager.<a href="#fnref1">↩</a></p></li>
-<li id="fn2"><p><code>bcat</code> is a &quot;pipe to browser utility.&quot; Manpage for <code>bcat</code> available here: <a href="https://rtomayko.github.io/bcat/bcat.1.html" class="uri">https://rtomayko.github.io/bcat/bcat.1.html</a><a href="#fnref2">↩</a></p></li>
-<li id="fn3"><p>It can also read files passed to it as arguments, which would have read like <code>pandoc README.md | bcat</code>, which would have worked the same, but wouldn't have illustrated the power and composability of pipes so nicely.<a href="#fnref3">↩</a></p></li>
-<li id="fn4"><p>And once you get here, the surface area expands hugely and the distance to the horizon contracts, ever so infrequently expanding, always tending toward zero but never quite reaching it as you traverse the graph.<a href="#fnref4">↩</a></p></li>
+<li id="fn1" role="doc-endnote"><p>bcat is traditionally a ruby gem (e.g. <code>gem install bcat</code>), but an alternative implementation is now available through npm (<code>npm install -g bcat</code>).</p>
+<p>Yes, pedant! Global installs with <code>npm install -g</code> are indeed frowned upon, but this is a reasonable thing to do if you can’t get the ruby gem, which is entirely possible, because I didn’t describe setting up a ruby version manager or how to install ruby gems if you don’t bother with a version manager.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2" role="doc-endnote"><p><code>bcat</code> is a “pipe to browser utility.” Manpage for <code>bcat</code> available here: <a href="https://rtomayko.github.io/bcat/bcat.1.html">https://rtomayko.github.io/bcat/bcat.1.html</a><a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3" role="doc-endnote"><p>It can also read files passed to it as arguments, which would have read like <code>pandoc README.md | bcat</code>, which would have worked the same, but wouldn’t have illustrated the power and composability of pipes so nicely.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4" role="doc-endnote"><p>And once you get here, the surface area expands hugely and the distance to the horizon contracts, ever so infrequently expanding, always tending toward zero but never quite reaching it as you traverse the graph.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
-</div>
+</section>
               </div>
       
         <div class="shareBar">

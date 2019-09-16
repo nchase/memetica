@@ -33,7 +33,7 @@
 <p>Memetica is a static site generator much like Jekyll. It is only focused on taking a combination of markdown content and CSS. It gives users a series of opportunities to transform that content in any way they wish, then it presents that content wherever the user tells it to.</p>
 <p>For the sake of simplicity, nearly everything here is connected through standard POSIX-style <a href="https://en.wikipedia.org/wiki/Standard_streams">Streams</a>.</p>
 <p><strong>Technologies used:</strong> Node.js, standard UNIX scripting, CSS</p>
-<p>For licenses, see <a href="LICENSE.md" class="uri">LICENSE.md</a>.</p>
+<p>For licenses, see <a href="LICENSE.md">LICENSE.md</a>.</p>
 <p><a href="https://travis-ci.org/nchase/memetica"><img src="https://travis-ci.org/nchase/memetica.svg?branch=master" alt="Build Status" /></a></p>
 <hr />
 <h2 id="why-memetica">Why Memetica?</h2>
@@ -51,11 +51,11 @@
 <hr />
 <h2 id="markdown-parsing">Markdown Parsing</h2>
 <p>The Markdown-handling responsibilities are mostly performed by <a href="https://github.com/jgm/pandoc">Pandoc</a>, the most excellent Haskell library ever.</p>
-<p>I added the notion of a &quot;column&quot; token (<code>|||</code>) into Markdown for Memetica. The reliance on stdin/stdout enables a user to plug in anywhere and transform content (e.g. to detect something that a markdown parser doesn't understand, like columns, and turn them into something that the parser understands).</p>
+<p>I added the notion of a “column” token (<code>|||</code>) into Markdown for Memetica. The reliance on stdin/stdout enables a user to plug in anywhere and transform content (e.g. to detect something that a markdown parser doesn’t understand, like columns, and turn them into something that the parser understands).</p>
 <p>Additionally, the architecture of the system allows for the possibility of entirely different Markdown parsers to be used in different places for interesting results or performance improvements.</p>
 <hr />
 <h2 id="additional-possibilities">Additional Possibilities</h2>
-<p>You could publish a book and style it with CSS. This isn't unique to Memetica, but I'm not going to stand here and tell you that you can't do it.</p>
+<p>You could publish a book and style it with CSS. This isn’t unique to Memetica, but I’m not going to stand here and tell you that you can’t do it.</p>
 <hr />
 <p>For testing, <code>npm run test</code>, but also see <a href="test">test/README.md</a>.</p>
               </div>

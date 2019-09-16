@@ -6,18 +6,6 @@
   content: " ";
   font-size: 0; }
 
-@-webkit-keyframes pop-upwards {
-  0% {
-    opacity: 0; }
-  20% {
-    opacity: .7; }
-  40% {
-    opacity: 1; }
-  70% {
-    opacity: 1; }
-  100% {
-    opacity: 1; } }
-
 @keyframes pop-upwards {
   0% {
     opacity: 0; }
@@ -52,7 +40,6 @@
   font-size: 1em;
   background-color: inherit;
   border: 0.1em solid currentColor;
-  -webkit-transition: none;
   transition: none; }
 
 .medium-editor-toolbar ul,
@@ -75,14 +62,10 @@
   text-decoration: none;
   background-color: transparent;
   border: none;
-  -webkit-transition: -webkit-transform 100ms;
-  transition: -webkit-transform 100ms;
-  transition: transform 100ms;
-  transition: transform 100ms, -webkit-transform 100ms; }
+  transition: transform 100ms; }
   .medium-editor-toolbar li button:hover,
   .medium-editor-anchor-preview li button:hover {
-    -webkit-transform: translateY(0.25em);
-            transform: translateY(0.25em); }
+    transform: translateY(0.25em); }
 
 .medium-editor-button-active {
   border-bottom: 0.25em solid currentColor !important; }
@@ -115,8 +98,7 @@
   top: 1px; }
 
 .medium-editor-toolbar-active.stalker-toolbar {
-  -webkit-animation: pop-upwards 160ms forwards linear;
-          animation: pop-upwards 160ms forwards linear; }
+  animation: pop-upwards 160ms forwards linear; }
 
 .medium-editor-action-bold {
   font-weight: bolder; }
@@ -132,24 +114,12 @@
   height: 40px;
   display: inline-block;
   border-radius: 100%;
-  -webkit-animation: medium-image-loading-animation 1s infinite ease-in-out;
-          animation: medium-image-loading-animation 1s infinite ease-in-out; }
-
-@-webkit-keyframes medium-image-loading-animation {
-  0% {
-    -webkit-transform: scale(0);
-            transform: scale(0); }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    opacity: 0; } }
+  animation: medium-image-loading-animation 1s infinite ease-in-out; }
 
 @keyframes medium-image-loading-animation {
   0% {
-    -webkit-transform: scale(0);
-            transform: scale(0); }
+    transform: scale(0); }
   100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
     opacity: 0; } }
 

@@ -34,25 +34,25 @@
 <p>We can use fonts and font combinations as tools of expression and creativity. We can impress certain <em>feelings</em> upon our users through expert font usage, which can lead to powerful, satisfying ends for all participants.</p>
 <p>But fonts can also make the web slow. In the interest of a fast web, how can we make fonts faster?</p>
 <hr />
-<p>Recently I found a font that I really liked and I started using it on one of my sites.<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a> As usual, I found myself doing some light performance profiling of the page some time thereafter.</p>
+<p>Recently I found a font that I really liked and I started using it on one of my sites.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> As usual, I found myself doing some light performance profiling of the page some time thereafter.</p>
 <p>I was horrified to discover that the font weighed in at a whopping <code>1.1MB</code>, roughly 10x the size of the entirety of the rest of the content and assets, literally everything else coming down through the pipe.</p>
 <p>I thought this would be a great time to investigate <em>why</em> the font was so large and I hoped it would give me an opportunity to try an optimization I was curious about.</p>
 <hr />
 <h2 id="subsetting-case-study-66-improvement">Subsetting Case Study: 66% Improvement</h2>
-<p>The optimization I was interested in was <em>Font Subsetting</em>. This is just the process of taking each <em>glyph</em> (or character) in the font and removing the ones you don't need.</p>
-<p>The font contained 421 glyphs and I was pretty sure I didn't need them all.</p>
-<p>I loaded the font into <a href="http://fontforge.github.io">FontForge</a><a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a> and thought about my use case: I was only going to be using the font to write title-sized/display content in English, with the additional potential for very basic English punctuation. Knowing this, I got rid of everything that wasn't an English-language alphanumeric or basic English punctuation.</p>
+<p>The optimization I was interested in was <em>Font Subsetting</em>. This is just the process of taking each <em>glyph</em> (or character) in the font and removing the ones you don’t need.</p>
+<p>The font contained 421 glyphs and I was pretty sure I didn’t need them all.</p>
+<p>I loaded the font into <a href="http://fontforge.github.io">FontForge</a><a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> and thought about my use case: I was only going to be using the font to write title-sized/display content in English, with the additional potential for very basic English punctuation. Knowing this, I got rid of everything that wasn’t an English-language alphanumeric or basic English punctuation.</p>
 <p>When I re-generated the font, I was down to 96 glyphs and the new file size was roughly 33% of the original filesize.</p>
-<p><code>330KB</code> for a font isn't even close to excellent — pages should be much smaller — but it's an example of the kind of improvement you can see from font subsetting.</p>
-<p>After more reflection on my use case, I have high confidence that I could reduce this font's size by another ~<code>100KB</code> without much effort. 80% filesize reduction isn't bad at all.</p>
-<p>If you can identify the use cases for your font, there's a good chance that you'll be able to remove a lot of the glyphs that you just won't need. This is a simple and straightforward performance optimization.</p>
+<p><code>330KB</code> for a font isn’t even close to excellent — pages should be much smaller — but it’s an example of the kind of improvement you can see from font subsetting.</p>
+<p>After more reflection on my use case, I have high confidence that I could reduce this font’s size by another ~<code>100KB</code> without much effort. 80% filesize reduction isn’t bad at all.</p>
+<p>If you can identify the use cases for your font, there’s a good chance that you’ll be able to remove a lot of the glyphs that you just won’t need. This is a simple and straightforward performance optimization.</p>
 <hr />
-<h2 id="what-tools-exist-for-optimization-through-font-subsetting">&quot;What tools exist for optimization through font subsetting?&quot;</h2>
+<h2 id="what-tools-exist-for-optimization-through-font-subsetting">“What tools exist for optimization through font subsetting?”</h2>
 <p><a href="http://fontforge.github.io">FontForge</a> is a free/open source that will let you edit fonts and output changes to a wide variety of formats. This is what I used for my investigation.</p>
-<p><a href="http://www.subsetter.com/">FF Subsetter</a> is an online tool that claims to automatically optimize fonts. I didn't have any luck with it, but I only tried one font.</p>
+<p><a href="http://www.subsetter.com/">FF Subsetter</a> is an online tool that claims to automatically optimize fonts. I didn’t have any luck with it, but I only tried one font.</p>
 <p>Font Squirrel has a <a href="http://www.fontsquirrel.com/tools/webfont-generator">webfont generator</a> that does some automatic optimization. The output that it gave me was significantly smaller — <code>660KB</code> — a decent optimization, but not even close to what I was able to get. There are a lot of optional tweaks here that might deliver better performance.</p>
-<p>Google Fonts will let you selectively choose <em>which</em> characters to render. You can read more about that feature <a href="https://developers.google.com/fonts/docs/getting_started?hl=en#Optimizing_Requests">here</a> under the 'Optimizing Requests' heading.</p>
-<p>Lastly, there's the Glyphs app, which is a very sophisticated font creating and editing tool, but unlike the other options here it isn't free. <a href="https://glyphsapp.com" class="uri">https://glyphsapp.com</a></p>
+<p>Google Fonts will let you selectively choose <em>which</em> characters to render. You can read more about that feature <a href="https://developers.google.com/fonts/docs/getting_started?hl=en#Optimizing_Requests">here</a> under the ‘Optimizing Requests’ heading.</p>
+<p>Lastly, there’s the Glyphs app, which is a very sophisticated font creating and editing tool, but unlike the other options here it isn’t free. <a href="https://glyphsapp.com">https://glyphsapp.com</a></p>
 <hr />
 <h2 id="other-places-to-read-about-subsetting">Other places to read about subsetting:</h2>
 <ul>
@@ -60,13 +60,13 @@
 <li><p><a href="http://thenewcode.com/878/Slash-Page-Load-Times-With-CSS-Font-Subsetting">Slash Page Load Times With CSS Font Subsetting</a></p></li>
 <li><p><a href="http://www.sitepoint.com/joy-of-subsets-web-fonts/">The Joy of Subsets: Crossbreeding Web Fonts</a></p></li>
 </ul>
-<div class="footnotes">
+<section class="footnotes" role="doc-endnotes">
 <hr />
 <ol>
-<li id="fn1"><p>In fact, the site was this site. See the header font for the 'brushup' font style.<a href="#fnref1">↩</a></p></li>
-<li id="fn2"><p>I had serious trouble getting FontForge installed on Mac OS 10.11. I tried installing the app as described on the FontForge webpage linked above and I also tried via a couple of Homebrew formulas. There are a handful of recent issues on GitHub (<a href="https://github.com/fontforge/fontforge/issues/2542">like this one</a>) where people are talking about the problem and how to solve it. Ultimately what worked for me was using the <code>.dmg</code> referred to in <a href="https://github.com/fontforge/fontforge/issues/2530#issuecomment-148997584">this issue</a>.<a href="#fnref2">↩</a></p></li>
+<li id="fn1" role="doc-endnote"><p>In fact, the site was this site. See the header font for the ‘brushup’ font style.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2" role="doc-endnote"><p>I had serious trouble getting FontForge installed on Mac OS 10.11. I tried installing the app as described on the FontForge webpage linked above and I also tried via a couple of Homebrew formulas. There are a handful of recent issues on GitHub (<a href="https://github.com/fontforge/fontforge/issues/2542">like this one</a>) where people are talking about the problem and how to solve it. Ultimately what worked for me was using the <code>.dmg</code> referred to in <a href="https://github.com/fontforge/fontforge/issues/2530#issuecomment-148997584">this issue</a>.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
-</div>
+</section>
               </div>
       
         <div class="shareBar">

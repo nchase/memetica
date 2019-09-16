@@ -1,23 +1,10 @@
-@-webkit-keyframes rota {
-  to {
-    -webkit-transform: rotate(0.5turn);
-            transform: rotate(0.5turn); } }
-
 @keyframes rota {
   to {
-    -webkit-transform: rotate(0.5turn);
-            transform: rotate(0.5turn); } }
-
-@-webkit-keyframes rota--frame {
-  to {
-    -webkit-transform: rotate(0.5turn) scale(0.75);
-            transform: rotate(0.5turn) scale(0.75);
-    opacity: 0; } }
+    transform: rotate(0.5turn); } }
 
 @keyframes rota--frame {
   to {
-    -webkit-transform: rotate(0.5turn) scale(0.75);
-            transform: rotate(0.5turn) scale(0.75);
+    transform: rotate(0.5turn) scale(0.75);
     opacity: 0; } }
 
 /* --- the rest: --- */
@@ -36,14 +23,10 @@
   width: 33vw;
   height: 33vw;
   box-shadow: inset 0 0 0 1px #fff;
-  -webkit-animation: rota--frame 1250ms;
-          animation: rota--frame 1250ms;
-  -webkit-animation-iteration-count: 30;
-          animation-iteration-count: 30;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards; }
+  animation: rota--frame 1250ms;
+  animation-iteration-count: 30;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; }
 
 .decorator--header-pageTitleContainer {
   margin: 0 3em; }
@@ -61,10 +44,8 @@
   width: 100px;
   height: 100px;
   box-shadow: inset 0 0 0 1px #fff;
-  -webkit-animation: rota 2000ms;
-          animation: rota 2000ms;
-  -webkit-animation-iteration-count: 30;
-          animation-iteration-count: 30; }
+  animation: rota 2000ms;
+  animation-iteration-count: 30; }
 
 .decorator--header-icon-structure-data {
   display: none; }

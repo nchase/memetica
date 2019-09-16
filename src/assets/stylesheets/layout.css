@@ -1,7 +1,6 @@
 @charset "UTF-8";
 * {
   box-sizing: border-box;
-  -webkit-transition: inherit;
   transition: inherit; }
 
 html {
@@ -31,10 +30,7 @@ iframe,
   font-size: 1.25rem;
   padding: 1em;
   background-color: inherit;
-  -webkit-transition: -webkit-transform 200ms;
-  transition: -webkit-transform 200ms;
   transition: transform 200ms;
-  transition: transform 200ms, -webkit-transform 200ms;
   cursor: pointer;
   opacity: 0.8; }
   .context:before, .context:after {
@@ -47,7 +43,6 @@ iframe,
     width: 0.75rem;
     height: 1rem;
     background-color: currentColor;
-    -webkit-transition: width 200ms, border-color 200ms;
     transition: width 200ms, border-color 200ms;
     border-bottom: 3rem solid transparent; }
   .context:after {
@@ -60,8 +55,7 @@ iframe,
   .context:hover:before {
     width: 4rem; }
   .context.is-active {
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
+    transform: translateX(100%);
     cursor: auto; }
     .context.is-active:hover:before {
       width: 0.75rem; }
@@ -134,10 +128,6 @@ iframe,
   border: 1px solid currentColor; }
   .decorator--footer-input:focus {
     outline-color: currentColor; }
-  .decorator--footer-input::-webkit-input-placeholder {
-    color: inherit; }
-  .decorator--footer-input::-moz-placeholder {
-    color: inherit; }
   .decorator--footer-input:-ms-input-placeholder {
     color: inherit; }
   .decorator--footer-input::placeholder {
@@ -156,10 +146,8 @@ iframe,
   border-bottom: 1em solid currentColor;
   padding: 1em 1em 0;
   overflow: scroll;
-  -webkit-transition-property: background-color;
   transition-property: background-color;
-  -webkit-transition-duration: 300ms;
-          transition-duration: 300ms; }
+  transition-duration: 300ms; }
 
 .region--frame.is-serializing {
   color: #fff;
@@ -176,28 +164,20 @@ iframe,
   margin: auto; }
 
 .region--frame-inner {
-  display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-transition-property: color, background-color, text-shadow, font-size, width, min-width;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   transition-property: color, background-color, text-shadow, font-size, width, min-width;
-  -webkit-transition-duration: 500ms;
-          transition-duration: 500ms; }
+  transition-duration: 500ms; }
 
 .ctl--handle {
   border: solid;
   border-width: 0 0.25em;
   border-left-color: #e69999;
   border-right-color: #99cce6;
-  cursor: -webkit-grab;
   cursor: grab; }
 
 .ctl {
@@ -265,8 +245,6 @@ blockquote p {
   margin-bottom: 0; }
 
 .sourceCode {
-  display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   overflow: auto;

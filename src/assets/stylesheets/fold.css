@@ -13,10 +13,8 @@
   border-width: 1px 0; }
 
 .folder:nth-child(even) {
-  -webkit-transform-origin: left;
-          transform-origin: left; }
+  transform-origin: left; }
 
 .folder:nth-child(odd) {
-  -webkit-transform-origin: right;
-          transform-origin: right; }
+  transform-origin: right; }
 

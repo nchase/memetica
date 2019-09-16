@@ -30,35 +30,35 @@
     >
       <div class="region--frame-inner">
                 <h1 id="simplicity-syntax-in-markup-templating">Simplicity: Syntax in Markup Templating</h1>
-<p>Five years ago I thought Haml<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a> was the coolest thing around.</p>
+<p>Five years ago I thought Haml<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> was the coolest thing around.</p>
 <p>When <a href="http://jade-lang.com/">Jade</a> came out, I thought Jade was great too. The core of my happiness around these two languages stems from the clever, succinct syntax.</p>
-<p>These languages abstract HTML into a higher level-syntax. The code looks &quot;clean&quot;. Cleanliness is great, but what's the cost here? Abstraction doesn't always lend cleanliness.</p>
+<p>These languages abstract HTML into a higher level-syntax. The code looks “clean”. Cleanliness is great, but what’s the cost here? Abstraction doesn’t always lend cleanliness.</p>
 <hr />
-<p>I've moved on past Jade and Haml. These days I don't want any special syntax.</p>
-<p>These days I just want file includes and normal code for a given language alongside and inside of HTML-like strings.<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a></p>
+<p>I’ve moved on past Jade and Haml. These days I don’t want any special syntax.</p>
+<p>These days I just want file includes and normal code for a given language alongside and inside of HTML-like strings.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
 <hr />
 <h2 id="tradeoffs-of-succinct-syntax-in-templating">Tradeoffs of Succinct Syntax in Templating</h2>
 <p>Succinct syntax seems like a great win where writing HTML is a challenge, but it seems like a great loss when I think about all of overhead related to using that syntax instead of something that I already know and use more widely (HTML syntax).</p>
-<p>There's a significant learning overhead incurred when teaching or learning a templating language. This same overhead applies to scenarios where you have to build complex markup in the templating language. Instead of thinking about how to write the HTML, you spend time thinking about that and then thinking about how to write the templating language that is going to produce the HTML that you want.</p>
+<p>There’s a significant learning overhead incurred when teaching or learning a templating language. This same overhead applies to scenarios where you have to build complex markup in the templating language. Instead of thinking about how to write the HTML, you spend time thinking about that and then thinking about how to write the templating language that is going to produce the HTML that you want.</p>
 <p>This overhead may be small or non-existent for simple markup structures, but the simple cases are never the problem. And sometimes you <em>do</em> need complex markup to achieve certain layouts or maybe to present information in a way that a machine can read it easily.</p>
 <p>Additionally (though rarely), what about the scenario where your markup needs are poorly-supported by the templating language? Will someone else be able to read the templating language that you wrote as easily as they could potentially read the HTML by itself?</p>
 <hr />
-<p>I still like Jade and Haml, and I feel very strongly that they deserve their popularity<a href="#fn3" class="footnoteRef" id="fnref3"><sup>3</sup></a>. But I think they are popular in large part because people simply don't want to write HTML.</p>
-<p>This isn't bad in-and-of itself. But when projects get complex, reading, authorship, and (perish the thought) debugging can be more challenging in language-that-compiles-to-the-language-that-you're-ultimately-producing than in the language that is your compile target.</p>
+<p>I still like Jade and Haml, and I feel very strongly that they deserve their popularity<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>. But I think they are popular in large part because people simply don’t want to write HTML.</p>
+<p>This isn’t bad in-and-of itself. But when projects get complex, reading, authorship, and (perish the thought) debugging can be more challenging in language-that-compiles-to-the-language-that-you’re-ultimately-producing than in the language that is your compile target.</p>
 <h2 id="features-syntax-artifacts-thought-experiment-parting-wisdom">Features, Syntax, Artifacts, Thought Experiment, Parting Wisdom</h2>
-<p>I'm not anti-features. Features like iteration, includes, and arbitrary code expression and evaluation in HTML are incredible.<a href="#fn4" class="footnoteRef" id="fnref4"><sup>4</sup></a> But why bother with a wholly different syntax that must be understood alongside of the artifact that you're trying to produce?</p>
+<p>I’m not anti-features. Features like iteration, includes, and arbitrary code expression and evaluation in HTML are incredible.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> But why bother with a wholly different syntax that must be understood alongside of the artifact that you’re trying to produce?</p>
 <hr />
-<p>In the context of Jade and Haml, maybe you can imagine cases where you have a complex, attribute-laden template with necessarily-deep HTML nesting. How many levels deep of forced indentation are you willing to travel for your clean syntax? And how &quot;clean&quot; is your syntax in this attribute-laden real-world scenario?</p>
+<p>In the context of Jade and Haml, maybe you can imagine cases where you have a complex, attribute-laden template with necessarily-deep HTML nesting. How many levels deep of forced indentation are you willing to travel for your clean syntax? And how “clean” is your syntax in this attribute-laden real-world scenario?</p>
 <p>Choose your tools wisely, choose your level of abstraction from your artifacts carefully.</p>
-<div class="footnotes">
+<section class="footnotes" role="doc-endnotes">
 <hr />
 <ol>
-<li id="fn1"><p><a href="http://haml.info/">Haml</a> is the close cousin and predecessor of Jade. Jade's syntax is borrowed very liberally and explicitly from Haml.<a href="#fnref1">↩</a></p></li>
-<li id="fn2"><p>Self-closing tags would be incredible too.<a href="#fnref2">↩</a></p></li>
-<li id="fn3"><p>Jade is really popular and active <a href="https://github.com/pugjs/jade">on GitHub</a> with over 10,000 stars.<a href="#fnref3">↩</a></p></li>
-<li id="fn4"><p>How <del>impossible</del> great would it be to have these features in HTML itself?<a href="#fnref4">↩</a></p></li>
+<li id="fn1" role="doc-endnote"><p><a href="http://haml.info/">Haml</a> is the close cousin and predecessor of Jade. Jade’s syntax is borrowed very liberally and explicitly from Haml.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2" role="doc-endnote"><p>Self-closing tags would be incredible too.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3" role="doc-endnote"><p>Jade is really popular and active <a href="https://github.com/pugjs/jade">on GitHub</a> with over 10,000 stars.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4" role="doc-endnote"><p>How <del>impossible</del> great would it be to have these features in HTML itself?<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
-</div>
+</section>
               </div>
       
         <div class="shareBar">

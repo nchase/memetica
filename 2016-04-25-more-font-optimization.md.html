@@ -32,58 +32,58 @@
                 <h1 id="font-optimization-woff-2.0-and-more">Font Optimization: WOFF 2.0 and More</h1>
 <p><strong>TL;DR — if you need a web font, use WOFF2 fonts if available, then fall back to WOFF, then, finally, use whatever other formats are available.</strong></p>
 <p>You can specify multiple values for the <code>src</code> property, so this syntax should work:</p>
-<div class="sourceCode"><pre class="sourceCode css"><code class="sourceCode css"><span class="dv">@font-face</span> <span class="kw">{</span>
-  <span class="kw">src:</span>
-    <span class="dt">url(</span><span class="st">&#39;../fonts/playfair.woff2&#39;</span><span class="dt">)</span> <span class="dt">format(</span><span class="st">&#39;woff2&#39;</span><span class="dt">)</span>,
-    <span class="dt">url(</span><span class="st">&#39;../fonts/playfair.woff&#39;</span><span class="dt">)</span> <span class="dt">format(</span><span class="st">&#39;woff&#39;</span><span class="dt">)</span>,
-    <span class="dt">url(</span><span class="st">&#39;../fonts/playfair.ttf&#39;</span><span class="dt">)</span> <span class="dt">format(</span><span class="st">&#39;truetype&#39;</span><span class="dt">)</span><span class="kw">;</span>
-  <span class="kw">font-family:</span> <span class="st">&#39;Playfair&#39;</span><span class="kw">;</span>
-<span class="kw">}</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode css"><code class="sourceCode css"><span id="cb1-1"><a href="#cb1-1"></a><span class="im">@font-face</span> {</span>
+<span id="cb1-2"><a href="#cb1-2"></a>  <span class="kw">src</span>:</span>
+<span id="cb1-3"><a href="#cb1-3"></a>    <span class="fu">url(</span><span class="st">&#39;../fonts/playfair.woff2&#39;</span><span class="fu">)</span> <span class="fu">format(</span><span class="st">&#39;woff2&#39;</span><span class="fu">)</span><span class="op">,</span></span>
+<span id="cb1-4"><a href="#cb1-4"></a>    <span class="fu">url(</span><span class="st">&#39;../fonts/playfair.woff&#39;</span><span class="fu">)</span> <span class="fu">format(</span><span class="st">&#39;woff&#39;</span><span class="fu">)</span><span class="op">,</span></span>
+<span id="cb1-5"><a href="#cb1-5"></a>    <span class="fu">url(</span><span class="st">&#39;../fonts/playfair.ttf&#39;</span><span class="fu">)</span> <span class="fu">format(</span><span class="st">&#39;truetype&#39;</span><span class="fu">)</span><span class="op">;</span></span>
+<span id="cb1-6"><a href="#cb1-6"></a>  <span class="kw">font-family</span>: <span class="st">&#39;Playfair&#39;</span><span class="op">;</span></span>
+<span id="cb1-7"><a href="#cb1-7"></a>}</span></code></pre></div>
 <hr />
 <p>Fonts are a heck of a lot of fun. Lately (thinking 2015, it is currently mid-2016) there have been a handful of reasonable arguments in favor of using system fonts instead of web fonts.</p>
-<p>I love system fonts and classic/core web fonts and I agree with the reasons behind using them instead of custom web fonts. They'll always be faster than custom web fonts for all of the obvious reasons.</p>
+<p>I love system fonts and classic/core web fonts and I agree with the reasons behind using them instead of custom web fonts. They’ll always be faster than custom web fonts for all of the obvious reasons.</p>
 <p>But what about when you need (or want) something nicer than a system font and you want it to be fast? Try WOFF2.</p>
 <p>WOFF2 is a web standard optimized font-packaging format that offers fairly large compression gains over other formats.</p>
-<p>If you're reading this page with my Playfair stylesheet (and if you aren't, but want to, navigate <a href="?style=playfair#playfair-picker" id="playfair-picker">here</a> or use the sidebar), there's a fair chance the headings are using the WOFF2 format.</p>
+<p>If you’re reading this page with my Playfair stylesheet (and if you aren’t, but want to, navigate <a href="?style=playfair#playfair-picker" id="playfair-picker">here</a> or use the sidebar), there’s a fair chance the headings are using the WOFF2 format.</p>
 <h1 id="the-numbers">The Numbers</h1>
-<p><strong>For 'Playfair Regular', WOFF2 offers a 10X optimization over TTF and a 3.5x optimization over WOFF.</strong></p>
+<p><strong>For ‘Playfair Regular’, WOFF2 offers a 10X optimization over TTF and a 3.5x optimization over WOFF.</strong></p>
 <table>
 <thead>
 <tr class="header">
-<th align="left">Format</th>
-<th align="left">Size</th>
+<th style="text-align: left;">Format</th>
+<th style="text-align: left;">Size</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">WOFF2</td>
-<td align="left">17.8KB</td>
+<td style="text-align: left;">WOFF2</td>
+<td style="text-align: left;">17.8KB</td>
 </tr>
 <tr class="even">
-<td align="left">WOFF</td>
-<td align="left">60KB</td>
+<td style="text-align: left;">WOFF</td>
+<td style="text-align: left;">60KB</td>
 </tr>
 <tr class="odd">
-<td align="left">TTF</td>
-<td align="left">182KB</td>
+<td style="text-align: left;">TTF</td>
+<td style="text-align: left;">182KB</td>
 </tr>
 </tbody>
 </table>
-<p>WOFF2 isn't supported everywhere, but web fonts allow us to specify multiple values for fonts (see CSS in intro). The first value is treated by the browser as the most desirable option, the final value is the ultimate fallback.</p>
-<p>Avoid sending WOFF2 files over the wire with e.g. gzip — they are already pre-compressed.</p>
+<p>WOFF2 isn’t supported everywhere, but web fonts allow us to specify multiple values for fonts (see CSS in intro). The first value is treated by the browser as the most desirable option, the final value is the ultimate fallback.</p>
+<p>Avoid sending WOFF2 files over the wire with e.g. gzip — they are already pre-compressed.</p>
 <h1 id="other-optimizations-further-reading">Other Optimizations, Further Reading</h1>
-<ol style="list-style-type: decimal">
-<li>If you can't use WOFF2 or WOFF with your font, try <a href="2015-11-04-fonts.md">Font Subsetting</a>.<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a></li>
+<ol type="1">
+<li>If you can’t use WOFF2 or WOFF with your font, try <a href="2015-11-04-fonts.md">Font Subsetting</a>.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></li>
 <li>Google <a href="https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/webfont-optimization">has a tremendous article about font optimization</a>.</li>
 <li><a href="https://www.w3.org/TR/WOFF20ER/">W3C Analysis of WOFF 2.0</a> - up to 94.51% gains observed.</li>
 <li>Be sure to declare a <code>local('NameOfLocalFont')</code> if there might be a locally-available font — avoid the network request altogether!</li>
 </ol>
-<div class="footnotes">
+<section class="footnotes" role="doc-endnotes">
 <hr />
 <ol>
-<li id="fn1"><p>The W3C exposes a better mechanism for doing subsetting in CSS with the <code>unicode-range</code> property, but this property <a href="http://caniuse.com/#feat=font-unicode-range">is not yet fully supported</a>. Once it <em>is</em> fully supported, the door to cheap + programmatic font subsetting will be open.<a href="#fnref1">↩</a></p></li>
+<li id="fn1" role="doc-endnote"><p>The W3C exposes a better mechanism for doing subsetting in CSS with the <code>unicode-range</code> property, but this property <a href="http://caniuse.com/#feat=font-unicode-range">is not yet fully supported</a>. Once it <em>is</em> fully supported, the door to cheap + programmatic font subsetting will be open.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
-</div>
+</section>
               </div>
       
         <div class="shareBar">

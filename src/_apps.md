@@ -16,6 +16,9 @@ and [TabNine](https://tabnine.com). (TabNine is great whatever editor you're usi
 I use it with the leader mapped to `^-a` instead of `^-b`, a holdover from my
 `screen` days.
 
+Recently I discovered [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect)
+which has made it even better.
+
 ## Kap.app
 
 [Kap.app](https://getkap.co) is a useful screencap app. It makes it easy to

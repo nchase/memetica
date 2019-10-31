@@ -9,12 +9,12 @@
     <link rel="icon" href="favicon.png" />
     <title>
       
-        Memetica
+        `xargs` is great. - Memetica
       
     </title>
   </head>
 
-  <body class="region--frame region--frame--src_index_md region--frame--singlet">
+  <body class="region--frame region--frame--src_2019-10-30-xargs_md region--frame--singlet">
     <svg style="display: none">
       <symbol viewBox="0 0 1024 1024" id="octoface">
   <path d="M940.812 277.688c8.25-20.219 35.375-101.75-8.562-211.906 0 0-67.375-21.312-219.875 82.906C648.5 131.125 579.875 128.5 512 128.5c-67.906 0-136.438 2.625-200.5 20.25C159.031 44.46900000000005 91.719 65.78099999999995 91.719 65.78099999999995 47.812 176 74.938 257.46900000000005 83.188 277.688 31.5 333.562 0 404.875 0 492.344 0 821.562 213.25 896 510.844 896 808.562 896 1024 821.562 1024 492.344 1024 404.875 992.5 333.562 940.812 277.688zM512 833c-211.406 0-382.781-9.875-382.781-214.688 0-48.938 24.062-94.595 65.344-132.312 68.75-62.969 185.281-29.688 317.438-29.688 132.25 0 248.625-33.281 317.438 29.625 41.312 37.78 65.438 83.312 65.438 132.312C894.875 823.125 723.375 833 512 833zM351.156 512.438c-42.469 0-76.906 51.062-76.906 114.188s34.438 114.312 76.906 114.312c42.375 0 76.812-51.188 76.812-114.312S393.531 512.438 351.156 512.438zM672.875 512.438C630.5 512.438 596 563.5 596 626.625s34.5 114.312 76.875 114.312 76.812-51.188 76.812-114.312C749.75 563.5 715.312 512.438 672.875 512.438z" />
@@ -29,88 +29,50 @@
             style="overflow: hidden;"
     >
       <div class="region--frame-inner">
-        <div class="decorator decorator--header">
-  <p class="decorator-bio">
-    Noah Chase is a software engineer who lives and works
-    outside of DC in Silver Spring, Maryland.
-    <a href="/about.md.html">About Me</a>
-  </p>
+                <h1 id="xargs-is-great."><code>xargs</code> is great.</h1>
+<h2 id="but-why">But why?</h2>
+<p>You should care about <code>xargs</code> if you believe what I write about command line tools in general, because <code>xargs</code> turns all of those tools into n-dimensional swiss army knives.</p>
+<hr />
+<p>Briefly: <code>xargs</code> takes a command that you want to run as its argument and reads the inputs (arguments) to that command from <a href="https://memetica.ahfr.org/2016-10-24-love-for-pipes-streams.md.html"><code>STDIN</code></a>.</p>
+<p>It’s remarkably powerful when combined with any other tool that writes in a predictable way to stdout.</p>
+<p>Here are some invocations that I like:</p>
+<ul>
+<li>The find-and-replace that you’d do in your editor, but on the command-line (and naturally, with the same flexibility): <code>git grep --ignore-case --files-with-matches searchterm | xargs -L 1 sed -i '' 's/searchTerm/replacementTerm/g'</code></li>
+</ul>
+              </div>
+      
+        <div class="shareBar">
+  <hr class="shareBar-divider" />
 
-  <hr class="decorator-break" />
+  <span class="shareBar-callout">
+    Share on:
+  </span>
 
-  <div class="decorator--header-pageTitleContainer">
-    <div class="decorator--header-icon">
-      <div class="decorator--header-icon-structure decorator--header-icon-div">
-      </div>
-      <svg class="decorator--header-icon-structure decorator--header-icon-svg decorator--header-icon-svg--goat">
-        <use "decorator--header-icon-structure-data" xlink:href="#goat"></use>
-      </svg>
-    </div>
-
-    <h1 class="decorator--header-text">
-      Essays &amp; Articles
-    </h1>
-  </div>
-
-  <hr class="decorator-break" />
-</div>
-
-        <p><a href="2019-10-30-xargs.md.html">The Exquisite Tyranny of <code>xargs</code></a></p>
-<p><a href="_quotes.md.html">My Favorite Quotes</a></p>
-<p><a href="_apps.md.html">My Favorite Apps</a></p>
-<p><a href="2019-09-15-product-success-pt1.md.html">Rules and Behaviors for Successful Products</a></p>
-<p><a href="2017-09-15-complexity.md.html">“Out of the Tar Pit” and Complexity</a></p>
-<p><a href="2016-10-24-love-for-pipes-streams.md.html">With Love For Pipes, Streams</a></p>
-<p><a href="2016-04-25-more-font-optimization.md.html">Font Optimization II</a></p>
-<p><a href="2016-04-11-challenges-in-ui-testing.md.html">Challenges In Web UI Testing</a></p>
-<p><a href="2016-04-03-software-epigenetics-DNA.md.html">Epigenetics and DNA in Software</a></p>
-<p><a href="2016-03-15-distilling-systemantics.md.html">Distilling Systemantics</a></p>
-<p><a href="test-README.md.html">Testing Memetica</a></p>
-<p><a href="README.md.html">Why Memetica, OR, <code>cat ../README.md</code></a></p>
-<p><a href="2016-01-16-email.md.html">Email Management Toward Sanity and Productivity</a></p>
-<p><a href="2016-02-20-software-maturity.md.html">Software Maturity Dynamics</a></p>
-<p><a href="2016-01-31-simplicity.md.html">Simplicity: Syntax in Markup Templating</a></p>
-<p><a href="2016-01-13-performance-ii.md.html">Performance II</a></p>
-<p><a href="2016-01-03-performance.md.html">Performance</a></p>
-<p><a href="2015-11-23-axiomatic-css.md.html">Axiomatic CSS</a></p>
-<p><a href="2015-11-11-twin-peaks.md.html">Twin Peaks</a></p>
-<p><a href="2015-11-04-fonts.md.html">Font Optimization: Subsetting</a></p>
-<p><a href="2015-11-02-grids.md.html">Grids</a></p>
-<p><a href="2015-09-27-time.md.html">Time</a></p>
-        <div class="decorator decorator--footer">
-  <hr class="decorator-break" />
-  <form
-    action="https://tinyletter.com/nchase"
-    method="post"
-    target="popupwindow"
-    onsubmit="window.open('https://tinyletter.com/nchase', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"
+  <a
+    class="shareBar-shareable"
+    title="Share/Discuss on Hacker News"
+    target="_blank"
+    href="https://news.ycombinator.com/submitlink?{url}"
   >
-    <input type="hidden" value="1" name="embed" />
-    <label
-      for="emailList"
-      class="decorator--footer-label"
-    >
-    <abbr title="I do not abuse email.">Subscribe for content updates:</abbr>
-    </label>
-    <br />
-    <input
-      name="email"
-      type="text"
-      placeholder="Email Address"
-      class="decorator--footer-input decorator--footer--inputText"
-      id="emailList"
-    />
-    <button
-      id="newsletterSignup"
-      type="submit"
-      class="decorator--footer-input decorator--footer-inputSubmit"
-      value="Subscribe"
-    >
-      Subscribe
-    </button>
-  </form>
+    Hacker News
+  </a>
+
+  <a
+    class="shareBar-shareable"
+    title="Share/Discuss on Twitter"
+    target="_blank"
+    href="https://twitter.com/intent/tweet?text=`xargs` is great.&amp;url={url}"
+  >
+    Twitter
+  </a>
+
 </div>
-      </div>
+
+<script>
+  Array.prototype.forEach.call(document.querySelectorAll('.shareBar-shareable'), function(element) {
+    element.href = element.href.replace('{url}', window.location.href);
+  });
+</script>
       
     </div>
     <div class="context has-toggle">

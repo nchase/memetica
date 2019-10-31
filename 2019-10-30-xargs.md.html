@@ -37,8 +37,16 @@
 <p>It’s remarkably powerful when combined with any other tool that writes in a predictable way to stdout.</p>
 <p>Here are some invocations that I like:</p>
 <ul>
-<li>The find-and-replace that you’d do in your editor, but on the command-line (and naturally, with the same flexibility): <code>git grep --ignore-case --files-with-matches searchterm | xargs -L 1 sed -i '' 's/searchTerm/replacementTerm/g'</code></li>
+<li>The find-and-replace that you’d do in your editor, but on the command-line (and naturally, with the same flexibility): <code>git grep --ignore-case --files-with-matches searchterm | xargs -L 1 sed -i '' 's/searchTerm/replacementTerm/g'</code><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></li>
+<li>Find lines of code for files in a directory and sort files by lines: <code>find . | xargs wc -l | sort -nr</code> (combine with <code>awk</code> to get sum of lines of code)</li>
+<li>This one is really great: simply use <code>xargs -p</code> to verify the command before each invocation. (It’s often nice to see what you’re doing before you’ve done it, especially if the operation could be risky).</li>
 </ul>
+<section class="footnotes" role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1" role="doc-endnote"><p>This uses the <code>-L 1</code> argument to <code>xargs</code>, which means “run this command once per line” - normally, commands are executed once per separator (e.g. space or line) found in the input.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
               </div>
       
         <div class="shareBar">

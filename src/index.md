@@ -1,3 +1,5 @@
+[The Exquisite Tyranny of `xargs`](2019-10-30-xargs.md)
+
 [My Favorite Quotes](_quotes.md)
 
 [My Favorite Apps](_apps.md)

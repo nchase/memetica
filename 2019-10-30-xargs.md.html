@@ -40,6 +40,7 @@
 <li>The find-and-replace that you’d do in your editor, but on the command-line (and naturally, with the same flexibility): <code>git grep --ignore-case --files-with-matches searchterm | xargs -L 1 sed -i '' 's/searchTerm/replacementTerm/g'</code><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></li>
 <li>Find lines of code for files in a directory and sort files by lines: <code>find . | xargs wc -l | sort -nr</code> (combine with <code>awk</code> to get sum of lines of code)</li>
 <li>This one is really great: simply use <code>xargs -p</code> to verify the command before each invocation. (It’s often nice to see what you’re doing before you’ve done it, especially if the operation could be risky).</li>
+<li>Rename all of your <code>.js</code> files to <code>.ts</code> files, with a prompt for sanity checking: <code>find . -iname '*.js' | grep -E -i --invert-match 'node_modules|bundle' | xargs -L 1 rename 's/\.js$/\.ts/'</code></li>
 </ul>
 <section class="footnotes" role="doc-endnotes">
 <hr />

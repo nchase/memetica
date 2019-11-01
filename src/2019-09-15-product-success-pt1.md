@@ -6,13 +6,13 @@ products that become successful and stay that way.
 
 ## 1. You must use the product.
 
-If you make a product for consumers, and you yourself aren't a user of your
-product, good luck making it great. It's entirely possible to have something
-"decent," but the effort required to reach "decent" multiplies in every other
-area, if you do not follow this simple rule.
+If you make a product for consumers - and you yourself aren't a user of your
+product - good luck making it great.
 
-And if you don't do this, you will likely never have a product that is able to
-transcend "decent" into being truly great.
+While it's possible to create a decent product as a non-user, the effort
+required for success will be much higher. And if you don't use your product,
+you can only get to decent - great is laughable, and superlative will never
+happen.[^1]
 
 
 ## 2. You must measure things in the product. Lots of things.
@@ -38,9 +38,11 @@ via rows in a database or stuff dumped from a database into Excel - the sorts
 of things that roll up well into explainable graphs and high-level reports.
 
 
-Measure flows. Measure user data. Make sure your teams are measuring
-externally. Measure yourselves too, sure, but only if you have a handle on how
-to measure the important dimensions of your product's success. Every team.
+Measure flows (funnels). Measure user data - drink it directly from the
+database. Make sure your teams are measuring externally. Measure yourselves
+too, sure, but only if you have a handle on how to measure the important
+dimensions of your product's success. Every team has to measure product
+success.
 
 ## 3. Feedback from the product: engineers must receive feedback from the product when things go wrong.
 
@@ -57,13 +59,16 @@ from general information.
 The other side of the feedback token is the support team's feedback.
 
 When support gets an issue that they can't solve with their tools, it should be
-reported and someone should be on duty to investigate and fix it.
+reported and someone should be on duty to investigate and fix whatever issues
+are reported.
 
 This might sound overbearing, but consider this: if your product is at any kind
 of scale, the fact that a single user _reported_ the issue probably means that
-others are having the issue, but they just aren't reporting it.[^1]
+others are having the issue, but they just aren't reporting it.[^2]
 
-[^1]: Aside: in some organizations, the relationship between support and
+[^1]: This couldn't be any plainer. It's listed first because it's an easy rule to
+  follow and gives you a great baseline.
+[^2]: Aside: in some organizations, the relationship between support and
   engineering is entirely mediated by product. (i.e. product decides whether or
   not something that support hears about is communicated to engineers).
   I urge these organizations to disintermediate these relationships.

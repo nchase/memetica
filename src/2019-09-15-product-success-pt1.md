@@ -65,5 +65,5 @@ others are having the issue, but they just aren't reporting it.[^1]
 
 [^1]: Aside: in some organizations, the relationship between support and
   engineering is entirely mediated by product. (i.e. product decides whether or
-  not something that support hears about is communicated to engineers). I don't
-  think this is right.
+  not something that support hears about is communicated to engineers).
+  I urge these organizations to disintermediate these relationships.

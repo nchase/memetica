@@ -1,4 +1,4 @@
-[The Exquisite Tyranny of `xargs`](2019-10-30-xargs.md)
+[Doing useful things with `xargs`](2019-10-30-xargs.md)
 
 [My Favorite Quotes](_quotes.md)
 

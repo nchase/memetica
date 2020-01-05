@@ -1,3 +1,5 @@
+[More Rules and Behaviors for Successful Products](2020-01-05-product-success-pt2.md)
+
 [Doing useful things with `xargs`](2019-10-30-xargs.md)
 
 [My Favorite Quotes](_quotes.md)

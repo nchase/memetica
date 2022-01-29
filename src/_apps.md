@@ -17,7 +17,7 @@ I use it with the leader mapped to `^-a` instead of `^-b`, a holdover from my
 `screen` days.
 
 Recently I discovered [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect)
-which has made it even better.
+which has made tmux even better.
 
 ## Kap.app
 
@@ -31,7 +31,7 @@ fit.
 Keeps me from muddling my debugging experience with tabs in Chrome (this makes
 more sense to me than having a single tab in Chrome that hooked up to a
 client-side debugger in Simulator.app alongside many tabs that are for other
-things around work)
+things around work).
 
 ## Mail.app
 

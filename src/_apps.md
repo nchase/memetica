@@ -19,6 +19,15 @@ I use it with the leader mapped to `^-a` instead of `^-b`, a holdover from my
 Recently I discovered [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect)
 which has made tmux even better.
 
+## Flycut
+
+[Flycut](https://github.com/TermiT/Flycut) (formerly known as Jumpcut) is an
+extremely fast and simple clipboard manager for macOS.
+
+For me, clipboard management is one of those things that's really difficult to
+live without once you've integrated it into your workflow. Having ~a day's
+worth of stuff that I've copied to my clipboard is like having a second brain.
+
 ## Kap.app
 
 [Kap.app](https://getkap.co) is a useful screencap app. It makes it easy to

@@ -1,0 +1,57 @@
+@font-face {
+  src: url("../fonts/playfair.woff2") format("woff2"), url("../fonts/playfair.woff") format("woff"), url("../fonts/playfair.ttf") format("truetype");
+  font-family: 'Playfair'; }
+
+.region--frame {
+  color: #222;
+  font-family: 'Playfair', Georgia, serif; }
+
+.decorator-bio {
+  display: none; }
+
+.decorator--header .decorator-break {
+  display: none; }
+
+.decorator--header-pageTitleContainer {
+  margin: 15vh 0; }
+  @media (min-width: 64em) {
+    .decorator--header-pageTitleContainer {
+      margin: 25vh 0; } }
+
+.decorator--header-text {
+  margin-top: 15vh; }
+  @media (min-width: 648px) {
+    .decorator--header-text {
+      margin-top: 0; } }
+  @media (min-width: 960px) {
+    .decorator--header-text {
+      margin-top: 15vh; } }
+
+h1 {
+  font-style: italic;
+  border-bottom-color: currentColor; }
+
+.region--frame--singlet h1:not(.decorator--header-text) {
+  margin-bottom: 1.5em;
+  padding: 1em 0;
+  width: 100%;
+  text-align: center; }
+  @media (min-width: 648px) {
+    .region--frame--singlet h1:not(.decorator--header-text) {
+      padding: 1em 0.5em; } }
+
+a {
+  color: #1A1A1A; }
+
+hr {
+  margin: 1.5em 0;
+  color: currentColo;
+  border-color: currentColor; }
+
+.region--frame--singlet hr {
+  margin: 3em 0 4em;
+  border-width: 1px;
+  border-style: solid; }
+
+hr:before {
+  content: ''; }

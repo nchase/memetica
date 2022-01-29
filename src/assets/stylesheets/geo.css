@@ -1,0 +1,51 @@
+@keyframes rota {
+  to {
+    transform: rotate(0.5turn); } }
+
+@keyframes rota--frame {
+  to {
+    transform: rotate(0.5turn) scale(0.75);
+    opacity: 0; } }
+
+/* --- the rest: --- */
+.region--frame {
+  color: #fff;
+  background-color: #000; }
+
+.region--frame-inner:before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 33vw;
+  height: 33vw;
+  box-shadow: inset 0 0 0 1px #fff;
+  animation: rota--frame 1250ms;
+  animation-iteration-count: 30;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; }
+
+.decorator--header-pageTitleContainer {
+  margin: 0 3em; }
+
+.decorator--header-icon {
+  display: block;
+  margin: 3em 0; }
+
+.decorator--header-text {
+  display: block; }
+
+.decorator--header-icon-structure {
+  fill: none;
+  position: static;
+  width: 100px;
+  height: 100px;
+  box-shadow: inset 0 0 0 1px #fff;
+  animation: rota 2000ms;
+  animation-iteration-count: 30; }
+
+.decorator--header-icon-structure-data {
+  display: none; }

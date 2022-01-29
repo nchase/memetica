@@ -1,0 +1,12 @@
+@font-face {
+  src: url("../fonts/marion.otf");
+  font-family: 'Marion'; }
+
+.col + hr {
+  margin: 4em 0 6em; }
+
+.region--frame {
+  font-family: Marion, Georgia, serif;
+  color: #E7F2DA;
+  background-color: #6E973F;
+  border-bottom-color: #5F6E7B; }
